@@ -1,4 +1,123 @@
 {
+  "resume": {
+    "back": "Back",
+    "savePdf": "Save as PDF",
+    "name": "JUAN IDROVO",
+    "contact": "idrovel@gmail.com | +593 983315783 | linkedin.com/in/juanidrovo | github.com/ichbinderbar | Cuenca, Ecuador",
+    "sections": {
+      "summary": "Professional Summary",
+      "skills": "Technical Skills",
+      "experience": "Professional Experience",
+      "education": "Education",
+      "certifications": "Certifications",
+      "languages": "Languages"
+    },
+    "summary": "Cybersecurity Professional and Full Stack Developer with a Juris Doctor background. 3+ years of experience in security compliance (SOC 2 Type II), vulnerability assessment, and enterprise application development. Delivered 37,000+ lines of production code at Kriptos Inc. Founder of Markatzy, an AI-powered trademark protection platform in beta with leading IP law firms. AWS Certified Cloud Practitioner with credentials from UT Austin, BrainStation (Konrad Group), and Harvard Business School Online.",
+    "skills": {
+      "security": {
+        "label": "Security",
+        "value": "SOC 2 Type II Compliance, Vulnerability Assessment, AWS Security Hub, Amazon Inspector, Vanta, Automated Security Testing, CI/CD Security Integration, SonarCloud"
+      },
+      "development": {
+        "label": "Development",
+        "value": "JavaScript, TypeScript, Python, React, Next.js, Node.js, Express, REST APIs, Tailwind CSS, HTML, CSS"
+      },
+      "cloud": {
+        "label": "Cloud & Infrastructure",
+        "value": "Amazon Web Services (AWS), EC2, Amplify, Docker, CI/CD Pipelines, Git, PostgreSQL, MySQL, Redis"
+      },
+      "tools": {
+        "label": "Tools",
+        "value": "ESLint, Prettier, Husky, Vitest, Testing Library, Storybook, Figma, Ansible"
+      }
+    },
+    "experience": {
+      "kriptos": {
+        "title": "Frontend Developer & Cybersecurity Analyst",
+        "company": "Kriptos Inc., Miami, FL (Remote)",
+        "dates": "Oct 2024 - Present",
+        "bullets": [
+          "Led frontend development for Update Manager module, delivering 219 commits and 37,000+ lines of TypeScript/React code; currently main contributor to platform repository",
+          "Supported successful SOC 2 Type II certification by managing security compliance through Vanta dashboard and coordinating vulnerability patching across 220+ repositories",
+          "Integrated SonarCloud code quality analysis and Amazon Inspector security scanning across approximately 100 CI/CD pipeline configurations",
+          "Streamlined software deployment processes for enterprise clients at banks and multinationals, enabling IT teams to schedule and monitor installation jobs across distributed systems",
+          "Leveraged AWS Security Hub and Amazon Inspector to monitor and triage container image vulnerabilities"
+        ]
+      },
+      "markatzy": {
+        "title": "Founder & Lead Developer",
+        "company": "Markatzy - Trademark Protection Platform",
+        "dates": "2022 - Present",
+        "bullets": [
+          "Designed and developed full-stack web application for trademark monitoring and conflict detection, currently in beta with leading IP law firms in Ecuador",
+          "Engineered AI-powered similarity detection engine analyzing conflicts across four dimensions: semantic, typographic, phonetic, and visual using vector databases",
+          "Built with React, Next.js, TypeScript, and PostgreSQL; reduced trademark conflict analysis time by 80% compared to traditional methods"
+        ]
+      },
+      "graceNelson": {
+        "title": "Attorney Associate & Webmaster",
+        "company": "Grace Nelson Attorneys at Law, Cuenca, Ecuador",
+        "dates": "Apr 2021 - Present",
+        "bullets": [
+          "Managed immigration procedures for 100+ U.S. nationals annually with near-perfect approval rate",
+          "Led digital transformation initiative, implementing first CRM system and automating internal workflows",
+          "Designed and maintained firm website with multi-language support, secure payment processing, and appointment booking integration",
+          "Coordinated 50+ real estate purchase and sale agreement closings; achieved 20% annual increase in referral business"
+        ]
+      },
+      "elliff": {
+        "title": "Staff Accountant",
+        "company": "Elliff CPA, Dallas, TX",
+        "dates": "Oct 2022 - Oct 2023",
+        "bullets": [
+          "Prepared 100+ individual and corporate tax returns including Forms 1040, 1120, 1120S, and 1065",
+          "Managed client communications and workflow for 300+ active clients",
+          "Authored comprehensive UltraTax software manual to optimize data entry processes"
+        ]
+      },
+      "imbaip": {
+        "title": "IP Attorney",
+        "company": "IMBAIP Cia. Ltda., Quito, Ecuador",
+        "dates": "Jan 2022 - Oct 2022",
+        "bullets": [
+          "Managed trademark registration, modification, and appeal processes for hundreds of clients",
+          "Directed office operations independently after sudden departure of department director",
+          "Drafted legal actions and managed digital and physical archives for IP cases"
+        ]
+      }
+    },
+    "education": {
+      "utaustin": {
+        "degree": "Postgraduate Diploma in Cybersecurity",
+        "school": "University of Texas at Austin - McCombs School of Business",
+        "date": "Sep 2025",
+        "details": "GPA: 4.13 | Courses: Network Security, Cyber Attacks, Security Controls, Governance Risk and Compliance (GRC)"
+      },
+      "brainstation": {
+        "degree": "Software Engineering Diploma",
+        "school": "BrainStation (Konrad Group), London, UK",
+        "date": "Oct 2024",
+        "details": "Intensive bootcamp | Won Lloyds Bank hackathon partnership project"
+      },
+      "usfq": {
+        "degree": "Juris Doctor (Abogado)",
+        "school": "Universidad San Francisco de Quito, Ecuador",
+        "date": "Apr 2021",
+        "details": "GPA: 3.12 | 260 Credits | Thesis: Central Bank Digital Currencies (CBDCs) in dollarized economies"
+      }
+    },
+    "certifications": {
+      "aws": "AWS Certified Cloud Practitioner - Amazon Web Services",
+      "hbs": "Financial Accounting Professional Certificate - Harvard Business School Online, Jul 2022",
+      "bsCyber": "Cybersecurity Certification - BrainStation, Jan 2025"
+    },
+    "languagesText": {
+      "spanish": "Spanish",
+      "spValue": "Native",
+      "english": "English",
+      "enValue": "Professional Proficiency (TOEFL iBT 104/120, CEFR C1)"
+    }
+  },
   "hero": {
     "greeting": "Hi, my name is",
     "name": "Juan Idrovo",

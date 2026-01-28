@@ -1,4 +1,123 @@
 {
+  "resume": {
+    "back": "Volver",
+    "savePdf": "Guardar PDF",
+    "name": "JUAN IDROVO",
+    "contact": "idrovel@gmail.com | +593 983315783 | linkedin.com/in/juanidrovo | github.com/ichbinderbar | Cuenca, Ecuador",
+    "sections": {
+      "summary": "Resumen Profesional",
+      "skills": "Habilidades Técnicas",
+      "experience": "Experiencia Profesional",
+      "education": "Educación",
+      "certifications": "Certificaciones",
+      "languages": "Idiomas"
+    },
+    "summary": "Profesional en Ciberseguridad y Desarrollador Full Stack con formación de Abogado. Más de 3 años de experiencia en cumplimiento de seguridad (SOC 2 Tipo II), evaluación de vulnerabilidades y desarrollo de aplicaciones empresariales. Entregué más de 37,000 líneas de código en producción en Kriptos Inc. Fundador de Markatzy, plataforma de protección de marcas impulsada por IA en beta con firmas de abogados líderes. AWS Certified Cloud Practitioner con credenciales de UT Austin, BrainStation (Konrad Group) y Harvard Business School Online.",
+    "skills": {
+      "security": {
+        "label": "Seguridad",
+        "value": "Cumplimiento SOC 2 Tipo II, Evaluación de Vulnerabilidades, AWS Security Hub, Amazon Inspector, Vanta, Pruebas de Seguridad Automatizadas, Integración de Seguridad CI/CD, SonarCloud"
+      },
+      "development": {
+        "label": "Desarrollo",
+        "value": "JavaScript, TypeScript, Python, React, Next.js, Node.js, Express, REST APIs, Tailwind CSS, HTML, CSS"
+      },
+      "cloud": {
+        "label": "Cloud e Infraestructura",
+        "value": "Amazon Web Services (AWS), EC2, Amplify, Docker, Pipelines CI/CD, Git, PostgreSQL, MySQL, Redis"
+      },
+      "tools": {
+        "label": "Herramientas",
+        "value": "ESLint, Prettier, Husky, Vitest, Testing Library, Storybook, Figma, Ansible"
+      }
+    },
+    "experience": {
+      "kriptos": {
+        "title": "Desarrollador Frontend y Analista de Ciberseguridad",
+        "company": "Kriptos Inc., Miami, FL (Remoto)",
+        "dates": "Oct 2024 - Presente",
+        "bullets": [
+          "Lideré el desarrollo frontend del módulo Update Manager, entregando 219 commits y más de 37,000 líneas de código TypeScript/React; actualmente contribuidor principal del repositorio de la plataforma",
+          "Apoyé la certificación exitosa SOC 2 Tipo II gestionando cumplimiento de seguridad a través del dashboard de Vanta y coordinando parches de vulnerabilidades en más de 220 repositorios",
+          "Integré análisis de calidad de código SonarCloud y escaneo de seguridad Amazon Inspector en aproximadamente 100 configuraciones de pipelines CI/CD",
+          "Optimicé procesos de despliegue de software para clientes empresariales en bancos y multinacionales, permitiendo a equipos de TI programar y monitorear trabajos de instalación en sistemas distribuidos",
+          "Utilicé AWS Security Hub y Amazon Inspector para monitorear y clasificar vulnerabilidades de imágenes de contenedores"
+        ]
+      },
+      "markatzy": {
+        "title": "Fundador y Desarrollador Principal",
+        "company": "Markatzy - Plataforma de Protección de Marcas",
+        "dates": "2022 - Presente",
+        "bullets": [
+          "Diseñé y desarrollé aplicación web full-stack para monitoreo de marcas y detección de conflictos, actualmente en beta con firmas de abogados de PI líderes en Ecuador",
+          "Desarrollé motor de detección de similitudes impulsado por IA que analiza conflictos en cuatro dimensiones: semántica, tipográfica, fonética y visual usando bases de datos vectoriales",
+          "Construido con React, Next.js, TypeScript y PostgreSQL; redujo el tiempo de análisis de conflictos de marcas en 80% comparado con métodos tradicionales"
+        ]
+      },
+      "graceNelson": {
+        "title": "Abogado Asociado y Webmaster",
+        "company": "Grace Nelson Attorneys at Law, Cuenca, Ecuador",
+        "dates": "Abr 2021 - Presente",
+        "bullets": [
+          "Gestioné procedimientos migratorios para más de 100 ciudadanos estadounidenses anualmente con tasa de aprobación casi perfecta",
+          "Lideré iniciativa de transformación digital, implementando el primer sistema CRM y automatizando flujos de trabajo internos",
+          "Diseñé y mantuve sitio web de la firma con soporte multilingüe, procesamiento seguro de pagos e integración de reserva de citas",
+          "Coordiné más de 50 cierres de contratos de compraventa de bienes raíces; logré 20% de aumento anual en negocios por referidos"
+        ]
+      },
+      "elliff": {
+        "title": "Contador",
+        "company": "Elliff CPA, Dallas, TX",
+        "dates": "Oct 2022 - Oct 2023",
+        "bullets": [
+          "Preparé más de 100 declaraciones de impuestos individuales y corporativas incluyendo Formularios 1040, 1120, 1120S y 1065",
+          "Gestioné comunicaciones con clientes y flujo de trabajo para más de 300 clientes activos",
+          "Redacté manual completo de software UltraTax para optimizar procesos de entrada de datos"
+        ]
+      },
+      "imbaip": {
+        "title": "Abogado de Propiedad Intelectual",
+        "company": "IMBAIP Cia. Ltda., Quito, Ecuador",
+        "dates": "Ene 2022 - Oct 2022",
+        "bullets": [
+          "Gestioné procesos de registro, modificación y apelación de marcas para cientos de clientes",
+          "Dirigí operaciones de la oficina independientemente tras la salida repentina del director del departamento",
+          "Redacté acciones legales y gestioné archivos digitales y físicos para casos de PI"
+        ]
+      }
+    },
+    "education": {
+      "utaustin": {
+        "degree": "Diplomado de Posgrado en Ciberseguridad",
+        "school": "University of Texas at Austin - McCombs School of Business",
+        "date": "Sep 2025",
+        "details": "GPA: 4.13 | Cursos: Seguridad de Redes, Ciberataques, Controles de Seguridad, Gobernanza Riesgo y Cumplimiento (GRC)"
+      },
+      "brainstation": {
+        "degree": "Diploma en Ingeniería de Software",
+        "school": "BrainStation (Konrad Group), Londres, UK",
+        "date": "Oct 2024",
+        "details": "Bootcamp intensivo | Ganador del hackathon en asociación con Lloyds Bank"
+      },
+      "usfq": {
+        "degree": "Abogado",
+        "school": "Universidad San Francisco de Quito, Ecuador",
+        "date": "Abr 2021",
+        "details": "GPA: 3.12 | 260 Créditos | Tesis: Monedas Digitales de Bancos Centrales (CBDCs) en economías dolarizadas"
+      }
+    },
+    "certifications": {
+      "aws": "AWS Certified Cloud Practitioner - Amazon Web Services",
+      "hbs": "Certificado Profesional en Contabilidad Financiera - Harvard Business School Online, Jul 2022",
+      "bsCyber": "Certificación en Ciberseguridad - BrainStation, Ene 2025"
+    },
+    "languagesText": {
+      "spanish": "Español",
+      "spValue": "Nativo",
+      "english": "Inglés",
+      "enValue": "Competencia Profesional (TOEFL iBT 104/120, CEFR C1)"
+    }
+  },
   "hero": {
     "greeting": "Hola, mi nombre es",
     "name": "Juan Idrovo",

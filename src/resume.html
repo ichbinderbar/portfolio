@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Idrovo - Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 11pt;
+      line-height: 1.4;
+      color: #000;
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 0.5in;
+      background: #fff;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #000;
+    }
+
+    .name {
+      font-size: 20pt;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .contact {
+      font-size: 10pt;
+    }
+
+    .section {
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-size: 12pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-bottom: 1px solid #000;
+      padding-bottom: 2px;
+      margin-bottom: 8px;
+    }
+
+    .job {
+      margin-bottom: 12px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .job-title {
+      font-weight: bold;
+    }
+
+    .job-company {
+      font-style: italic;
+    }
+
+    .job ul {
+      margin-left: 18px;
+      margin-top: 4px;
+    }
+
+    .job li {
+      margin-bottom: 2px;
+    }
+
+    .edu {
+      margin-bottom: 8px;
+    }
+
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .edu-degree {
+      font-weight: bold;
+    }
+
+    .edu-school {
+      font-style: italic;
+    }
+
+    .skills-list {
+      margin-bottom: 6px;
+    }
+
+    .skills-category {
+      font-weight: bold;
+    }
+
+    .cert {
+      margin-bottom: 4px;
+    }
+
+    @media print {
+      body {
+        padding: 0;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+
+    @page {
+      margin: 0.5in;
+    }
+
+    .toolbar {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .toolbar button, .toolbar a {
+      background: #02aab0;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .toolbar button:hover, .toolbar a:hover {
+      background: #00cdac;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar no-print">
+    <a href="index.html" data-i18n="resume.back">Back</a>
+    <button onclick="window.print()" data-i18n="resume.savePdf">Save as PDF</button>
+    <button id="lang-toggle" onclick="toggleLanguage()">ES</button>
+  </div>
+
+  <div class="header">
+    <div class="name" data-i18n="resume.name">JUAN IDROVO</div>
+    <div class="contact" data-i18n="resume.contact">idrovel@gmail.com | +593 983315783 | linkedin.com/in/juanidrovo | github.com/ichbinderbar | Cuenca, Ecuador</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title" data-i18n="resume.sections.summary">Professional Summary</div>
+    <p data-i18n="resume.summary">Cybersecurity Professional and Full Stack Developer with a Juris Doctor background. 3+ years of experience in security compliance (SOC 2 Type II), vulnerability assessment, and enterprise application development. Delivered 37,000+ lines of production code at Kriptos Inc. Founder of Markatzy, an AI-powered trademark protection platform in beta with leading IP law firms. AWS Certified Cloud Practitioner with credentials from UT Austin, BrainStation (Konrad Group), and Harvard Business School Online.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title" data-i18n="resume.sections.skills">Technical Skills</div>
+    <div class="skills-list">
+      <span class="skills-category" data-i18n="resume.skills.security.label">Security</span>: <span data-i18n="resume.skills.security.value">SOC 2 Type II Compliance, Vulnerability Assessment, AWS Security Hub, Amazon Inspector, Vanta, Automated Security Testing, CI/CD Security Integration, SonarCloud</span>
+    </div>
+    <div class="skills-list">
+      <span class="skills-category" data-i18n="resume.skills.development.label">Development</span>: <span data-i18n="resume.skills.development.value">JavaScript, TypeScript, Python, React, Next.js, Node.js, Express, REST APIs, Tailwind CSS, HTML, CSS</span>
+    </div>
+    <div class="skills-list">
+      <span class="skills-category" data-i18n="resume.skills.cloud.label">Cloud & Infrastructure</span>: <span data-i18n="resume.skills.cloud.value">Amazon Web Services (AWS), EC2, Amplify, Docker, CI/CD Pipelines, Git, PostgreSQL, MySQL, Redis</span>
+    </div>
+    <div class="skills-list">
+      <span class="skills-category" data-i18n="resume.skills.tools.label">Tools</span>: <span data-i18n="resume.skills.tools.value">ESLint, Prettier, Husky, Vitest, Testing Library, Storybook, Figma, Ansible</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title" data-i18n="resume.sections.experience">Professional Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <span><span class="job-title" data-i18n="resume.experience.kriptos.title">Frontend Developer & Cybersecurity Analyst</span> | <span class="job-company" data-i18n="resume.experience.kriptos.company">Kriptos Inc., Miami, FL (Remote)</span></span>
+        <span data-i18n="resume.experience.kriptos.dates">Oct 2024 - Present</span>
+      </div>
+      <ul>
+        <li data-i18n="resume.experience.kriptos.bullets.0">Led frontend development for Update Manager module, delivering 219 commits and 37,000+ lines of TypeScript/React code; currently main contributor to platform repository</li>
+        <li data-i18n="resume.experience.kriptos.bullets.1">Supported successful SOC 2 Type II certification by managing security compliance through Vanta dashboard and coordinating vulnerability patching across 220+ repositories</li>
+        <li data-i18n="resume.experience.kriptos.bullets.2">Integrated SonarCloud code quality analysis and Amazon Inspector security scanning across approximately 100 CI/CD pipeline configurations</li>
+        <li data-i18n="resume.experience.kriptos.bullets.3">Streamlined software deployment processes for enterprise clients at banks and multinationals, enabling IT teams to schedule and monitor installation jobs across distributed systems</li>
+        <li data-i18n="resume.experience.kriptos.bullets.4">Leveraged AWS Security Hub and Amazon Inspector to monitor and triage container image vulnerabilities</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span><span class="job-title" data-i18n="resume.experience.markatzy.title">Founder & Lead Developer</span> | <span class="job-company" data-i18n="resume.experience.markatzy.company">Markatzy - Trademark Protection Platform</span></span>
+        <span data-i18n="resume.experience.markatzy.dates">2022 - Present</span>
+      </div>
+      <ul>
+        <li data-i18n="resume.experience.markatzy.bullets.0">Designed and developed full-stack web application for trademark monitoring and conflict detection, currently in beta with leading IP law firms in Ecuador</li>
+        <li data-i18n="resume.experience.markatzy.bullets.1">Engineered AI-powered similarity detection engine analyzing conflicts across four dimensions: semantic, typographic, phonetic, and visual using vector databases</li>
+        <li data-i18n="resume.experience.markatzy.bullets.2">Built with React, Next.js, TypeScript, and PostgreSQL; reduced trademark conflict analysis time by 80% compared to traditional methods</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span><span class="job-title" data-i18n="resume.experience.graceNelson.title">Attorney Associate & Webmaster</span> | <span class="job-company" data-i18n="resume.experience.graceNelson.company">Grace Nelson Attorneys at Law, Cuenca, Ecuador</span></span>
+        <span data-i18n="resume.experience.graceNelson.dates">Apr 2021 - Present</span>
+      </div>
+      <ul>
+        <li data-i18n="resume.experience.graceNelson.bullets.0">Managed immigration procedures for 100+ U.S. nationals annually with near-perfect approval rate</li>
+        <li data-i18n="resume.experience.graceNelson.bullets.1">Led digital transformation initiative, implementing first CRM system and automating internal workflows</li>
+        <li data-i18n="resume.experience.graceNelson.bullets.2">Designed and maintained firm website with multi-language support, secure payment processing, and appointment booking integration</li>
+        <li data-i18n="resume.experience.graceNelson.bullets.3">Coordinated 50+ real estate purchase and sale agreement closings; achieved 20% annual increase in referral business</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span><span class="job-title" data-i18n="resume.experience.elliff.title">Staff Accountant</span> | <span class="job-company" data-i18n="resume.experience.elliff.company">Elliff CPA, Dallas, TX</span></span>
+        <span data-i18n="resume.experience.elliff.dates">Oct 2022 - Oct 2023</span>
+      </div>
+      <ul>
+        <li data-i18n="resume.experience.elliff.bullets.0">Prepared 100+ individual and corporate tax returns including Forms 1040, 1120, 1120S, and 1065</li>
+        <li data-i18n="resume.experience.elliff.bullets.1">Managed client communications and workflow for 300+ active clients</li>
+        <li data-i18n="resume.experience.elliff.bullets.2">Authored comprehensive UltraTax software manual to optimize data entry processes</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span><span class="job-title" data-i18n="resume.experience.imbaip.title">IP Attorney</span> | <span class="job-company" data-i18n="resume.experience.imbaip.company">IMBAIP Cia. Ltda., Quito, Ecuador</span></span>
+        <span data-i18n="resume.experience.imbaip.dates">Jan 2022 - Oct 2022</span>
+      </div>
+      <ul>
+        <li data-i18n="resume.experience.imbaip.bullets.0">Managed trademark registration, modification, and appeal processes for hundreds of clients</li>
+        <li data-i18n="resume.experience.imbaip.bullets.1">Directed office operations independently after sudden departure of department director</li>
+        <li data-i18n="resume.experience.imbaip.bullets.2">Drafted legal actions and managed digital and physical archives for IP cases</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title" data-i18n="resume.sections.education">Education</div>
+
+    <div class="edu">
+      <div class="edu-header">
+        <span><span class="edu-degree" data-i18n="resume.education.utaustin.degree">Postgraduate Diploma in Cybersecurity</span> | <span class="edu-school" data-i18n="resume.education.utaustin.school">University of Texas at Austin - McCombs School of Business</span></span>
+        <span data-i18n="resume.education.utaustin.date">Sep 2025</span>
+      </div>
+      <div data-i18n="resume.education.utaustin.details">GPA: 4.13 | Courses: Network Security, Cyber Attacks, Security Controls, Governance Risk and Compliance (GRC)</div>
+    </div>
+
+    <div class="edu">
+      <div class="edu-header">
+        <span><span class="edu-degree" data-i18n="resume.education.brainstation.degree">Software Engineering Diploma</span> | <span class="edu-school" data-i18n="resume.education.brainstation.school">BrainStation (Konrad Group), London, UK</span></span>
+        <span data-i18n="resume.education.brainstation.date">Oct 2024</span>
+      </div>
+      <div data-i18n="resume.education.brainstation.details">Intensive bootcamp | Won Lloyds Bank hackathon partnership project</div>
+    </div>
+
+    <div class="edu">
+      <div class="edu-header">
+        <span><span class="edu-degree" data-i18n="resume.education.usfq.degree">Juris Doctor (Abogado)</span> | <span class="edu-school" data-i18n="resume.education.usfq.school">Universidad San Francisco de Quito, Ecuador</span></span>
+        <span data-i18n="resume.education.usfq.date">Apr 2021</span>
+      </div>
+      <div data-i18n="resume.education.usfq.details">GPA: 3.12 | 260 Credits | Thesis: Central Bank Digital Currencies (CBDCs) in dollarized economies</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title" data-i18n="resume.sections.certifications">Certifications</div>
+    <div class="cert" data-i18n="resume.certifications.aws">AWS Certified Cloud Practitioner - Amazon Web Services</div>
+    <div class="cert" data-i18n="resume.certifications.hbs">Financial Accounting Professional Certificate - Harvard Business School Online, Jul 2022</div>
+    <div class="cert" data-i18n="resume.certifications.bsCyber">Cybersecurity Certification - BrainStation, Jan 2025</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title" data-i18n="resume.sections.languages">Languages</div>
+    <p><span data-i18n="resume.languagesText.spanish">Spanish</span>: <span data-i18n="resume.languagesText.spValue">Native</span> | <span data-i18n="resume.languagesText.english">English</span>: <span data-i18n="resume.languagesText.enValue">Professional Proficiency (TOEFL iBT 104/120, CEFR C1)</span></p>
+  </div>
+
+  <script type="module">
+    import i18next from 'i18next';
+    import en from './locales/en.json';
+    import es from './locales/es.json';
+
+    const savedLang = localStorage.getItem('i18nextLng') || 'en';
+
+    i18next.init({
+      lng: savedLang,
+      resources: {
+        en: { translation: en },
+        es: { translation: es }
+      },
+      fallbackLng: 'en'
+    }).then(() => {
+      updateContent();
+      updateToggle();
+    });
+
+    function updateContent() {
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.getAttribute('data-i18n');
+        const val = i18next.t(key);
+        if (val && val !== key) {
+          el.textContent = val;
+        }
+      });
+    }
+
+    function updateToggle() {
+      const toggle = document.getElementById('lang-toggle');
+      if (toggle) {
+        toggle.textContent = i18next.language === 'es' ? 'EN' : 'ES';
+      }
+    }
+
+    window.toggleLanguage = () => {
+      const newLang = i18next.language === 'es' ? 'en' : 'es';
+      i18next.changeLanguage(newLang).then(() => {
+        localStorage.setItem('i18nextLng', newLang);
+        updateContent();
+        updateToggle();
+      });
+    };
+  </script>
+</body>
+</html>
