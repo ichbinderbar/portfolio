@@ -1,0 +1,49 @@
+{
+  "hero": {
+    "greeting": "Hola, mi nombre es",
+    "name": "Juan Idrovo",
+    "tagline": "Construyo aplicaciones web seguras.",
+    "cta": "Conocer más"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "p1": "Soy Profesional en Ciberseguridad, Desarrollador Full Stack y Abogado radicado en Ecuador. Combino mi título de Abogado con habilidades técnicas en React, TypeScript y cumplimiento de seguridad. Actualmente desarrollo aplicaciones empresariales seguras en Kriptos y construyo Markatzy, una plataforma de protección de marcas impulsada por IA.",
+    "p2": "Mi formación multidisciplinaria abarca derecho, ingeniería de software y análisis financiero. He contribuido a certificaciones SOC 2 Tipo II, entregado más de 37,000 líneas de código en producción, y poseo credenciales de UT Austin, BrainStation (Konrad Group), Harvard Business School Online y AWS (Cloud Practitioner Certificado).",
+    "resume": "Ver CV"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "seeLive": "Ver en Vivo",
+    "markatzy": {
+      "title": "Markatzy",
+      "description": "Plataforma de monitoreo de marcas y detección de conflictos impulsada por IA. Analiza conflictos en cuatro dimensiones: semántica, tipográfica, fonética y visual. Actualmente en beta con firmas de abogados de PI líderes en Ecuador. Construida con React, Next.js, TypeScript y bases de datos vectoriales."
+    },
+    "updateManager": {
+      "title": "Update Manager",
+      "description": "Orquestador de instalación de agentes Windows construido para Kriptos Inc. Permite a departamentos de TI desplegar y gestionar software de forma segura en miles de computadoras cliente en bancos y multinacionales. Lideré el desarrollo frontend con 219 commits y más de 37,000 líneas de código.",
+      "cta": "Ver Kriptos"
+    },
+    "cuarenta": {
+      "title": "Cuarenta",
+      "description": "Implementación digital del tradicional juego de cartas ecuatoriano. Aplicación full-stack desarrollada durante el bootcamp de BrainStation en Londres. Incluye juego multijugador en tiempo real y oponentes con IA. Construida con React, Node.js, Express y WebSockets."
+    },
+    "graceNelson": {
+      "title": "Grace Nelson Law",
+      "description": "Sitio web e infraestructura digital completa para un bufete de abogados bilingüe enfocado en expatriados con más de 22 años de experiencia. Incluye soporte multilingüe (EN/ES), integración de reserva de citas, mensajería WhatsApp, formularios de contacto seguros, listados de propiedades y testimonios en video. También desarrollé automatizaciones de flujos de trabajo internos y sistemas CRM.",
+      "cta": "Visitar Sitio"
+    },
+    "laPampa": {
+      "title": "La Pampa E-commerce",
+      "description": "Plataforma e-commerce full-stack para un productor de pulpas de fruta congeladas. Storefront en Next.js 15 con backend headless Medusa.js v2. Incluye catálogo de productos, carrito, checkout, pagos con PayPhone y panel de administración. Desplegado en Railway con PostgreSQL y Redis.",
+      "cta": "Visitar Tienda"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "cta": "¿Interesado en trabajar juntos?",
+    "button": "Envíame un Email"
+  },
+  "footer": {
+    "copyright": "© 2026 Juan Idrovo"
+  }
+}

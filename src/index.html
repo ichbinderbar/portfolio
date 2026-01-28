@@ -1,13 +1,7 @@
 <!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobiwave/simplefolio/
-  Readme: https://github.com/cobiwave/simplefolio/README.md
-  -
-  For business & inquires, contact me -> jacobojavier98@gmail.com
+  Juan Idrovo Portfolio
+  Built with Simplefolio template by Jacobo Martinez
+  https://github.com/cobiwave/simplefolio/
 -->
 <!DOCTYPE html>
 <html lang="en" class="sr">
@@ -17,12 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
-    <!-- Todo: put here your site title -->
-    <title>[Your name here] | Developer</title>
-    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
-    <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+    <title>Juan Idrovo | Cybersecurity Professional & Full Stack Developer</title>
+    <meta name="keywords" content="juanidrovo, Juan Idrovo, cybersecurity, full stack developer, React, TypeScript, security compliance, attorney" />
+    <meta name="description" content="Juan Idrovo | Cybersecurity Professional & Full Stack Developer. Security compliance, enterprise applications, and AI-powered trademark protection." />
 
     <link
       rel="stylesheet"
@@ -33,25 +24,24 @@
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
-
-    <!-- Todo: remove the below script once you finish your portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
-  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
+
+    <!-- Language Toggle -->
+    <button id="lang-toggle" class="lang-toggle" onclick="toggleLanguage()">ES</button>
 
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+          <span data-i18n="hero.greeting">Hi, my name is</span> <span class="text-color-main" data-i18n="hero.name">Juan Idrovo</span>
           <br />
-          I'm the Unknown Developer.
+          <span data-i18n="hero.tagline">I build secure web applications.</span>
         </h1>
         <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about" data-i18n="hero.cta"
             >Know more</a
           >
         </p>
@@ -62,7 +52,7 @@
     <!-- **** About Section **** -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title load-hidden">About me</h2>
+        <h2 class="section-title load-hidden" data-i18n="about.title">About me</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__image load-hidden">
@@ -72,18 +62,24 @@
                 height="auto"
                 width="300px"
                 src="assets/profile.jpg"
-                alt="Profile Image"
               />
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
-              <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you have!
+              <p class="about-wrapper__info-text" data-i18n="about.p1">
+                I'm a Cybersecurity Professional, Full Stack Software Developer, and Attorney based in Ecuador.
+                I combine my Juris Doctor with hands-on technical skills
+                in React, TypeScript, and security compliance. Currently building secure
+                enterprise applications at Kriptos and developing Markatzy, an AI-powered
+                trademark protection platform.
               </p>
-              <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
+              <p class="about-wrapper__info-text" data-i18n="about.p2">
+                My unique cross-disciplinary background spans law, software engineering,
+                and financial analysis. I've contributed to SOC 2 Type II certifications,
+                delivered 37,000+ lines of production code, and hold credentials from
+                UT Austin, BrainStation (Konrad Group), Harvard Business School Online,
+                and AWS (Certified Cloud Practitioner).
               </p>
               <span class="d-flex mt-3">
                 <a
@@ -91,6 +87,7 @@
                   target="_blank"
                   class="cta-btn cta-btn--resume"
                   href="assets/resume.pdf"
+                  data-i18n="about.resume"
                 >
                   View Resume
                 </a>
@@ -106,41 +103,35 @@
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
+          <h2 class="section-title dark-blue-text" data-i18n="projects.title">Projects</h2>
 
-          <!-- Notice: each .row is a project -->
+          <!-- Project 1: Markatzy -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+                <h3 class="project-wrapper__text-title" data-i18n="projects.markatzy.title">Markatzy</h3>
                 <div>
-                  <p class="mb-4">
-                    Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
-                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
-                    prove to be proactive in the search for solutions.
+                  <p class="mb-4" data-i18n="projects.markatzy.description">
+                    AI-powered trademark monitoring and conflict detection platform.
+                    Analyzes conflicts across four dimensions: semantic, typographic,
+                    phonetic, and visual. Currently in beta with leading IP law firms
+                    in Ecuador. Built with React, Next.js, TypeScript, and vector databases.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://markatzy.com"
+                  data-i18n="projects.seeLive"
                 >
                   See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://markatzy.com" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -149,7 +140,7 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Project Image"
+                      alt="Markatzy Project"
                       class="img-fluid"
                       src="assets/project.jpg"
                     />
@@ -160,39 +151,33 @@
           </div>
           <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
+          <!-- Project 2: Update Manager -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title" data-i18n="projects.updateManager.title">Update Manager</h3>
                 <div>
-                  <p class="mb-4">
-                    Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
+                  <p class="mb-4" data-i18n="projects.updateManager.description">
+                    Windows agent installation orchestrator built for Kriptos Inc.
+                    Enables IT departments to securely deploy and manage software
+                    across thousands of client computers at banks and multinationals.
+                    Led frontend development with 219 commits and 37,000+ lines of code.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://kriptos.io"
+                  data-i18n="projects.updateManager.cta"
                 >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
+                  See Kriptos
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://kriptos.io" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -201,7 +186,7 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Project Image"
+                      alt="Update Manager Project"
                       class="img-fluid"
                       src="assets/project.jpg"
                     />
@@ -212,38 +197,33 @@
           </div>
           <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
+          <!-- Project 3: Cuarenta -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
+                <h3 class="project-wrapper__text-title" data-i18n="projects.cuarenta.title">Cuarenta</h3>
                 <div>
-                  <p class="mb-4">
-                    If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
+                  <p class="mb-4" data-i18n="projects.cuarenta.description">
+                    Digital implementation of the traditional Ecuadorian card game.
+                    Full-stack application developed during BrainStation bootcamp
+                    in London. Features real-time multiplayer gameplay and AI opponents.
+                    Built with React, Node.js, Express, and WebSockets.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://cuarenta.juanidrovo.com"
+                  data-i18n="projects.seeLive"
                 >
                   See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://cuarenta.juanidrovo.com" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -252,7 +232,100 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Project Image"
+                      alt="Cuarenta Project"
+                      class="img-fluid"
+                      src="assets/project.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Project 4: Grace Nelson Law -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title" data-i18n="projects.graceNelson.title">Grace Nelson Law</h3>
+                <div>
+                  <p class="mb-4" data-i18n="projects.graceNelson.description">
+                    Complete website and digital infrastructure for a bilingual expat-focused
+                    law firm with 22+ years of experience. Features multi-language support (EN/ES),
+                    appointment booking integration, WhatsApp messaging, secure contact forms,
+                    property listings, and video testimonials. Also built internal workflow
+                    automations and CRM systems.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://gracenelsonlaw.com"
+                  data-i18n="projects.graceNelson.cta"
+                >
+                  Visit Site
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://gracenelsonlaw.com" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Grace Nelson Law Website"
+                      class="img-fluid"
+                      src="assets/project.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Project 5: La Pampa E-commerce -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title" data-i18n="projects.laPampa.title">La Pampa E-commerce</h3>
+                <div>
+                  <p class="mb-4" data-i18n="projects.laPampa.description">
+                    Full-stack e-commerce platform for a frozen fruit pulp producer.
+                    Next.js 15 storefront with Medusa.js v2 headless backend. Features
+                    product catalog, cart, checkout, PayPhone payments, and admin dashboard.
+                    Deployed on Railway with PostgreSQL and Redis.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://lapampaec.com"
+                  data-i18n="projects.laPampa.cta"
+                >
+                  Visit Store
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://lapampaec.com" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="La Pampa E-commerce"
                       class="img-fluid"
                       src="assets/project.jpg"
                     />
@@ -270,15 +343,16 @@
     <!-- **** Contact Section **** -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
+        <h2 class="section-title" data-i18n="contact.title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <p class="contact-wrapper__text" data-i18n="contact.cta">Interested in working together?</p>
           <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
+            href="mailto:idrovel@gmail.com"
+            data-i18n="contact.button"
+            >Email Me</a
           >
         </div>
       </div>
@@ -292,49 +366,21 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://linkedin.com/in/juanidrovo" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://github.com/ichbinderbar" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="https://calendly.com/juanidrovo" target="_blank">
+            <i class="fa fa-calendar fa-inverse"></i>
           </a>
         </div>
 
         <hr />
 
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-        <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer" 
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobiwave/simplefolio on GitHub"
-            >Star</a
-          >
+        <p class="footer__text" data-i18n="footer.copyright">
+          © 2026 Juan Idrovo
         </p>
       </div>
     </footer>

@@ -1,0 +1,49 @@
+{
+  "hero": {
+    "greeting": "Hi, my name is",
+    "name": "Juan Idrovo",
+    "tagline": "I build secure web applications.",
+    "cta": "Know more"
+  },
+  "about": {
+    "title": "About me",
+    "p1": "I'm a Cybersecurity Professional, Full Stack Software Developer, and Attorney based in Ecuador. I combine my Juris Doctor with hands-on technical skills in React, TypeScript, and security compliance. Currently building secure enterprise applications at Kriptos and developing Markatzy, an AI-powered trademark protection platform.",
+    "p2": "My unique cross-disciplinary background spans law, software engineering, and financial analysis. I've contributed to SOC 2 Type II certifications, delivered 37,000+ lines of production code, and hold credentials from UT Austin, BrainStation (Konrad Group), Harvard Business School Online, and AWS (Certified Cloud Practitioner).",
+    "resume": "View Resume"
+  },
+  "projects": {
+    "title": "Projects",
+    "seeLive": "See Live",
+    "markatzy": {
+      "title": "Markatzy",
+      "description": "AI-powered trademark monitoring and conflict detection platform. Analyzes conflicts across four dimensions: semantic, typographic, phonetic, and visual. Currently in beta with leading IP law firms in Ecuador. Built with React, Next.js, TypeScript, and vector databases."
+    },
+    "updateManager": {
+      "title": "Update Manager",
+      "description": "Windows agent installation orchestrator built for Kriptos Inc. Enables IT departments to securely deploy and manage software across thousands of client computers at banks and multinationals. Led frontend development with 219 commits and 37,000+ lines of code.",
+      "cta": "See Kriptos"
+    },
+    "cuarenta": {
+      "title": "Cuarenta",
+      "description": "Digital implementation of the traditional Ecuadorian card game. Full-stack application developed during BrainStation bootcamp in London. Features real-time multiplayer gameplay and AI opponents. Built with React, Node.js, Express, and WebSockets."
+    },
+    "graceNelson": {
+      "title": "Grace Nelson Law",
+      "description": "Complete website and digital infrastructure for a bilingual expat-focused law firm with 22+ years of experience. Features multi-language support (EN/ES), appointment booking integration, WhatsApp messaging, secure contact forms, property listings, and video testimonials. Also built internal workflow automations and CRM systems.",
+      "cta": "Visit Site"
+    },
+    "laPampa": {
+      "title": "La Pampa E-commerce",
+      "description": "Full-stack e-commerce platform for a frozen fruit pulp producer. Next.js 15 storefront with Medusa.js v2 headless backend. Features product catalog, cart, checkout, PayPhone payments, and admin dashboard. Deployed on Railway with PostgreSQL and Redis.",
+      "cta": "Visit Store"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "cta": "Interested in working together?",
+    "button": "Email Me"
+  },
+  "footer": {
+    "copyright": "© 2026 Juan Idrovo"
+  }
+}
