@@ -109,6 +109,53 @@
       margin-bottom: 4px;
     }
 
+    /* Toolbar - hidden on print */
+    .toolbar {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 8px;
+      z-index: 1000;
+    }
+
+    .toolbar-btn {
+      display: inline-block;
+      position: relative;
+      padding: 8px 16px;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-image: linear-gradient(135deg, #02aab0, #00cdac) 1;
+      background: linear-gradient(135deg, #02aab0, #00cdac);
+      color: #fff;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
+    .toolbar-btn:hover {
+      background: transparent;
+      color: #00cdac;
+    }
+
+    @media screen and (max-width: 768px) {
+      body {
+        padding-top: 70px;
+      }
+      .toolbar {
+        top: 10px;
+        right: 10px;
+        gap: 4px;
+      }
+      .toolbar-btn {
+        padding: 6px 10px;
+        font-size: 14px;
+      }
+    }
+
     @media print {
       body {
         padding: 0;
@@ -121,38 +168,14 @@
     @page {
       margin: 0.5in;
     }
-
-    .toolbar {
-      position: fixed;
-      top: 16px;
-      right: 16px;
-      display: flex;
-      gap: 8px;
-    }
-
-    .toolbar button, .toolbar a {
-      background: #02aab0;
-      color: #fff;
-      border: none;
-      padding: 8px 16px;
-      border-radius: 4px;
-      font-size: 12px;
-      font-weight: bold;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .toolbar button:hover, .toolbar a:hover {
-      background: #00cdac;
-    }
   </style>
 </head>
 <body>
 
   <div class="toolbar no-print">
-    <a href="index.html" data-i18n="resume.back">Back</a>
-    <button onclick="window.print()" data-i18n="resume.savePdf">Save as PDF</button>
-    <button id="lang-toggle" onclick="toggleLanguage()">ES</button>
+    <a href="index.html" class="toolbar-btn" data-i18n="resume.back">Back</a>
+    <button class="toolbar-btn" onclick="window.print()" data-i18n="resume.savePdf">Save as PDF</button>
+    <button id="lang-toggle" class="toolbar-btn" onclick="toggleLanguage()">ES</button>
   </div>
 
   <div class="header">
