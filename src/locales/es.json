@@ -128,7 +128,8 @@
     "title": "Sobre mí",
     "p1": "Tu empresa necesita software que funcione—y que sea seguro. Ayudo a empresas a construir aplicaciones en las que pueden confiar, combinando ingeniería de seguridad con perspectiva legal para detectar riesgos de cumplimiento temprano. Ya sea que estés lanzando software empresarial o protegiendo una marca, traigo la profundidad técnica para entregar.",
     "p2": "He contribuido a certificaciones SOC 2 Tipo II, entregado más de 37,000 líneas de código en producción solo en Kriptos, y construido Markatzy—una plataforma de IA que ahora protege marcas para firmas de abogados en Ecuador. Credenciales de UT Austin, BrainStation, Harvard Business School Online y AWS. Cuando no estoy asegurando aplicaciones, me encuentras escalando volcanes en Ecuador y Guatemala o corriendo maratones.",
-    "resume": "Ver CV"
+    "resume": "Ver CV",
+    "timeline": "Ver Trayectoria"
   },
   "projects": {
     "title": "Proyectos",
@@ -164,5 +165,84 @@
   },
   "footer": {
     "copyright": "© 2026 Juan Idrovo"
+  },
+  "timeline": {
+    "back": "Volver",
+    "title": "Mi Trayectoria",
+    "legend": {
+      "completed": "Completado",
+      "ongoing": "En Curso",
+      "planned": "Planeado"
+    },
+    "events": {
+      "born": {
+        "date": "Sep 1995",
+        "title": "Nací en Cuenca, Ecuador"
+      },
+      "usfqEngineering": {
+        "date": "Ago 2014",
+        "title": "Inicié USFQ - Ingeniería"
+      },
+      "usfqLaw": {
+        "date": "May 2015",
+        "title": "Cambié a Derecho en USFQ"
+      },
+      "graduatedLaw": {
+        "date": "Abr 2021",
+        "title": "Graduación de Derecho & Inicio en Grace Nelson"
+      },
+      "imbaipMarkatzy": {
+        "date": "Ene 2022",
+        "title": "Inicié IMBAIP & Scripts de automatización Markatzy"
+      },
+      "hbsCert": {
+        "date": "Jul 2022",
+        "title": "Certificado HBS Contabilidad Financiera"
+      },
+      "elliff": {
+        "date": "Oct 2022",
+        "title": "Salí de IMBAIP & Inicié Elliff CPA (Remoto)"
+      },
+      "sabbatical": {
+        "date": "Oct 2023",
+        "title": "Salí de Elliff & Inicié Sabático"
+      },
+      "brainstation": {
+        "date": "Jul 2024",
+        "title": "Bootcamp BrainStation en Londres"
+      },
+      "kriptos": {
+        "date": "Oct 2024",
+        "title": "Diploma SE & Inicio en Kriptos"
+      },
+      "bsCyber": {
+        "date": "Ene 2025",
+        "title": "Completé Ciberseguridad BrainStation"
+      },
+      "toefl": {
+        "date": "Feb 2025",
+        "title": "TOEFL iBT 104/120"
+      },
+      "utaustin": {
+        "date": "Abr 2025",
+        "title": "Inicié UT Austin Ciberseguridad"
+      },
+      "markatzyLaunch": {
+        "date": "Jul 2025",
+        "title": "Lanzamiento Plataforma Web Markatzy v0"
+      },
+      "utaustinComplete": {
+        "date": "Sep 2025",
+        "title": "Completé UT Austin - GPA 4.13"
+      },
+      "present": {
+        "date": "Presente",
+        "title": "Kriptos / Grace Nelson / Markatzy (en curso)"
+      },
+      "securityPlus": {
+        "date": "Mar 2026",
+        "title": "CompTIA Security+ (planeado)"
+      }
+    }
   }
 }

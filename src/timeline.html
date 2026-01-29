@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Idrovo - Timeline</title>
+  <style>
+    :root {
+      --color-primary: #02aab0;
+      --color-secondary: #00cdac;
+      --color-planned: #6b7280;
+      --color-ongoing: #f59e0b;
+      --timeline-line: #e5e7eb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #1f2937;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      min-height: 100vh;
+    }
+
+    .toolbar {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 8px;
+      z-index: 1000;
+    }
+
+    .toolbar-btn {
+      display: inline-block;
+      padding: 8px 16px;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-image: linear-gradient(135deg, var(--color-primary), var(--color-secondary)) 1;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    .toolbar-btn:hover {
+      background: transparent;
+      color: var(--color-secondary);
+    }
+
+    .page-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 3rem;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .timeline {
+      position: relative;
+      padding: 1rem 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
+      border-radius: 2px;
+    }
+
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 0 2.5rem 2rem;
+    }
+
+    .timeline-item:nth-child(odd) {
+      left: 0;
+      text-align: right;
+    }
+
+    .timeline-item:nth-child(even) {
+      left: 50%;
+      text-align: left;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: var(--color-primary);
+      border: 4px solid #fff;
+      border-radius: 50%;
+      top: 0;
+      box-shadow: 0 2px 8px rgba(2, 170, 176, 0.3);
+    }
+
+    .timeline-item:nth-child(odd)::before {
+      right: -8px;
+    }
+
+    .timeline-item:nth-child(even)::before {
+      left: -8px;
+    }
+
+    .timeline-item.ongoing::before {
+      background: var(--color-ongoing);
+      box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+    }
+
+    .timeline-item.planned::before {
+      background: var(--color-planned);
+      box-shadow: 0 2px 8px rgba(107, 114, 128, 0.3);
+    }
+
+    .timeline-content {
+      background: #fff;
+      padding: 1.25rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .timeline-content:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .timeline-date {
+      display: inline-block;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-item.ongoing .timeline-date {
+      color: var(--color-ongoing);
+    }
+
+    .timeline-item.planned .timeline-date {
+      color: var(--color-planned);
+    }
+
+    .timeline-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1f2937;
+    }
+
+    .legend {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+
+    .legend-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    .legend-dot.confirmed {
+      background: var(--color-primary);
+    }
+
+    .legend-dot.ongoing {
+      background: var(--color-ongoing);
+    }
+
+    .legend-dot.planned {
+      background: var(--color-planned);
+    }
+
+    @media screen and (max-width: 768px) {
+      body {
+        padding-top: 70px;
+      }
+
+      .toolbar {
+        top: 10px;
+        right: 10px;
+        gap: 4px;
+      }
+
+      .toolbar-btn {
+        padding: 6px 10px;
+        font-size: 14px;
+      }
+
+      .page-title {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+      }
+
+      .timeline::before {
+        left: 20px;
+      }
+
+      .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 1rem;
+        text-align: left !important;
+      }
+
+      .timeline-item:nth-child(odd),
+      .timeline-item:nth-child(even) {
+        left: 0;
+      }
+
+      .timeline-item:nth-child(odd)::before,
+      .timeline-item:nth-child(even)::before {
+        left: 12px;
+      }
+
+      .legend {
+        gap: 1rem;
+      }
+    }
+
+    @media print {
+      body {
+        padding: 0;
+        background: #fff;
+      }
+
+      .no-print {
+        display: none !important;
+      }
+
+      .timeline::before {
+        background: #000;
+      }
+
+      .timeline-item::before {
+        border-color: #000;
+        background: #000 !important;
+      }
+
+      .timeline-content {
+        box-shadow: none;
+        border: 1px solid #e5e7eb;
+      }
+    }
+
+    @page {
+      margin: 0.5in;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar no-print">
+    <a href="index.html" class="toolbar-btn" data-i18n="timeline.back">Back</a>
+    <button id="lang-toggle" class="toolbar-btn" onclick="toggleLanguage()">ES</button>
+  </div>
+
+  <main>
+    <h1 class="page-title" data-i18n="timeline.title">My Journey</h1>
+
+    <section class="legend">
+      <div class="legend-item">
+        <span class="legend-dot confirmed" aria-hidden="true"></span>
+        <span data-i18n="timeline.legend.completed">Completed</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-dot ongoing" aria-hidden="true"></span>
+        <span data-i18n="timeline.legend.ongoing">Ongoing</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-dot planned" aria-hidden="true"></span>
+        <span data-i18n="timeline.legend.planned">Planned</span>
+      </div>
+    </section>
+
+    <section class="timeline" aria-label="Career timeline">
+      <article class="timeline-item">
+        <div class="timeline-content">
+          <time class="timeline-date" datetime="1995-09" data-i18n="timeline.events.born.date">Sep 1995</time>
+          <h2 class="timeline-title" data-i18n="timeline.events.born.title">Born in Cuenca, Ecuador</h2>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-content">
+          <time class="timeline-date" datetime="2014-08" data-i18n="timeline.events.usfqEngineering.date">Aug 2014</time>
+          <h2 class="timeline-title" data-i18n="timeline.events.usfqEngineering.title">Started USFQ - Engineering</h2>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-content">
+          <time class="timeline-date" datetime="2015-05" data-i18n="timeline.events.usfqLaw.date">May 2015</time>
+          <h2 class="timeline-title" data-i18n="timeline.events.usfqLaw.title">Switched to Law School at USFQ</h2>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-content">
+          <time class="timeline-date" datetime="2021-04" data-i18n="timeline.events.graduatedLaw.date">Apr 2021</time>
+          <h2 class="timeline-title" data-i18n="timeline.events.graduatedLaw.title">Graduated Law School & Started Grace Nelson</h2>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-content">
+          <time class="timeline-date" datetime="2022-01" data-i18n="timeline.events.imbaipMarkatzy.date">Jan 2022</time>
+          <h2 class="timeline-title" data-i18n="timeline.events.imbaipMarkatzy.title">Started IMBAIP & Markatzy automation scripts</h2>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-content">
+          <time class="timeline-date" datetime="2022-07" data-i18n="timeline.events.hbsCert.date">Jul 2022</time>
+          <h2 class="timeline-title" data-i18n="timeline.events.hbsCert.title">HBS Financial Accounting Certificate</h2>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-content">
+          <time class="timeline-date" datetime="2022-10" data-i18n="timeline.events.elliff.date">Oct 2022</time>
+          <h2 class="timeline-title" data-i18n="timeline.events.elliff.title">Left IMBAIP & Started Elliff CPA (Remote)</h2>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-content">
+          <time class="timeline-date" datetime="2023-10" data-i18n="timeline.events.sabbatical.date">Oct 2023</time>
+          <h2 class="timeline-title" data-i18n="timeline.events.sabbatical.title">Left Elliff & Started Sabbatical</h2>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-content">
+          <time class="timeline-date" datetime="2024-07" data-i18n="timeline.events.brainstation.date">Jul 2024</time>
+          <h2 class="timeline-title" data-i18n="timeline.events.brainstation.title">BrainStation Bootcamp in London</h2>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-content">
+          <time class="timeline-date" datetime="2024-10" data-i18n="timeline.events.kriptos.date">Oct 2024</time>
+          <h2 class="timeline-title" data-i18n="timeline.events.kriptos.title">SE Diploma & Started Kriptos</h2>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-content">
+          <time class="timeline-date" datetime="2025-01" data-i18n="timeline.events.bsCyber.date">Jan 2025</time>
+          <h2 class="timeline-title" data-i18n="timeline.events.bsCyber.title">Completed BrainStation Cybersecurity</h2>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-content">
+          <time class="timeline-date" datetime="2025-02" data-i18n="timeline.events.toefl.date">Feb 2025</time>
+          <h2 class="timeline-title" data-i18n="timeline.events.toefl.title">TOEFL iBT 104/120</h2>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-content">
+          <time class="timeline-date" datetime="2025-04" data-i18n="timeline.events.utaustin.date">Apr 2025</time>
+          <h2 class="timeline-title" data-i18n="timeline.events.utaustin.title">Started UT Austin Cybersecurity</h2>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-content">
+          <time class="timeline-date" datetime="2025-07" data-i18n="timeline.events.markatzyLaunch.date">Jul 2025</time>
+          <h2 class="timeline-title" data-i18n="timeline.events.markatzyLaunch.title">Markatzy v0 Web Platform Launch</h2>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-content">
+          <time class="timeline-date" datetime="2025-09" data-i18n="timeline.events.utaustinComplete.date">Sep 2025</time>
+          <h2 class="timeline-title" data-i18n="timeline.events.utaustinComplete.title">Completed UT Austin - GPA 4.13</h2>
+        </div>
+      </article>
+
+      <article class="timeline-item ongoing">
+        <div class="timeline-content">
+          <time class="timeline-date" data-i18n="timeline.events.present.date">Present</time>
+          <h2 class="timeline-title" data-i18n="timeline.events.present.title">Kriptos / Grace Nelson / Markatzy (ongoing)</h2>
+        </div>
+      </article>
+
+      <article class="timeline-item planned">
+        <div class="timeline-content">
+          <time class="timeline-date" datetime="2026-03" data-i18n="timeline.events.securityPlus.date">Mar 2026</time>
+          <h2 class="timeline-title" data-i18n="timeline.events.securityPlus.title">CompTIA Security+ (planned)</h2>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script type="module">
+    import i18next from 'i18next';
+    import en from './locales/en.json';
+    import es from './locales/es.json';
+
+    const savedLang = localStorage.getItem('i18nextLng') || 'en';
+
+    i18next.init({
+      lng: savedLang,
+      resources: {
+        en: { translation: en },
+        es: { translation: es }
+      },
+      fallbackLng: 'en'
+    }).then(() => {
+      updateContent();
+      updateToggle();
+    });
+
+    function updateContent() {
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.getAttribute('data-i18n');
+        const val = i18next.t(key);
+        if (val && val !== key) {
+          el.textContent = val;
+        }
+      });
+    }
+
+    function updateToggle() {
+      const toggle = document.getElementById('lang-toggle');
+      if (toggle) {
+        toggle.textContent = i18next.language === 'es' ? 'EN' : 'ES';
+      }
+    }
+
+    window.toggleLanguage = () => {
+      const newLang = i18next.language === 'es' ? 'en' : 'es';
+      i18next.changeLanguage(newLang).then(() => {
+        localStorage.setItem('i18nextLng', newLang);
+        updateContent();
+        updateToggle();
+      });
+    };
+  </script>
+</body>
+</html>

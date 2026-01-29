@@ -128,7 +128,8 @@
     "title": "About me",
     "p1": "Your business needs software that works—and stays secure. I help companies build applications they can trust, combining security engineering with the legal perspective to catch compliance risks early. Whether you're shipping enterprise software or protecting a brand, I bring the technical depth to deliver.",
     "p2": "I've contributed to SOC 2 Type II certifications, delivered 37,000+ lines of production code at Kriptos alone, and built Markatzy—an AI platform now protecting trademarks for law firms in Ecuador. Credentials from UT Austin, BrainStation, Harvard Business School Online, and AWS. When I'm not securing applications, you'll find me climbing volcanoes in Ecuador and Guatemala or running marathons.",
-    "resume": "View Resume"
+    "resume": "View Resume",
+    "timeline": "View Timeline"
   },
   "projects": {
     "title": "Projects",
@@ -164,5 +165,84 @@
   },
   "footer": {
     "copyright": "© 2026 Juan Idrovo"
+  },
+  "timeline": {
+    "back": "Back",
+    "title": "My Journey",
+    "legend": {
+      "completed": "Completed",
+      "ongoing": "Ongoing",
+      "planned": "Planned"
+    },
+    "events": {
+      "born": {
+        "date": "Sep 1995",
+        "title": "Born in Cuenca, Ecuador"
+      },
+      "usfqEngineering": {
+        "date": "Aug 2014",
+        "title": "Started USFQ - Engineering"
+      },
+      "usfqLaw": {
+        "date": "May 2015",
+        "title": "Switched to Law School at USFQ"
+      },
+      "graduatedLaw": {
+        "date": "Apr 2021",
+        "title": "Graduated Law School & Started Grace Nelson"
+      },
+      "imbaipMarkatzy": {
+        "date": "Jan 2022",
+        "title": "Started IMBAIP & Markatzy automation scripts"
+      },
+      "hbsCert": {
+        "date": "Jul 2022",
+        "title": "HBS Financial Accounting Certificate"
+      },
+      "elliff": {
+        "date": "Oct 2022",
+        "title": "Left IMBAIP & Started Elliff CPA (Remote)"
+      },
+      "sabbatical": {
+        "date": "Oct 2023",
+        "title": "Left Elliff & Started Sabbatical"
+      },
+      "brainstation": {
+        "date": "Jul 2024",
+        "title": "BrainStation Bootcamp in London"
+      },
+      "kriptos": {
+        "date": "Oct 2024",
+        "title": "SE Diploma & Started Kriptos"
+      },
+      "bsCyber": {
+        "date": "Jan 2025",
+        "title": "Completed BrainStation Cybersecurity"
+      },
+      "toefl": {
+        "date": "Feb 2025",
+        "title": "TOEFL iBT 104/120"
+      },
+      "utaustin": {
+        "date": "Apr 2025",
+        "title": "Started UT Austin Cybersecurity"
+      },
+      "markatzyLaunch": {
+        "date": "Jul 2025",
+        "title": "Markatzy v0 Web Platform Launch"
+      },
+      "utaustinComplete": {
+        "date": "Sep 2025",
+        "title": "Completed UT Austin - GPA 4.13"
+      },
+      "present": {
+        "date": "Present",
+        "title": "Kriptos / Grace Nelson / Markatzy (ongoing)"
+      },
+      "securityPlus": {
+        "date": "Mar 2026",
+        "title": "CompTIA Security+ (planned)"
+      }
+    }
   }
 }
