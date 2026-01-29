@@ -332,7 +332,7 @@ I highly recommend to use [Netlify](https://netlify.com) because it is super eas
 
 ## Others versions 👥
 
-[Gatsby Simplefolio](https://github.com/cobiwave/gatsby-simplefolio) by [Jacobo Martinez](https://github.com/cobiwave)\
+[Gatsby Simplefolio](https://github.com/cobiwave/gatsby-simplefolio)\
 [Ember.js Simplefolio](https://github.com/sernadesigns/simplefolio-ember) by [Michael Serna](https://github.com/sernadesigns)
 
 ## Technologies used 🛠️
@@ -345,7 +345,7 @@ I highly recommend to use [Netlify](https://netlify.com) because it is super eas
 
 ## Authors
 
-- **Jacobo Martinez** - [https://github.com/cobiwave](https://github.com/cobiwave)
+- **Juan Idrovo** - [https://github.com/juanidrovoy](https://github.com/juanidrovoy)
 
 ## Status
 
