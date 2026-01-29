@@ -45,6 +45,33 @@ Technology-focused attorney and cybersecurity professional with expertise spanni
 - Routine hardening of repos under watch
 - Leveraged AWS Security Hub and Amazon Inspector to monitor container image vulnerabilities
 
+### Freelance Consultant
+**Independent — Remote**
+**2023 – Present** *(Sporadic, project-based)*
+
+Provide comprehensive professional services to small businesses and individuals on a project basis.
+
+**Website Creation & Development:**
+- End-to-end website design and development with AI-assisted drafting
+- SEO performance analysis and optimization for existing sites
+- Focus on functionality, navigability, and conversion optimization
+- Quick turnaround for small sites (landing pages, portfolios, small business sites)
+
+**Legal Consultancy:**
+- Intellectual property advice and brand protection
+- Corporate compliance and data processing regulations
+- Legal review ensuring websites meet regulatory requirements
+
+**Copywriting & Content:**
+- Legally compliant content writing (service descriptions, company profiles, legal blogs)
+- SEO-optimized content to build trust and authority with target audiences
+
+**Process Implementation:**
+- Workflow optimization and restructuring for professional services organizations
+- Custom solutions focused on improving handoffs, efficiency, and reducing costs
+
+*Also provided these services during sabbatical period (Oct 2023 – Jul 2024) before BrainStation bootcamp.*
+
 ### Founder & Lead Developer
 **Markatzy — Trademark Management & Protection Platform** | markatzy.com
 **2022 – Present** ✓ *Confirmed*
@@ -322,7 +349,7 @@ Full-stack e-commerce platform for La Pampa, a frozen fruit pulp producer in Ecu
         ●━━━━━━━━━━━━━━━━━━━━━━━━┫  Left Elliff CPA
                                  │
     Oct 2023 - Jul 2024          │
-        ○━━━━━━━━━━━━━━━━━━━━━━━━┫  Sabbatical: Markatzy dev, CS50, travel, Grace Nelson
+        ○━━━━━━━━━━━━━━━━━━━━━━━━┫  Sabbatical: Markatzy dev, CS50, travel, freelance, Grace Nelson
                                  │
     ~Jul 2024                    │
         ●━━━━━━━━━━━━━━━━━━━━━━━━┫  Started BrainStation SE Bootcamp (London)
