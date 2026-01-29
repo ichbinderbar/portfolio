@@ -12,7 +12,7 @@
       "certifications": "Certifications",
       "languages": "Languages"
     },
-    "summary": "Cybersecurity Professional and Full Stack Developer with a Juris Doctor background. 3+ years of experience in security compliance (SOC 2 Type II), vulnerability assessment, and enterprise application development. Delivered 37,000+ lines of production code at Kriptos Inc. Founder of Markatzy, an AI-powered trademark protection platform in beta with leading IP law firms. AWS Certified Cloud Practitioner with credentials from UT Austin, BrainStation (Konrad Group), and Harvard Business School Online.",
+    "summary": "Cybersecurity Professional and Full Stack Developer with a Juris Doctor background. 3+ years of experience in security compliance (SOC 2 Type II), vulnerability assessment, and enterprise application development. Delivered 37,000+ lines of production code at Kriptos Inc. Founder of Markatzy, an AI-powered trademark protection platform now live and serving IP law firms in Ecuador. AWS Certified Cloud Practitioner with credentials from UT Austin, BrainStation (Konrad Group), and Harvard Business School Online.",
     "skills": {
       "security": {
         "label": "Security",
@@ -49,7 +49,7 @@
         "company": "Markatzy - Trademark Protection Platform",
         "dates": "2022 - Present",
         "bullets": [
-          "Designed and developed full-stack web application for trademark monitoring and conflict detection, currently in beta with leading IP law firms in Ecuador",
+          "Designed and developed full-stack web application for trademark monitoring and conflict detection, now live and actively used by IP law firms in Ecuador",
           "Engineered AI-powered similarity detection engine analyzing conflicts across four dimensions: semantic, typographic, phonetic, and visual using vector databases",
           "Built with React, Next.js, TypeScript, and PostgreSQL; reduced trademark conflict analysis time by 80% compared to traditional methods"
         ]
@@ -67,7 +67,7 @@
       },
       "elliff": {
         "title": "Staff Accountant",
-        "company": "Elliff CPA, Dallas, TX",
+        "company": "Elliff CPA, Dallas, TX (Remote)",
         "dates": "Oct 2022 - Oct 2023",
         "bullets": [
           "Prepared 100+ individual and corporate tax returns including Forms 1040, 1120, 1120S, and 1065",
@@ -135,7 +135,7 @@
     "seeLive": "See Live",
     "markatzy": {
       "title": "Markatzy",
-      "description": "AI-powered trademark monitoring and conflict detection platform. Analyzes conflicts across four dimensions: semantic, typographic, phonetic, and visual. Currently in beta with leading IP law firms in Ecuador. Built with React, Next.js, TypeScript, and vector databases."
+      "description": "AI-powered trademark monitoring and conflict detection platform. Analyzes conflicts across four dimensions: semantic, typographic, phonetic, and visual. Now live and actively used by IP law firms in Ecuador. Built with React, Next.js, TypeScript, and vector databases."
     },
     "updateManager": {
       "title": "Update Manager",

@@ -12,7 +12,7 @@
 
 ## Professional Summary
 
-Technology-focused attorney and cybersecurity professional with expertise spanning law, software engineering, and financial analysis. Founder of an AI-powered trademark protection platform in beta with leading IP law firms. Proven track record in security compliance (SOC 2 Type 2), automated security testing, and full-stack development. Unique cross-disciplinary background combining legal expertise in intellectual property with hands-on technical skills in cloud infrastructure and application security.
+Technology-focused attorney and cybersecurity professional with expertise spanning law, software engineering, and financial analysis. Founder of an AI-powered trademark protection platform now live and serving IP law firms in Ecuador. Proven track record in security compliance (SOC 2 Type 2), automated security testing, and full-stack development. Unique cross-disciplinary background combining legal expertise in intellectual property with hands-on technical skills in cloud infrastructure and application security.
 
 ---
 
@@ -79,7 +79,7 @@ Provide comprehensive professional services to small businesses and individuals 
 - *Primary development period:* Oct 2023 – Jul 2024 (self-funded sabbatical, combined with CS50 coursework, travel, and occasional Grace Nelson work)
 - *Web platform rebuild:* Jul 2025 (first commit in v0 repo)
 
-Designed and developed a comprehensive web application for trademark monitoring and conflict detection, currently in beta testing with leading IP law firms in Ecuador. Engineered an AI-powered similarity detection engine analyzing conflicts across four dimensions: semantic, typographic, phonetic, and visual. The platform enables clients to deliver automatic advanced reporting and quality detailed conflict analysis at a fraction of traditional methods' time investment, reducing operational costs.
+Designed and developed a comprehensive web application for trademark monitoring and conflict detection, now live and actively used by IP law firms in Ecuador. Engineered an AI-powered similarity detection engine analyzing conflicts across four dimensions: semantic, typographic, phonetic, and visual. The platform enables clients to deliver automatic advanced reporting and quality detailed conflict analysis at a fraction of traditional methods' time investment, reducing operational costs.
 
 *Origin story:* Built out of necessity when left alone to manage the IP office after the director's sudden resignation. Started as custom scripts to keep up with client trademark monitoring, later rebuilt as a full web platform.
 
@@ -116,7 +116,7 @@ Designed and developed a comprehensive web application for trademark monitoring 
 - Contribute to casework in inheritance and estate planning
 
 ### Staff Accountant
-**Elliff CPA — Dallas, TX**
+**Elliff CPA — Dallas, TX (Remote)**
 **Oct 2022 – Oct 2023** ✓ *Confirmed (website)*
 
 - Successfully prepared and assisted in over 100 individual and corporate tax returns (including forms 1040, 1120, 1120S, 1065)
@@ -377,7 +377,7 @@ Full-stack e-commerce platform for La Pampa, a frozen fruit pulp producer in Ecu
     Present (Jan 2026)           │
         ○━━━━━━━━━━━━━━━━━━━━━━━━┫  Kriptos (ongoing)
         ○━━━━━━━━━━━━━━━━━━━━━━━━┫  Grace Nelson (ongoing, part-time)
-        ○━━━━━━━━━━━━━━━━━━━━━━━━┫  Markatzy (beta with law firms)
+        ○━━━━━━━━━━━━━━━━━━━━━━━━┫  Markatzy (live with law firms)
                                  │
     Mar/Apr 2026                 │
         ◇━━━━━━━━━━━━━━━━━━━━━━━━┫  CompTIA Security+ (planned)

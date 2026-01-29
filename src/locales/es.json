@@ -12,7 +12,7 @@
       "certifications": "Certificaciones",
       "languages": "Idiomas"
     },
-    "summary": "Profesional en Ciberseguridad y Desarrollador Full Stack con formación de Abogado. Más de 3 años de experiencia en cumplimiento de seguridad (SOC 2 Tipo II), evaluación de vulnerabilidades y desarrollo de aplicaciones empresariales. Entregué más de 37,000 líneas de código en producción en Kriptos Inc. Fundador de Markatzy, plataforma de protección de marcas impulsada por IA en beta con firmas de abogados líderes. AWS Certified Cloud Practitioner con credenciales de UT Austin, BrainStation (Konrad Group) y Harvard Business School Online.",
+    "summary": "Profesional en Ciberseguridad y Desarrollador Full Stack con formación de Abogado. Más de 3 años de experiencia en cumplimiento de seguridad (SOC 2 Tipo II), evaluación de vulnerabilidades y desarrollo de aplicaciones empresariales. Entregué más de 37,000 líneas de código en producción en Kriptos Inc. Fundador de Markatzy, plataforma de protección de marcas impulsada por IA activa y sirviendo a firmas de abogados de PI en Ecuador. AWS Certified Cloud Practitioner con credenciales de UT Austin, BrainStation (Konrad Group) y Harvard Business School Online.",
     "skills": {
       "security": {
         "label": "Seguridad",
@@ -49,7 +49,7 @@
         "company": "Markatzy - Plataforma de Protección de Marcas",
         "dates": "2022 - Presente",
         "bullets": [
-          "Diseñé y desarrollé aplicación web full-stack para monitoreo de marcas y detección de conflictos, actualmente en beta con firmas de abogados de PI líderes en Ecuador",
+          "Diseñé y desarrollé aplicación web full-stack para monitoreo de marcas y detección de conflictos, activa y utilizada por firmas de abogados de PI en Ecuador",
           "Desarrollé motor de detección de similitudes impulsado por IA que analiza conflictos en cuatro dimensiones: semántica, tipográfica, fonética y visual usando bases de datos vectoriales",
           "Construido con React, Next.js, TypeScript y PostgreSQL; redujo el tiempo de análisis de conflictos de marcas en 80% comparado con métodos tradicionales"
         ]
@@ -67,7 +67,7 @@
       },
       "elliff": {
         "title": "Contador",
-        "company": "Elliff CPA, Dallas, TX",
+        "company": "Elliff CPA, Dallas, TX (Remoto)",
         "dates": "Oct 2022 - Oct 2023",
         "bullets": [
           "Preparé más de 100 declaraciones de impuestos individuales y corporativas incluyendo Formularios 1040, 1120, 1120S y 1065",
@@ -135,7 +135,7 @@
     "seeLive": "Ver en Vivo",
     "markatzy": {
       "title": "Markatzy",
-      "description": "Plataforma de monitoreo de marcas y detección de conflictos impulsada por IA. Analiza conflictos en cuatro dimensiones: semántica, tipográfica, fonética y visual. Actualmente en beta con firmas de abogados de PI líderes en Ecuador. Construida con React, Next.js, TypeScript y bases de datos vectoriales."
+      "description": "Plataforma de monitoreo de marcas y detección de conflictos impulsada por IA. Analiza conflictos en cuatro dimensiones: semántica, tipográfica, fonética y visual. Activa y utilizada por firmas de abogados de PI en Ecuador. Construida con React, Next.js, TypeScript y bases de datos vectoriales."
     },
     "updateManager": {
       "title": "Update Manager",
