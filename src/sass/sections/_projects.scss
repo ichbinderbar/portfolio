@@ -97,6 +97,10 @@
             position: relative;
           }
         }
+
+        &--5 img {
+          animation-duration: 15s;
+        }
       }
     }
   }
@@ -105,7 +109,7 @@
 @keyframes slideshow {
   0% { opacity: 0; }
   5% { opacity: 1; }
-  16.67% { opacity: 1; }
-  21.67% { opacity: 0; }
+  17% { opacity: 1; }
+  22% { opacity: 0; }
   100% { opacity: 0; }
 }
