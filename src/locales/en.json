@@ -12,7 +12,7 @@
       "certifications": "Certifications",
       "languages": "Languages"
     },
-    "summary": "Cybersecurity Professional and Full Stack Developer with a Juris Doctor background. 3+ years of experience in security compliance (SOC 2 Type II), vulnerability assessment, and enterprise application development. Delivered 37,000+ lines of production code at Kriptos Inc. Founder of Markatzy, an AI-powered trademark protection platform now live and serving IP law firms in Ecuador. AWS Certified Cloud Practitioner with credentials from UT Austin, BrainStation (Konrad Group), and Harvard Business School Online.",
+    "summary": "Full Stack Developer with 4+ years of experience and a Juris Doctor background. Specialized in security compliance (SOC 2 Type II) and vulnerability assessment at Kriptos Inc., delivering 37,000+ lines of production code in 15 months. Founder of Markatzy, an AI-powered trademark protection platform now live and serving IP law firms in Ecuador. AWS Certified Cloud Practitioner with credentials from UT Austin, BrainStation (Konrad Group), and Harvard Business School Online.",
     "skills": {
       "security": {
         "label": "Security",
@@ -121,13 +121,13 @@
   "hero": {
     "greeting": "Hi, my name is",
     "name": "Juan Idrovo",
-    "tagline": "I build secure web applications.",
-    "cta": "Know more"
+    "tagline": "I secure software and protect brands.",
+    "cta": "See my work"
   },
   "about": {
     "title": "About me",
-    "p1": "I'm a Cybersecurity Professional, Full Stack Software Developer, and Attorney based in Ecuador. I combine my Juris Doctor with hands-on technical skills in React, TypeScript, and security compliance. Currently building secure enterprise applications at Kriptos and developing Markatzy, an AI-powered trademark protection platform.",
-    "p2": "My unique cross-disciplinary background spans law, software engineering, and financial analysis. I've contributed to SOC 2 Type II certifications, delivered 37,000+ lines of production code, and hold credentials from UT Austin, BrainStation (Konrad Group), Harvard Business School Online, and AWS (Certified Cloud Practitioner).",
+    "p1": "Your business needs software that works—and stays secure. I help companies build applications they can trust, combining security engineering with the legal perspective to catch compliance risks early. Whether you're shipping enterprise software or protecting a brand, I bring the technical depth to deliver.",
+    "p2": "I've contributed to SOC 2 Type II certifications, delivered 37,000+ lines of production code at Kriptos alone, and built Markatzy—an AI platform now protecting trademarks for law firms in Ecuador. Credentials from UT Austin, BrainStation, Harvard Business School Online, and AWS. When I'm not securing applications, you'll find me climbing volcanoes in Ecuador and Guatemala or running marathons.",
     "resume": "View Resume"
   },
   "projects": {
@@ -135,7 +135,7 @@
     "seeLive": "See Live",
     "markatzy": {
       "title": "Markatzy",
-      "description": "AI-powered trademark monitoring and conflict detection platform. Analyzes conflicts across four dimensions: semantic, typographic, phonetic, and visual. Now live and actively used by IP law firms in Ecuador. Built with React, Next.js, TypeScript, and vector databases."
+      "description": "AI-powered trademark monitoring and conflict detection platform. Analyzes conflicts across four dimensions: semantic, typographic, phonetic, and visual—reducing analysis time by 80%. Now live and protecting trademarks for IP law firms in Ecuador. Built with React, Next.js, TypeScript, and vector databases."
     },
     "updateManager": {
       "title": "Update Manager",
@@ -144,7 +144,7 @@
     },
     "cuarenta": {
       "title": "Cuarenta",
-      "description": "Digital implementation of the traditional Ecuadorian card game. Full-stack application developed during BrainStation bootcamp in London. Features real-time multiplayer gameplay and AI opponents. Built with React, Node.js, Express, and WebSockets."
+      "description": "Digital implementation of the traditional Ecuadorian card game, built in 2 weeks during BrainStation bootcamp. Features real-time multiplayer with WebSockets and AI opponents. React, Node.js, Express."
     },
     "graceNelson": {
       "title": "Grace Nelson Law",
@@ -159,8 +159,8 @@
   },
   "contact": {
     "title": "Contact",
-    "cta": "Interested in working together?",
-    "button": "Email Me"
+    "cta": "Let's build something secure—and ship it.",
+    "button": "Let's Talk"
   },
   "footer": {
     "copyright": "© 2026 Juan Idrovo"

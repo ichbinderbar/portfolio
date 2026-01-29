@@ -295,8 +295,9 @@ Full-stack e-commerce platform for La Pampa, a frozen fruit pulp producer in Ecu
 
 - Entrepreneur biographies, podcasts, films
 - Frequent travel
-- Trail running as exploration method
-- Surfing (self-described "proud kook" on 60L funboard)
+- Mountaineering: summited Cotopaxi and Iliniza Norte (Ecuador), Acatenango and Volcán de Fuego (Guatemala)
+- Distance running: Amsterdam Marathon 2025
+- Surfing: spent 3 months learning in Mexico (2024)
 
 ---
 
