@@ -136,7 +136,7 @@
     "seeLive": "Ver en Vivo",
     "markatzy": {
       "title": "Markatzy",
-      "description": "Plataforma de monitoreo de marcas y detección de conflictos impulsada por IA. Analiza conflictos en cuatro dimensiones: semántica, tipográfica, fonética y visual—reduciendo el tiempo de análisis en 80%. Activa y protegiendo marcas para firmas de abogados de PI en Ecuador. Construida con React, Next.js, TypeScript y bases de datos vectoriales."
+      "description": "Plataforma de protección de marcas impulsada por IA con detección de conflictos multidimensional en tiempo real. Analiza marcas en dimensiones fonética (basada en IPA, multilingüe), tipográfica, semántica (embeddings vectoriales) y visual. Busca en un registro de más de medio millón de marcas en menos de 100ms con seguridad de nivel empresarial (rate limiting, aislamiento de datos por organización). Calificación A en SonarQube para mantenibilidad, confiabilidad y seguridad. Construida con un framework full-stack moderno (Next.js 15), APIs con tipado seguro (tRPC), bases de datos vectoriales (PostgreSQL), análisis impulsado por IA (OpenAI), y procesamiento automatizado en segundo plano."
     },
     "updateManager": {
       "title": "Update Manager",

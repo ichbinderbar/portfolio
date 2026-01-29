@@ -136,7 +136,7 @@
     "seeLive": "See Live",
     "markatzy": {
       "title": "Markatzy",
-      "description": "AI-powered trademark monitoring and conflict detection platform. Analyzes conflicts across four dimensions: semantic, typographic, phonetic, and visual—reducing analysis time by 80%. Now live and protecting trademarks for IP law firms in Ecuador. Built with React, Next.js, TypeScript, and vector databases."
+      "description": "AI-powered trademark protection platform with real-time, multi-dimensional conflict detection. Analyzes brands across phonetic (IPA-based, cross-language), typographic, semantic (vector embeddings), and visual dimensions. Searches over half a million trademarks in under 100ms with enterprise-grade security (rate limiting, row-level data isolation). A-rated in SonarQube for maintainability, reliability, and security. Built with a modern full-stack framework (Next.js 15), type-safe APIs (tRPC), vector databases (PostgreSQL), AI-powered analysis (OpenAI), and automated background processing."
     },
     "updateManager": {
       "title": "Update Manager",
