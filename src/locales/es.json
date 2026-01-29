@@ -119,10 +119,11 @@
     }
   },
   "hero": {
-    "greeting": "Hola, mi nombre es",
-    "name": "Juan Idrovo",
-    "tagline": "Aseguro software y protejo marcas.",
-    "cta": "Ver mi trabajo"
+    "greeting": "Hola, soy",
+    "name": "Juan",
+    "tagline1": "Soy abogado especializado en",
+    "tagline2": "soluciones digitales seguras",
+    "cta": "Conoce más"
   },
   "about": {
     "title": "Sobre mí",

@@ -120,9 +120,10 @@
   },
   "hero": {
     "greeting": "Hi, my name is",
-    "name": "Juan Idrovo",
-    "tagline": "I secure software and protect brands.",
-    "cta": "See my work"
+    "name": "Juan",
+    "tagline1": "I am a lawyer specialized in",
+    "tagline2": "secure digital solutions",
+    "cta": "Learn more"
   },
   "about": {
     "title": "About me",
