@@ -35,6 +35,13 @@
       @include respond(tab-port-sm) {
         padding-bottom: 6.4rem;
       }
+
+      img {
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        object-position: top center;
+      }
     }
 
     &__info {
