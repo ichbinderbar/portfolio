@@ -120,8 +120,8 @@
   },
   "hero": {
     "greeting": "Hola, soy",
-    "name": "Juan",
-    "tagline1": "Soy abogado especializado en",
+    "name": "Juan,",
+    "tagline1": "un abogado especializado en",
     "tagline2": "soluciones digitales seguras",
     "cta": "Conoce más"
   },
