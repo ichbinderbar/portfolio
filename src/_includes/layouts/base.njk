@@ -32,6 +32,13 @@
     <meta name="twitter:description" content="{{ description or 'Thoughts on compliance, security, legal tech, and building secure digital solutions.' }}" />
     <meta name="twitter:image" content="{{ ogImage or 'https://juanidrovo.com/assets/profile.jpg' }}" />
 
+    <!-- LLMs.txt for AI context -->
+    <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM Context" />
+    <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="LLM Full Context" />
+
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="Juan Idrovo Blog RSS" href="/blog/feed.xml" />
+
     <!-- JSON-LD Structured Data -->
     {% if layout == "post.njk" %}
     <script type="application/ld+json">
@@ -59,6 +66,28 @@
         "@id": "https://juanidrovo.com{{ page.url }}"
       },
       "image": "https://juanidrovo.com/assets/profile.jpg"
+    }
+    </script>
+    {% else %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "@id": "https://juanidrovo.com/blog/#blog",
+      "name": "Juan Idrovo Blog",
+      "description": "Thoughts on compliance, security, legal tech, and building secure digital solutions.",
+      "url": "https://juanidrovo.com/blog/",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Person",
+        "@id": "https://juanidrovo.com/#person",
+        "name": "Juan Idrovo",
+        "url": "https://juanidrovo.com"
+      },
+      "publisher": {
+        "@type": "Person",
+        "@id": "https://juanidrovo.com/#person"
+      }
     }
     </script>
     {% endif %}

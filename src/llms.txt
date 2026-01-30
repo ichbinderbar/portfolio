@@ -42,6 +42,13 @@ Full-stack e-commerce platform with Next.js 15 storefront and Medusa.js v2 headl
 - Infrastructure: AWS, Railway, Vercel
 - Security: SOC 2 controls, encryption, rate limiting, row-level isolation
 
+## Blog
+
+Articles on compliance, security, legal tech, and building secure digital solutions.
+
+- Blog: https://juanidrovo.com/blog/
+- RSS Feed: https://juanidrovo.com/blog/feed.xml
+
 ## Contact
 
 - Email: idrovel@gmail.com

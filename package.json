@@ -3,7 +3,11 @@
   "version": "1.0.1",
   "private": "true",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
-  "source": ["src/index.html", "src/payments.html", "src/payment-confirm.html"],
+  "source": [
+    "src/index.html",
+    "src/payments.html",
+    "src/payment-confirm.html"
+  ],
   "scripts": {
     "start": "parcel",
     "start:blog": "npx @11ty/eleventy --serve --port=8081",
@@ -25,6 +29,7 @@
   "homepage": "https://github.com/cobiwave/simplefolio#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
     "@parcel/packager-raw-url": "^2.8.2",
     "@parcel/transformer-jsonld": "^2.8.2",
     "@parcel/transformer-sass": "^2.8.2",

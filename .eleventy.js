@@ -1,4 +1,9 @@
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+
 module.exports = function(eleventyConfig) {
+  // RSS Feed plugin
+  eleventyConfig.addPlugin(pluginRss);
+
   // Ignore files that Parcel handles
   eleventyConfig.ignores.add("src/index.html");
   eleventyConfig.ignores.add("src/resume.html");
