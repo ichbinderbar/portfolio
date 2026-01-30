@@ -155,7 +155,7 @@
     "title": "Projects",
     "seeLive": "See Live",
     "markatzy": {
-      "title": "Markatzy",
+      "title": "Markatzy Legal AI SaaS",
       "description": "AI-powered trademark protection platform with real-time, multi-dimensional conflict detection. Analyzes brands across phonetic (IPA-based, cross-language), typographic, semantic (vector embeddings), and visual dimensions. Searches over half a million trademarks in under 100ms with enterprise-grade security (rate limiting, row-level data isolation). A-rated in SonarQube for maintainability, reliability, and security. Built with RAG architecture (Retrieval-Augmented Generation), Next.js 15, type-safe APIs (tRPC), vector databases (pgvector), and OpenAI for intelligent conflict analysis."
     },
     "updateManager": {
@@ -164,11 +164,11 @@
       "cta": "See Kriptos"
     },
     "cuarenta": {
-      "title": "Cuarenta",
+      "title": "Cuarenta Card Game",
       "description": "Digital implementation of the traditional Ecuadorian card game, built in 2 weeks during BrainStation bootcamp. Features real-time multiplayer with WebSockets and AI opponents. React, Node.js, Express."
     },
     "graceNelson": {
-      "title": "Grace Nelson Law",
+      "title": "Grace Nelson Law Website",
       "description": "Complete website and digital infrastructure for a bilingual expat-focused law firm with 22+ years of experience. Features multi-language support (EN/ES), appointment booking integration, WhatsApp messaging, secure contact forms, property listings, and video testimonials. Also built internal workflow automations and CRM systems.",
       "cta": "Visit Site"
     },
