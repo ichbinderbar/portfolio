@@ -155,25 +155,30 @@
     "title": "Proyectos",
     "seeLive": "Ver en Vivo",
     "markatzy": {
-      "title": "Markatzy Legal AI SaaS",
+      "name": "Markatzy",
+      "label": "Legal AI SaaS",
       "description": "Plataforma de protección de marcas impulsada por IA con detección de conflictos multidimensional en tiempo real. Analiza marcas en dimensiones fonética (basada en IPA, multilingüe), tipográfica, semántica (embeddings vectoriales) y visual. Busca en un registro de más de medio millón de marcas en menos de 100ms con seguridad de nivel empresarial (rate limiting, aislamiento de datos por organización). Calificación A en SonarQube para mantenibilidad, confiabilidad y seguridad. Construida con arquitectura RAG (Retrieval-Augmented Generation), Next.js 15, APIs con tipado seguro (tRPC), bases de datos vectoriales (pgvector), y OpenAI para análisis inteligente de conflictos."
     },
     "updateManager": {
-      "title": "Update Manager Herramienta Empresarial",
+      "name": "Update Manager",
+      "label": "Herramienta Empresarial",
       "description": "Orquestador de instalación de agentes Windows construido para Kriptos Inc. Permite a departamentos de TI desplegar y gestionar software de forma segura en miles de computadoras cliente en bancos y multinacionales. Entregué código frontend con 219 commits y más de 37,000 líneas de código.",
       "cta": "Ver Kriptos"
     },
     "cuarenta": {
-      "title": "Cuarenta Juego de Cartas",
+      "name": "Cuarenta",
+      "label": "Juego de Cartas",
       "description": "Implementación digital del tradicional juego de cartas ecuatoriano, construido en 2 semanas durante el bootcamp de BrainStation. Incluye multijugador en tiempo real con WebSockets y oponentes con IA. React, Node.js, Express."
     },
     "graceNelson": {
-      "title": "Sitio Web Grace Nelson Law",
+      "name": "Grace Nelson Law",
+      "label": "Sitio Web",
       "description": "Sitio web e infraestructura digital completa para un bufete de abogados bilingüe enfocado en expatriados con más de 22 años de experiencia. Incluye soporte multilingüe (EN/ES), integración de reserva de citas, mensajería WhatsApp, formularios de contacto seguros, listados de propiedades y testimonios en video. También desarrollé automatizaciones de flujos de trabajo internos y sistemas CRM.",
       "cta": "Visitar Sitio"
     },
     "laPampa": {
-      "title": "La Pampa E-commerce",
+      "name": "La Pampa",
+      "label": "E-commerce",
       "description": "Plataforma e-commerce full-stack para un productor de pulpas de fruta congeladas. Storefront en Next.js 15 con backend headless Medusa.js v2. Incluye catálogo de productos, carrito, checkout, pagos con PayPhone y panel de administración. Desplegado en Railway con PostgreSQL y Redis.",
       "cta": "Visitar Tienda"
     }
