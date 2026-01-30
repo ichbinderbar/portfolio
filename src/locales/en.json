@@ -28,7 +28,7 @@
       },
       "aiml": {
         "label": "AI/ML",
-        "value": "OpenAI API, pgvector, Semantic Search, Phonetic Matching"
+        "value": "RAG (Retrieval-Augmented Generation), OpenAI API, pgvector, Semantic Search, Phonetic Matching"
       },
       "tools": {
         "label": "Tools",

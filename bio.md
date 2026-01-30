@@ -249,7 +249,7 @@ TypeScript, JavaScript, Python, React, Next.js, Node.js, tRPC, Prisma, Express, 
 AWS (S3, EC2, Amplify, Inspector), Docker, CI/CD Pipelines, Git, PostgreSQL, Redis, Upstash
 
 ### AI/ML
-OpenAI API, pgvector, Semantic Search, Phonetic Matching
+RAG (Retrieval-Augmented Generation), OpenAI API, pgvector, Semantic Search, Phonetic Matching
 
 ### Tools & Practices
 ESLint, Prettier, Vitest, pg-boss, Bun, Figma, Ansible

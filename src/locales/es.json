@@ -28,7 +28,7 @@
       },
       "aiml": {
         "label": "IA/ML",
-        "value": "OpenAI API, pgvector, Búsqueda Semántica, Coincidencia Fonética"
+        "value": "RAG (Retrieval-Augmented Generation), OpenAI API, pgvector, Búsqueda Semántica, Coincidencia Fonética"
       },
       "tools": {
         "label": "Herramientas",
