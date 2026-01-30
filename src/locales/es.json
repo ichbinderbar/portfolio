@@ -37,7 +37,7 @@
         "company": "Kriptos Inc., Miami, FL (Remoto)",
         "dates": "Oct 2024 - Presente",
         "bullets": [
-          "Lideré el desarrollo frontend del módulo Update Manager, entregando 219 commits y más de 37,000 líneas de código TypeScript/React; actualmente contribuidor principal del repositorio de la plataforma",
+          "Entregué código frontend para el módulo Update Manager con 219 commits y más de 37,000 líneas de TypeScript/React; actualmente contribuidor principal del repositorio de la plataforma",
           "Apoyé la certificación exitosa SOC 2 Tipo II gestionando cumplimiento de seguridad a través del dashboard de Vanta y coordinando parches de vulnerabilidades en más de 220 repositorios",
           "Integré pruebas de seguridad automatizadas en pipelines CI/CD: SonarCloud para calidad de código, Amazon Inspector para escaneo de contenedores, y Hexstrike para pentesting automatizado",
           "Desarrollé el frontend del Update Manager, permitiendo a clientes empresariales desplegar y monitorear agentes Windows de Kriptos en su infraestructura mediante backend con Ansible",
