@@ -1,0 +1,41 @@
+---
+layout: base.njk
+title: Blog
+description: Thoughts on compliance, security, legal tech, and building secure digital solutions.
+---
+<div class="blog-listing">
+  <div class="container">
+    <header class="blog-listing__header">
+      <h1 class="blog-listing__title">Welcome to my blog</h1>
+      <h2 class="blog-listing__subtitle">News and opinions</h2>
+    </header>
+
+    <div class="blog-listing__posts">
+      {% for post in collections.posts %}
+      <article class="blog-card">
+        <a href="{{ post.url }}" class="blog-card__link">
+          <div class="blog-card__meta">
+            <time datetime="{{ post.date.toISOString().split('T')[0] }}">{{ post.date | dateFormat }}</time>
+            <span class="blog-card__reading-time">{{ post.templateContent | readingTime }}</span>
+          </div>
+          <h2 class="blog-card__title">{{ post.data.title }}</h2>
+          {% if post.data.description %}
+          <p class="blog-card__excerpt">{{ post.data.description }}</p>
+          {% endif %}
+          {% if post.data.tags %}
+          <div class="blog-card__tags">
+            {% for tag in post.data.tags %}
+            {% if tag != "posts" %}
+            <span class="blog-card__tag">{{ tag }}</span>
+            {% endif %}
+            {% endfor %}
+          </div>
+          {% endif %}
+        </a>
+      </article>
+      {% else %}
+      <p class="blog-listing__empty">No posts yet. Check back soon!</p>
+      {% endfor %}
+    </div>
+  </div>
+</div>

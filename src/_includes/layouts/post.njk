@@ -1,0 +1,30 @@
+---
+layout: base.njk
+---
+<article class="blog-post">
+  <div class="container">
+    <header class="blog-post__header">
+      <div class="blog-post__meta">
+        <time datetime="{{ date.toISOString().split('T')[0] }}">{{ date | dateFormat }}</time>
+        <span class="blog-post__reading-time">{{ content | readingTime }}</span>
+      </div>
+      <h1 class="blog-post__title">{{ title }}</h1>
+      {% if description %}
+      <p class="blog-post__description">{{ description }}</p>
+      {% endif %}
+      {% if tags %}
+      <div class="blog-post__tags">
+        {% for tag in tags %}
+        {% if tag != "posts" %}
+        <span class="blog-post__tag">{{ tag }}</span>
+        {% endif %}
+        {% endfor %}
+      </div>
+      {% endif %}
+    </header>
+
+    <div class="blog-post__content">
+      {{ content | safe }}
+    </div>
+  </div>
+</article>

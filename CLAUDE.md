@@ -5,9 +5,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-npm install    # Install dependencies
-npm start      # Start dev server at http://localhost:1234
-npm run build  # Build for production (outputs to /dist)
+npm install      # Install dependencies
+npm start        # Start dev server at http://localhost:1234 (main site only)
+npm run preview  # Build and serve full site with blog
+npm run build    # Build for production (outputs to /dist)
 ```
 
 ## Architecture
@@ -47,3 +48,16 @@ src/sass/
 **Projects:** Each project is a `.row` inside `#projects` section. Copy/paste a row block to add more projects.
 
 **Social links:** Footer contains Font Awesome icons. Find icons at https://fontawesome.com/v4.7.0/icons/
+
+## Blog
+
+Static blog at `/blog/` built with Eleventy (11ty). Posts are markdown files in `src/blog/posts/`.
+
+**Add a post:** Create `src/blog/posts/your-slug.md` with required frontmatter (title, description, date, tags).
+
+See `docs/blog.md` for full documentation.
+
+## Documentation
+
+Extended documentation lives in `/docs/`:
+- `blog.md` - Blog post format and usage
