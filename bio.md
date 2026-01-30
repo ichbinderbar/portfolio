@@ -213,7 +213,7 @@ Completed intensive in-person bootcamp. Won multiple class hackathons during the
 
 Funded by Lloyds Bank hackathon scholarship.
 
-### Juris Doctor (Abogado)
+### Abogado (Law Degree)
 **Universidad San Francisco de Quito — Ecuador**
 **Aug 2015 – Apr 2021** ✓ *Confirmed (transcript)*
 **GPA:** 3.12

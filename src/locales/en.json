@@ -12,7 +12,7 @@
       "certifications": "Certifications",
       "languages": "Languages"
     },
-    "summary": "Full Stack Developer with 4+ years of experience and a Juris Doctor background. Specialized in security compliance (SOC 2 Type II) and vulnerability assessment at Kriptos Inc., delivering 37,000+ lines of production code in 15 months. Founder of Markatzy, an AI-powered trademark protection platform now live and serving IP law firms in Ecuador. AWS Certified Cloud Practitioner with credentials from UT Austin, BrainStation (Konrad Group), and Harvard Business School Online.",
+    "summary": "Full Stack Developer and licensed attorney building secure software at the intersection of law and technology. At Kriptos Inc., delivered 37,000+ lines of production code while supporting SOC 2 Type II certification. Founder of Markatzy, an AI-powered trademark protection platform now live and serving IP law firms in Ecuador. AWS Certified with credentials in cybersecurity (UT Austin), software engineering (BrainStation), and financial accounting (HBS Online).",
     "skills": {
       "security": {
         "label": "Security",
@@ -39,9 +39,9 @@
         "bullets": [
           "Led frontend development for Update Manager module, delivering 219 commits and 37,000+ lines of TypeScript/React code; currently main contributor to platform repository",
           "Supported successful SOC 2 Type II certification by managing security compliance through Vanta dashboard and coordinating vulnerability patching across 220+ repositories",
-          "Integrated SonarCloud code quality analysis and Amazon Inspector security scanning across approximately 100 CI/CD pipeline configurations",
-          "Streamlined software deployment processes for enterprise clients at banks and multinationals, enabling IT teams to schedule and monitor installation jobs across distributed systems",
-          "Leveraged AWS Security Hub and Amazon Inspector to monitor and triage container image vulnerabilities"
+          "Integrated automated security testing across CI/CD pipelines: SonarCloud for code quality, Amazon Inspector for container scanning, and Hexstrike for automated pentesting",
+          "Built installation orchestrator enabling enterprise IT teams at banks and multinationals to deploy and monitor software across distributed systems",
+          "Cut dev environment build time in half by optimizing CI/CD pipeline to run tests only on changed files; introduced MSW mocking layer to accelerate frontend-backend collaboration"
         ]
       },
       "markatzy": {
@@ -109,7 +109,7 @@
         "details": "Intensive bootcamp | Won Lloyds Bank hackathon partnership project"
       },
       "usfq": {
-        "degree": "Juris Doctor (Abogado)",
+        "degree": "Abogado (Law Degree)",
         "school": "Universidad San Francisco de Quito, Ecuador",
         "date": "Apr 2021",
         "details": "GPA: 3.12 | 260 Credits | Thesis: Central Bank Digital Currencies (CBDCs) in dollarized economies"
