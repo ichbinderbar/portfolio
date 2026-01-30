@@ -107,7 +107,7 @@
   color: #272727;
 }
 
-/* Back Button (used on payments, blog pages) */
+/* Back Button (used on payments, blog pages) - matches cta-btn--hero style */
 .back-btn {
   position: fixed;
   top: 20px;
@@ -116,28 +116,48 @@
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  padding: 1rem 1.6rem;
-  background: $primary-color;
-  border: 2px solid $secondary-color;
-  color: $secondary-color;
-  font-size: 1.4rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  padding: 0.8rem $default-font-size;
+  font-size: $default-font-size;
+  font-weight: bold;
+  line-height: 1;
   text-decoration: none;
-  transition: all 0.2s ease;
+  background: transparent;
+  background-image: linear-gradient(135deg, $primary-color, $secondary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  border-image-slice: 1;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  }
 
   &:hover {
-    background: $secondary-color;
-    color: $white-color;
+    -webkit-text-fill-color: $white-color;
+    text-decoration: none;
+
+    &::after {
+      width: 100%;
+    }
   }
 
   &:hover i {
-    transform: translateX(-2px);
+    transform: translateX(-3px);
   }
 
   i {
-    font-size: 1.4rem;
     transition: transform 0.2s ease;
   }
 }
