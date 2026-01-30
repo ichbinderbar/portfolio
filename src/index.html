@@ -35,16 +35,57 @@
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
       <div class="container">
-        <h1 class="hero-title load-hidden">
-          <span data-i18n="hero.greeting">Hi, my name is</span> <span class="text-color-main" data-i18n="hero.name">Juan</span>
-          <br />
-          <span data-i18n="hero.tagline1">I am a lawyer specialized in</span> <span class="text-color-main" data-i18n="hero.tagline2">secure digital solutions</span>
-        </h1>
-        <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about" data-i18n="hero.cta"
-            >Learn more</a
-          >
-        </p>
+        <div class="hero-carousel" role="region" aria-label="Hero carousel" aria-roledescription="carousel">
+          <span id="carousel-live" class="sr-only" aria-live="polite" aria-atomic="true"></span>
+          <div class="hero-carousel-viewport">
+            <div class="hero-carousel-track">
+            <!-- Slide 1: Introduction -->
+            <div class="hero-slide" data-slide="0" role="group" aria-roledescription="slide" aria-label="Slide 1 of 3">
+              <h1 class="hero-title load-hidden">
+                <span data-i18n="hero.greeting">Hi, my name is</span> <span class="text-color-main" data-i18n="hero.name">Juan</span>
+                <br />
+                <span data-i18n="hero.tagline1">I am a lawyer specialized in</span> <span class="text-color-main" data-i18n="hero.tagline2">secure digital solutions</span>
+              </h1>
+              <p class="hero-cta load-hidden">
+                <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about" data-i18n="hero.cta">Learn more</a>
+              </p>
+            </div>
+
+            <!-- Slide 2: Qualifying Question -->
+            <div class="hero-slide" data-slide="1" role="group" aria-roledescription="slide" aria-label="Slide 2 of 3">
+              <h1 class="hero-title">
+                <span data-i18n="hero.question1">Looking to achieve</span>
+                <br />
+                <span class="text-color-main" data-i18n="hero.question2">SOC 2, ISO 27001,</span>
+                <br />
+                <span data-i18n="hero.question3">or another compliance certification?</span>
+              </h1>
+              <p class="hero-cta">
+                <a rel="noreferrer" class="cta-btn cta-btn--hero" href="mailto:idrovel@gmail.com" data-i18n="hero.questionCta">Tell me more</a>
+              </p>
+            </div>
+
+            <!-- Slide 3: Book Consultation -->
+            <div class="hero-slide" data-slide="2" role="group" aria-roledescription="slide" aria-label="Slide 3 of 3">
+              <h1 class="hero-title">
+                <span data-i18n="hero.consultTitle1">Let's talk about your</span>
+                <br />
+                <span class="text-color-main" data-i18n="hero.consultTitle2">compliance goals</span>
+              </h1>
+              <p class="hero-cta">
+                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://calendly.com/juanidrovo" data-i18n="hero.consultCta">Book Free Consultation</a>
+              </p>
+            </div>
+          </div>
+          </div>
+
+          <!-- Carousel Navigation -->
+          <div class="hero-carousel-nav" role="tablist" aria-label="Carousel navigation">
+            <button class="hero-nav-dot active" data-slide="0" role="tab" aria-selected="true" aria-label="Go to slide 1" tabindex="0"></button>
+            <button class="hero-nav-dot" data-slide="1" role="tab" aria-selected="false" aria-label="Go to slide 2" tabindex="-1"></button>
+            <button class="hero-nav-dot" data-slide="2" role="tab" aria-selected="false" aria-label="Go to slide 3" tabindex="-1"></button>
+          </div>
+        </div>
       </div>
     </section>
     <!-- /END Hero Section -->

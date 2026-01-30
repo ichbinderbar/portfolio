@@ -16,14 +16,14 @@ export const targetElements = [
     },
   },
   {
-    element: ".hero-title",
+    element: ".hero-slide[data-slide='0'] .hero-title",
     animation: {
       delay: 500,
       origin: window.innerWidth > 768 ? "left" : "bottom",
     },
   },
   {
-    element: ".hero-cta",
+    element: ".hero-slide[data-slide='0'] .hero-cta",
     animation: {
       delay: 1000,
       origin: window.innerWidth > 768 ? "left" : "bottom",

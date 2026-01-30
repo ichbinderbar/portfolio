@@ -132,7 +132,14 @@
     "name": "Juan,",
     "tagline1": "un abogado especializado en",
     "tagline2": "soluciones digitales seguras",
-    "cta": "Conoce más"
+    "cta": "Conoce más",
+    "question1": "¿Buscas obtener",
+    "question2": "SOC 2, ISO 27001,",
+    "question3": "u otra certificación de cumplimiento?",
+    "questionCta": "Cuéntame más",
+    "consultTitle1": "Hablemos de tus",
+    "consultTitle2": "metas de cumplimiento",
+    "consultCta": "Reservar Consulta Gratis"
   },
   "about": {
     "title": "Sobre mí",

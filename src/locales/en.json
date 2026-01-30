@@ -132,7 +132,14 @@
     "name": "Juan",
     "tagline1": "I am a lawyer specialized in",
     "tagline2": "secure digital solutions",
-    "cta": "Learn more"
+    "cta": "Learn more",
+    "question1": "Looking to achieve",
+    "question2": "SOC 2, ISO 27001,",
+    "question3": "or another compliance certification?",
+    "questionCta": "Tell me more",
+    "consultTitle1": "Let's talk about your",
+    "consultTitle2": "compliance goals",
+    "consultCta": "Book Free Consultation"
   },
   "about": {
     "title": "About me",
