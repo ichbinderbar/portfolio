@@ -26,12 +26,11 @@ Technology-focused attorney and cybersecurity professional with expertise spanni
 
 **Phase 1: Cybersecurity & Compliance (Initial Focus)**
 - Supported the successful achievement of SOC 2 Type II certification during the audit window
-- Managed people and equipment security using Vanta dashboard
-- Verified vulnerabilities detected by AWS Inspector and created tickets for dev team to patch
-- Coordinated patching efforts across repositories
+- Systematically monitored security controls in Vanta dashboard and AWS infrastructure
+- Triaged vulnerabilities detected by AWS Inspector, Dependabot, and SonarCloud, generating tickets for the dev team to remediate
+- Tracked remediation progress and ensured control targets were maintained for people and assets
 - Conducted security review of Ansible-powered backend console
-- Integrated SonarCloud code quality analysis and Amazon Inspector security scanning across the company's 220+ repositories, configuring approximately 100 CI/CD pipeline yml files
-- Employed Strike, Hexstrike, and AI-assisted tools to automate security testing workflows and identify security gaps
+- Employed Strike, Hexstrike, and AI-assisted tools to identify security gaps
 
 **Phase 2: Frontend Development (Primary Focus)**
 - Converted v0-generated UI into Figma project to standardize components
