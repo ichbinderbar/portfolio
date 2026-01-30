@@ -34,7 +34,7 @@ Technology-focused attorney and cybersecurity professional with expertise spanni
 
 **Phase 2: Frontend Development (Primary Focus)**
 - Converted v0-generated UI into Figma project to standardize components
-- Led the design and implementation of the frontend for the Update Manager module within the Kriptos.io platform
+- Designed and implemented the frontend for the Update Manager module within the Kriptos.io platform
 - Delivered 219 commits totaling 37,000+ lines of code; currently the main contributor to the main platform's git repository and 3rd contributor overall
 - Streamlined and automated software deployment processes for enterprise clients, allowing IT teams to efficiently create, schedule, and monitor installation jobs across distributed systems
 - Integrated into a hybrid on-prem/cloud infrastructure tailored to enterprise requirements
