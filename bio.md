@@ -85,8 +85,8 @@ Designed and developed a comprehensive web application for trademark monitoring 
 
 ### Attorney Associate & Webmaster/Office Manager
 **Grace Nelson Attorneys at Law — Cuenca, Ecuador**
-**Apr 2021 – Present** ✓ *Confirmed*
-*(Family practice — flexible/part-time arrangement maintained alongside other positions)*
+**Apr 2021 – Oct 2022 (Part-time from Jan 2022)** ✓ *Confirmed*
+*(Family practice — part-time during IMBAIP, transitioned to contract after IMBAIP ended)*
 
 *Full-service expat relocation practice serving hundreds of expatriates in Ecuador.*
 
@@ -97,11 +97,6 @@ Designed and developed a comprehensive web application for trademark monitoring 
 - Automated internal workflows
 - Oversaw Microsoft product deployment
 - Coordinated meetings, maintained schedules, and delegated tasks among junior associates
-
-**Web & Digital Presence:**
-- Maintain and update the firm's website
-- Integrated secure payment processing
-- Handled user data systems
 
 **Legal Practice - Immigration:**
 - Managed immigration procedures and applications for over 100 U.S. nationals annually
@@ -114,6 +109,19 @@ Designed and developed a comprehensive web application for trademark monitoring 
 
 **Legal Practice - Estate Planning:**
 - Contribute to casework in inheritance and estate planning
+
+### Technology & IP Consultant (Contract)
+**Grace Nelson Attorneys at Law — Cuenca, Ecuador**
+**Oct 2022 – Present** ✓ *Confirmed*
+*(Contract basis after transitioning from employee role)*
+
+**Web & Digital Presence:**
+- Maintain and update the firm's website
+- Integrated secure payment processing
+- Handled user data systems
+
+**Advisory:**
+- Advise on intellectual property and technology-related legal matters
 
 ### Staff Accountant
 **Elliff CPA — Dallas, TX (Remote)**
@@ -332,10 +340,11 @@ Full-stack e-commerce platform for La Pampa, a frozen fruit pulp producer in Ecu
                                  │
     Apr 2021                     │
         ●━━━━━━━━━━━━━━━━━━━━━━━━┫  Graduated Law (USFQ) - GPA 3.12
-        ●━━━━━━━━━━━━━━━━━━━━━━━━┫  Started Grace Nelson (Attorney/Webmaster) - ongoing
+        ●━━━━━━━━━━━━━━━━━━━━━━━━┫  Started Grace Nelson (Attorney/Webmaster - Employee)
                                  │
     Jan 2022                     │
         ●━━━━━━━━━━━━━━━━━━━━━━━━┫  Started IMBAIP (IP Attorney) - Quito
+        ○━━━━━━━━━━━━━━━━━━━━━━━━┫  Grace Nelson reduced to part-time
         ○━━━━━━━━━━━━━━━━━━━━━━━━┫  Started Markatzy scripts (after director left)
                                  │
     Jul 2022                     │
@@ -343,6 +352,7 @@ Full-stack e-commerce platform for La Pampa, a frozen fruit pulp producer in Ecu
                                  │
     Oct 2022                     │
         ●━━━━━━━━━━━━━━━━━━━━━━━━┫  Left IMBAIP
+        ●━━━━━━━━━━━━━━━━━━━━━━━━┫  Grace Nelson: Employee → Contract transition
         ○━━━━━━━━━━━━━━━━━━━━━━━━┫  SENADI (~8 days) ⚠️ EXCLUDED
         ●━━━━━━━━━━━━━━━━━━━━━━━━┫  Started Elliff CPA (Dallas, TX)
                                  │
@@ -377,7 +387,7 @@ Full-stack e-commerce platform for La Pampa, a frozen fruit pulp producer in Ecu
                                  │
     Present (Jan 2026)           │
         ○━━━━━━━━━━━━━━━━━━━━━━━━┫  Kriptos (ongoing)
-        ○━━━━━━━━━━━━━━━━━━━━━━━━┫  Grace Nelson (ongoing, part-time)
+        ○━━━━━━━━━━━━━━━━━━━━━━━━┫  Grace Nelson (ongoing, contract)
         ○━━━━━━━━━━━━━━━━━━━━━━━━┫  Markatzy (live with law firms)
                                  │
     Mar/Apr 2026                 │

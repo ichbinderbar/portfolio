@@ -49,6 +49,7 @@
         "company": "Markatzy - Trademark Protection Platform",
         "dates": "2022 - Present",
         "bullets": [
+          "Started as custom scripts to manage trademark monitoring after director's sudden departure; rebuilt as full web platform during career sabbatical (2023-2024)",
           "Designed and developed full-stack web application for trademark monitoring and conflict detection, now live and actively used by IP law firms in Ecuador",
           "Engineered AI-powered similarity detection engine analyzing conflicts across four dimensions: semantic, typographic, phonetic, and visual using vector databases",
           "Built with React, Next.js, TypeScript, and PostgreSQL; reduced trademark conflict analysis time by 80% compared to traditional methods"
@@ -57,12 +58,20 @@
       "graceNelson": {
         "title": "Attorney Associate & Webmaster",
         "company": "Grace Nelson Attorneys at Law, Cuenca, Ecuador",
-        "dates": "Apr 2021 - Present",
+        "dates": "Apr 2021 - Oct 2022 (Part-time from Jan 2022)",
         "bullets": [
           "Managed immigration procedures for 100+ U.S. nationals annually with near-perfect approval rate",
           "Led digital transformation initiative, implementing first CRM system and automating internal workflows",
-          "Designed and maintained firm website with multi-language support, secure payment processing, and appointment booking integration",
           "Coordinated 50+ real estate purchase and sale agreement closings; achieved 20% annual increase in referral business"
+        ]
+      },
+      "graceNelsonContract": {
+        "title": "Technology & IP Consultant (Contract)",
+        "company": "Grace Nelson Attorneys at Law",
+        "dates": "Oct 2022 - Present",
+        "bullets": [
+          "Maintain firm website with multi-language support, secure payment processing, and appointment booking integration",
+          "Advise on intellectual property and technology-related legal matters"
         ]
       },
       "elliff": {

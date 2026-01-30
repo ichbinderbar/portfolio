@@ -49,6 +49,7 @@
         "company": "Markatzy - Plataforma de Protección de Marcas",
         "dates": "2022 - Presente",
         "bullets": [
+          "Comenzó como scripts personalizados para gestionar el monitoreo de marcas tras la salida repentina del director; reconstruido como plataforma web completa durante año sabático (2023-2024)",
           "Diseñé y desarrollé aplicación web full-stack para monitoreo de marcas y detección de conflictos, activa y utilizada por firmas de abogados de PI en Ecuador",
           "Desarrollé motor de detección de similitudes impulsado por IA que analiza conflictos en cuatro dimensiones: semántica, tipográfica, fonética y visual usando bases de datos vectoriales",
           "Construido con React, Next.js, TypeScript y PostgreSQL; redujo el tiempo de análisis de conflictos de marcas en 80% comparado con métodos tradicionales"
@@ -57,12 +58,20 @@
       "graceNelson": {
         "title": "Abogado Asociado y Webmaster",
         "company": "Grace Nelson Attorneys at Law, Cuenca, Ecuador",
-        "dates": "Abr 2021 - Presente",
+        "dates": "Abr 2021 - Oct 2022 (Medio tiempo desde Ene 2022)",
         "bullets": [
           "Gestioné procedimientos migratorios para más de 100 ciudadanos estadounidenses anualmente con tasa de aprobación casi perfecta",
           "Lideré iniciativa de transformación digital, implementando el primer sistema CRM y automatizando flujos de trabajo internos",
-          "Diseñé y mantuve sitio web de la firma con soporte multilingüe, procesamiento seguro de pagos e integración de reserva de citas",
           "Coordiné más de 50 cierres de contratos de compraventa de bienes raíces; logré 20% de aumento anual en negocios por referidos"
+        ]
+      },
+      "graceNelsonContract": {
+        "title": "Consultor de Tecnología y PI (Contrato)",
+        "company": "Grace Nelson Attorneys at Law",
+        "dates": "Oct 2022 - Presente",
+        "bullets": [
+          "Mantengo sitio web de la firma con soporte multilingüe, procesamiento seguro de pagos e integración de reserva de citas",
+          "Asesoro en asuntos legales de propiedad intelectual y tecnología"
         ]
       },
       "elliff": {
