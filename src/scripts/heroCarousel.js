@@ -1,7 +1,10 @@
 let currentSlide = 0;
 let autoAdvanceTimer = null;
 let keydownHandler = null;
+let touchStartX = 0;
+let touchEndX = 0;
 const AUTO_ADVANCE_DELAY = 6000;
+const SWIPE_THRESHOLD = 50;
 
 const initHeroCarousel = () => {
   const carousel = document.querySelector('.hero-carousel');
@@ -41,6 +44,10 @@ const initHeroCarousel = () => {
     carousel.addEventListener('mouseleave', startAutoAdvance);
     carousel.addEventListener('focusin', pauseAutoAdvance);
     carousel.addEventListener('focusout', startAutoAdvance);
+
+    // Touch swipe support for mobile
+    carousel.addEventListener('touchstart', handleTouchStart, { passive: true });
+    carousel.addEventListener('touchend', handleTouchEnd, { passive: true });
   }
 
   // Cleanup on page unload
@@ -140,6 +147,31 @@ const pauseAutoAdvance = () => {
 const resetAutoAdvance = () => {
   pauseAutoAdvance();
   startAutoAdvance();
+};
+
+const handleTouchStart = (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+  pauseAutoAdvance();
+};
+
+const handleTouchEnd = (e) => {
+  touchEndX = e.changedTouches[0].screenX;
+  handleSwipe();
+  startAutoAdvance();
+};
+
+const handleSwipe = () => {
+  const swipeDistance = touchEndX - touchStartX;
+
+  if (Math.abs(swipeDistance) < SWIPE_THRESHOLD) return;
+
+  if (swipeDistance < 0) {
+    // Swiped left - go to next slide
+    nextSlide();
+  } else {
+    // Swiped right - go to previous slide
+    prevSlide();
+  }
 };
 
 export default initHeroCarousel;
