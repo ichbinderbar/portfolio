@@ -24,10 +24,14 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  // Year filter for footer
+  // Date filter for various formats
   eleventyConfig.addFilter("date", (value, format) => {
     if (format === "Y") {
       return new Date().getFullYear();
+    }
+    if (format === "Y-m-d") {
+      const d = new Date(value);
+      return d.toISOString().split('T')[0];
     }
     return new Date(value).toISOString();
   });

@@ -22,11 +22,6 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://juanidrovo.com/" />
 
-    <!-- Hreflang Tags -->
-    <link rel="alternate" hreflang="en" href="https://juanidrovo.com/" />
-    <link rel="alternate" hreflang="es" href="https://juanidrovo.com/?lang=es" />
-    <link rel="alternate" hreflang="x-default" href="https://juanidrovo.com/" />
-
     <!-- Favicons -->
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
     <link rel="apple-touch-icon" href="assets/favicon.png" />
@@ -55,6 +50,10 @@
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="manifest.json" />
+
+    <!-- LLMs.txt for AI context -->
+    <link rel="alternate" type="text/markdown" href="llms.txt" title="LLM Context" />
+    <link rel="alternate" type="text/markdown" href="llms-full.txt" title="LLM Full Context" />
 
     <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
@@ -138,6 +137,25 @@
             "https://linkedin.com/in/juanidrovo",
             "https://github.com/ichbinderbar",
             "https://calendly.com/juanidrovo"
+          ],
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "contactType": "customer service",
+              "email": "idrovel@gmail.com",
+              "url": "https://calendly.com/juanidrovo",
+              "availableLanguage": ["English", "Spanish"],
+              "areaServed": "Worldwide"
+            },
+            {
+              "@type": "ContactPoint",
+              "contactType": "sales",
+              "email": "idrovel@gmail.com",
+              "url": "https://calendly.com/juanidrovo",
+              "contactOption": "TollFree",
+              "availableLanguage": ["English", "Spanish"],
+              "description": "Book a free consultation for compliance, software development, or automation projects"
+            }
           ],
           "worksFor": {
             "@type": "Organization",

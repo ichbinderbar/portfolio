@@ -32,6 +32,37 @@
     <meta name="twitter:description" content="{{ description or 'Thoughts on compliance, security, legal tech, and building secure digital solutions.' }}" />
     <meta name="twitter:image" content="{{ ogImage or 'https://juanidrovo.com/assets/profile.jpg' }}" />
 
+    <!-- JSON-LD Structured Data -->
+    {% if layout == "post.njk" %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{{ title }}",
+      "description": "{{ description }}",
+      "datePublished": "{{ date | date('Y-m-d') }}",
+      "dateModified": "{{ date | date('Y-m-d') }}",
+      "url": "https://juanidrovo.com{{ page.url }}",
+      "author": {
+        "@type": "Person",
+        "@id": "https://juanidrovo.com/#person",
+        "name": "Juan Idrovo",
+        "url": "https://juanidrovo.com"
+      },
+      "publisher": {
+        "@type": "Person",
+        "@id": "https://juanidrovo.com/#person",
+        "name": "Juan Idrovo"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://juanidrovo.com{{ page.url }}"
+      },
+      "image": "https://juanidrovo.com/assets/profile.jpg"
+    }
+    </script>
+    {% endif %}
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"

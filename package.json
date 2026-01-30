@@ -10,7 +10,7 @@
     "preview": "npm run build && npx serve dist",
     "build:parcel": "parcel build",
     "build:blog": "npx @11ty/eleventy",
-    "build": "npm run build:parcel && npm run build:blog && node -e \"require('fs').copyFileSync('src/robots.txt','dist/robots.txt');require('fs').copyFileSync('src/sitemap.xml','dist/sitemap.xml')\""
+    "build": "npm run build:parcel && npm run build:blog && node -e \"const fs=require('fs');fs.copyFileSync('src/robots.txt','dist/robots.txt');fs.copyFileSync('src/sitemap.xml','dist/sitemap.xml');fs.copyFileSync('src/llms.txt','dist/llms.txt');fs.copyFileSync('src/llms-full.txt','dist/llms-full.txt');fs.mkdirSync('dist/.well-known',{recursive:true});fs.copyFileSync('src/.well-known/security.txt','dist/.well-known/security.txt')\""
   },
   "repository": {
     "type": "git",

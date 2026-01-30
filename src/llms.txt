@@ -1,0 +1,59 @@
+# Juan Idrovo
+
+> For complete details, see: https://juanidrovo.com/llms-full.txt
+
+> Lawyer and software engineer specializing in secure digital solutions, compliance consulting (SOC 2, ISO 27001), and legal tech. Based in Ecuador, serving clients globally.
+
+## About
+
+Juan Idrovo combines legal expertise with hands-on software engineering. He builds custom software and automations while guiding businesses through compliance certifications. His background includes a cybersecurity postgraduate diploma from UT Austin, software engineering and cybersecurity diplomas from BrainStation (Konrad Group), financial accounting certificate from Harvard Business School Online, and AWS cloud certification.
+
+Experience includes supporting SOC 2 Type II certification at Kriptos Inc. (monitoring security controls, triaging vulnerabilities) and delivering 37,000+ lines of production code for enterprise software.
+
+## Services
+
+- Compliance Consulting: SOC 2 Type I/II, ISO 27001 certification guidance
+- Custom Software Development: Full-stack web applications, internal tools
+- Business Process Automation: Workflow optimization, integration development
+- Data Security Consulting: Security architecture, vulnerability assessment
+- Legal Tech Solutions: AI-powered legal tools, document automation
+
+## Projects
+
+### Markatzy (markatzy.com)
+AI-powered trademark protection platform with real-time, multi-dimensional conflict detection. Analyzes brands across phonetic, typographic, semantic, and visual dimensions. Searches 500,000+ trademarks in under 100ms. Built with Next.js 15, tRPC, pgvector, and OpenAI.
+
+### Update Manager (kriptos.io)
+Windows agent installation orchestrator for enterprise IT departments. Enables secure deployment and management of software across thousands of client computers at banks and multinationals.
+
+### Cuarenta (cuarenta.juanidrovo.com)
+Digital implementation of the traditional Ecuadorian card game with real-time multiplayer via WebSockets and AI opponents.
+
+### Grace Nelson Law (gracenelsonlaw.com)
+Complete website and digital infrastructure for a bilingual expat-focused law firm. Multi-language support, appointment booking, CRM systems.
+
+### La Pampa E-commerce (lapampaec.com)
+Full-stack e-commerce platform with Next.js 15 storefront and Medusa.js v2 headless backend.
+
+## Tech Stack
+
+- Frontend: React, Next.js 15, TypeScript, Tailwind CSS
+- Backend: Node.js, tRPC, Prisma, PostgreSQL
+- Infrastructure: AWS, Railway, Vercel
+- Security: SOC 2 controls, encryption, rate limiting, row-level isolation
+
+## Contact
+
+- Email: idrovel@gmail.com
+- Booking: https://calendly.com/juanidrovo
+- LinkedIn: https://linkedin.com/in/juanidrovo
+- GitHub: https://github.com/ichbinderbar
+- Website: https://juanidrovo.com
+
+## Languages
+
+English, Spanish (native)
+
+## Location
+
+Ecuador (serving clients worldwide)
