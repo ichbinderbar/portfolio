@@ -15,6 +15,15 @@ const PAYPHONE_CDN = {
 let scriptsLoaded = false;
 let isProcessing = false;
 
+// Inject style to override Payphone CSS (:root { font-size: 13px })
+function injectFontSizeOverride() {
+  if (document.getElementById('payphone-font-fix')) return;
+  const style = document.createElement('style');
+  style.id = 'payphone-font-fix';
+  style.textContent = 'html, :root { font-size: 62.5% !important; }';
+  document.head.appendChild(style);
+}
+
 // Load Payphone SDK resources
 function loadPayphoneSDK() {
   return new Promise((resolve, reject) => {
@@ -23,11 +32,12 @@ function loadPayphoneSDK() {
       return;
     }
 
-    // Load CSS
+    // Load CSS then inject override (our style tag comes after, so it wins)
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = PAYPHONE_CDN.css;
     document.head.appendChild(link);
+    injectFontSizeOverride();
 
     // Load JS
     const script = document.createElement('script');

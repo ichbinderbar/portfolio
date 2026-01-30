@@ -12,6 +12,10 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
+
+    @include respond(phone) {
+      padding-top: 8rem; // Clear fixed back button
+    }
   }
 
   &__title {
