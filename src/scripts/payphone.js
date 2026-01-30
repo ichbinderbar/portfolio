@@ -2,18 +2,10 @@
 // Documentation: https://www.docs.payphone.app/cajita-de-pagos-payphone
 
 const PAYPHONE_CONFIG = {
-  token: process.env.PAYPHONE_TOKEN,
-  storeId: process.env.PAYPHONE_STORE_ID,
-  responseUrl: process.env.PAYPHONE_RESPONSE_URL || 'https://juanidrovo.com/payment-confirm.html',
+  token: (process.env.PAYPHONE_TOKEN || '').trim(),
+  storeId: (process.env.PAYPHONE_STORE_ID || '').trim(),
+  responseUrl: (process.env.PAYPHONE_RESPONSE_URL || 'https://juanidrovo.com/payment-confirm.html').trim(),
 };
-
-// DEBUG: Log config on load (remove after debugging)
-console.log('[Payphone Debug] Config loaded:', {
-  hasToken: !!PAYPHONE_CONFIG.token,
-  tokenPreview: PAYPHONE_CONFIG.token ? PAYPHONE_CONFIG.token.substring(0, 10) + '...' : 'MISSING',
-  storeId: PAYPHONE_CONFIG.storeId || 'MISSING',
-  responseUrl: PAYPHONE_CONFIG.responseUrl,
-});
 
 const PAYPHONE_CDN = {
   css: 'https://cdn.payphonetodoesposible.com/box/v1.1/payphone-payment-box.css',
@@ -123,12 +115,6 @@ async function initPaymentWidget(amount, reference) {
       responseUrl: PAYPHONE_CONFIG.responseUrl,
       lang: document.documentElement.lang || 'en',
     };
-
-    // DEBUG: Log widget config before creating (remove after debugging)
-    console.log('[Payphone Debug] Creating widget with config:', {
-      ...widgetConfig,
-      token: widgetConfig.token ? widgetConfig.token.substring(0, 10) + '...' : 'MISSING',
-    });
 
     const widget = new window.PPaymentButtonBox(widgetConfig);
 
