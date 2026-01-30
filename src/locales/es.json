@@ -33,14 +33,14 @@
     },
     "experience": {
       "kriptos": {
-        "title": "Desarrollador Frontend y Analista de Ciberseguridad",
+        "title": "Desarrollador Frontend y Analista de Ciberseguridad (Contrato)",
         "company": "Kriptos Inc., Miami, FL (Remoto)",
         "dates": "Oct 2024 - Presente",
         "bullets": [
           "Lideré el desarrollo frontend del módulo Update Manager, entregando 219 commits y más de 37,000 líneas de código TypeScript/React; actualmente contribuidor principal del repositorio de la plataforma",
           "Apoyé la certificación exitosa SOC 2 Tipo II gestionando cumplimiento de seguridad a través del dashboard de Vanta y coordinando parches de vulnerabilidades en más de 220 repositorios",
           "Integré pruebas de seguridad automatizadas en pipelines CI/CD: SonarCloud para calidad de código, Amazon Inspector para escaneo de contenedores, y Hexstrike para pentesting automatizado",
-          "Construí orquestador de instalaciones que permite a equipos de TI empresariales en bancos y multinacionales desplegar y monitorear software en sistemas distribuidos",
+          "Desarrollé el frontend del Update Manager, permitiendo a clientes empresariales desplegar y monitorear agentes Windows de Kriptos en su infraestructura mediante backend con Ansible",
           "Reduje el tiempo de build del entorno de desarrollo a la mitad optimizando el pipeline CI/CD para ejecutar tests solo en archivos modificados; introduje capa de mocking MSW para acelerar la colaboración frontend-backend"
         ]
       },
@@ -75,7 +75,7 @@
         ]
       },
       "elliff": {
-        "title": "Contador",
+        "title": "Contador (Contrato)",
         "company": "Elliff CPA, Dallas, TX (Remoto)",
         "dates": "Oct 2022 - Oct 2023",
         "bullets": [
