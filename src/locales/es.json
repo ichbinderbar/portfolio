@@ -3,36 +3,40 @@
     "back": "Volver",
     "savePdf": "Guardar PDF",
     "name": "JUAN IDROVO",
-    "contact": "idrovel@gmail.com | +593 983315783 | linkedin.com/in/juanidrovo | github.com/ichbinderbar | juanidrovo.com",
+    "contact": "idrovel@gmail.com | +593 983315783 | Cuenca, Ecuador (Remoto/Reubicación disponible)",
+    "links": "linkedin.com/in/juanidrovo | github.com/ichbinderbar | juanidrovo.com",
     "sections": {
       "summary": "Resumen Profesional",
-      "skills": "Habilidades Técnicas",
+      "skills": "Competencias Técnicas",
       "experience": "Experiencia Profesional",
       "education": "Educación",
-      "certifications": "Certificaciones",
-      "languages": "Idiomas"
+      "certifications": "Certificaciones"
     },
-    "summary": "Desarrollador Full Stack y abogado titulado construyendo software seguro en la intersección del derecho y la tecnología. En Kriptos Inc., apoyé la certificación SOC 2 Tipo II mediante monitoreo de controles y triaje de vulnerabilidades, para luego entregar más de 37,000 líneas de código desarrollando el frontend del módulo Update Manager. Fundador de Markatzy, plataforma de protección de marcas impulsada por IA activa y sirviendo a firmas de abogados de PI en Ecuador. Certificado AWS con estudios de posgrado en ciberseguridad (UT Austin) y diplomas en ingeniería de software (BrainStation) y contabilidad financiera (HBS Online).",
+    "summary": "Tecnólogo enfocado en producto con experiencia legal construyendo soluciones de cumplimiento y legal-tech. Fundador de Markatzy, plataforma de monitoreo de marcas impulsada por IA que ahora sirve a firmas de abogados de PI en Ecuador. Identifiqué el problema durante la práctica legal de PI, luego construí y lancé software en producción que automatiza lo que de otra forma requeriría más de 170,000 comparaciones manuales mensuales para una firma mediana. En Kriptos Inc., conecté cumplimiento de seguridad e ingeniería: gestioné la certificación SOC 2 Tipo II gestionando vulnerabilidades en más de 220 repositorios, para luego entregar más de 37,000 líneas de TypeScript/React para plataforma empresarial de despliegue de agentes. Abogado titulado (Ecuador) con formación de posgrado en ciberseguridad (UT Austin McCombs) y certificación AWS. Bilingüe español/inglés, aprendiendo alemán.",
     "skills": {
-      "security": {
-        "label": "Seguridad",
-        "value": "Cumplimiento SOC 2 Tipo II, Evaluación de Vulnerabilidades, AWS Security Hub, Amazon Inspector, Vanta, Strike, Hexstrike, Trivy, SonarCloud, Clerk"
+      "languages": {
+        "label": "Lenguajes y Frameworks",
+        "value": "TypeScript, JavaScript, Python | React, Next.js, Node.js"
       },
-      "development": {
-        "label": "Desarrollo",
-        "value": "TypeScript, JavaScript, Python, React, Next.js, Node.js, tRPC, Prisma, Express, Zod, Tailwind CSS"
+      "infrastructure": {
+        "label": "Infraestructura",
+        "value": "AWS (S3, EC2, Amplify), Docker, PostgreSQL, Redis | Automatización CI/CD"
       },
-      "cloud": {
-        "label": "Cloud e Infraestructura",
-        "value": "AWS (S3, EC2, Amplify, Inspector), Docker, Pipelines CI/CD, Git, PostgreSQL, Redis, Upstash"
+      "compliance": {
+        "label": "Cumplimiento y Seguridad",
+        "value": "SOC 2 Tipo II, Vanta, Strike, SonarCloud | Evaluación y remediación de vulnerabilidades"
       },
-      "aiml": {
-        "label": "IA/ML",
-        "value": "RAG (Retrieval-Augmented Generation), OpenAI API, pgvector, Búsqueda Semántica, Coincidencia Fonética"
+      "aiLegalTech": {
+        "label": "IA/Legal-Tech",
+        "value": "Sistemas RAG, OpenAI API, pgvector | Coincidencia semántica/fonética (Double Metaphone) | Integración con base de datos de PI del SENADI"
       },
-      "tools": {
-        "label": "Herramientas",
-        "value": "ESLint, Prettier, Vitest, pg-boss, Bun, Figma, Ansible"
+      "productStack": {
+        "label": "Stack de Producto",
+        "value": "tRPC, Prisma, Express, Zod, Tailwind CSS | Hexstrike, Amazon Inspector"
+      },
+      "spokenLanguages": {
+        "label": "Idiomas",
+        "value": "Español (nativo), Inglés (fluido - TOEFL 104/120), Alemán (aprendiendo - A2)"
       }
     },
     "experience": {
@@ -41,50 +45,29 @@
         "company": "Kriptos Inc., Miami, FL (Remoto)",
         "dates": "Oct 2024 - Presente",
         "bullets": [
-          "Entregué código frontend para el módulo Update Manager (219 commits, más de 37,000 líneas de TypeScript/React), permitiendo a clientes empresariales desplegar y monitorear agentes Windows de Kriptos en su infraestructura; actualmente contribuidor principal del repositorio de la plataforma",
-          "Apoyé la certificación exitosa SOC 2 Tipo II gestionando cumplimiento de seguridad a través del dashboard de Vanta y coordinando parches de vulnerabilidades en más de 220 repositorios",
-          "Integré pruebas de seguridad automatizadas en pipelines CI/CD: SonarCloud para calidad de código, Amazon Inspector para escaneo de contenedores, y Hexstrike para pentesting automatizado",
-          "Reduje el tiempo de build del entorno de desarrollo a la mitad optimizando el pipeline CI/CD para ejecutar tests solo en archivos modificados; introduje capa de mocking MSW para acelerar la colaboración frontend-backend"
+          "Construí el frontend de la plataforma Update Manager permitiendo a clientes empresariales (incluyendo bancos latinoamericanos) desplegar y monitorear agentes de seguridad Windows en miles de endpoints. Entregué más de 37,000 líneas de TypeScript/React en producción (contribuidor principal del repositorio core) implementando monitoreo de estado de agentes en tiempo real, flujos de despliegue automatizado y controles de acceso basados en roles.",
+          "Gestioné remediación de vulnerabilidades para certificación SOC 2 Tipo II, triando hallazgos de escaneos automatizados (SonarCloud, Amazon Inspector, Hexstrike) en más de 220 repositorios y coordinando resolución con equipos de desarrollo. Implementé correcciones de seguridad en repositorio frontend principal (flujos de autenticación, actualizaciones de dependencias, validación de entrada) mientras mantenía cronograma de entrega de funcionalidades.",
+          "Reduje el tiempo de ejecución del pre-commit hook en 50% configurando ejecución selectiva de tests solo en archivos modificados (suite completa de tests aún corre en merge a main). Refiné configuración existente de Mock Service Worker (MSW) en capa de backend mockeado coherente con definiciones de esquema, permitiendo que el trabajo frontend avanzara mientras las APIs de backend se desarrollaban y proporcionando contratos de API precisos para iteración más rápida."
         ]
       },
       "markatzy": {
         "title": "Fundador y Desarrollador Principal",
-        "company": "Markatzy - Plataforma de Protección de Marcas",
-        "dates": "2022 - Presente",
+        "company": "Markatzy - Plataforma de Monitoreo de Marcas con IA",
+        "dates": "Ene 2023 - Presente (Tiempo completo 2023-2024, medio tiempo mientras en Kriptos 2024-Presente)",
         "bullets": [
-          "Comenzó como scripts personalizados para gestionar el monitoreo de marcas tras la salida repentina del director; reconstruido como plataforma web completa durante año sabático (2023-2024)",
-          "Diseñé y desarrollé aplicación web full-stack para monitoreo de marcas y detección de conflictos, activa y utilizada por firmas de abogados de PI en Ecuador",
-          "Desarrollé motor de detección de similitudes impulsado por IA que analiza conflictos en cuatro dimensiones: semántica, tipográfica, fonética y visual usando bases de datos vectoriales",
-          "Para una firma mediana con 100 marcas, automatiza más de 170,000 comparaciones mensuales (contra ~1,700 nuevas publicaciones) usando procesamiento paralelo en lotes y filtrado con IA—una reducción del 99%+ comparado con el análisis manual, que es virtualmente imposible de realizar exhaustivamente"
+          "Fundé plataforma SaaS resolviendo el problema de detección de conflictos de marcas identificado durante práctica legal de PI. Ahora sirviendo a firmas de abogados de PI en Ecuador. Para una firma mediana con 100 marcas, la plataforma automatiza más de 170,000 comparaciones mensuales y aplica análisis de factores DuPont para filtrar resultados a porcentajes de un solo dígito, permitiendo a los abogados enfocarse exclusivamente en conflictos genuinos.",
+          "Construí aplicación web full-stack (TypeScript/React/Next.js) con detección de conflictos multi-dimensional impulsada por IA: similitud semántica (embeddings de OpenAI + pgvector HNSW), coincidencia fonética (Double Metaphone + scoring IPA), y análisis tipográfico. Implementé arquitectura de búsqueda de dos niveles logrando latencia end-to-end de 60-100ms sobre cientos de miles de registros en base de datos (Nivel 1 filtrado Metaphone en 1-32ms, Nivel 2 scoring fonético IPA + tipográfico en 57-97ms). Procesamiento paralelo en lotes escala a millones de comparaciones mensuales entre organizaciones.",
+          "Desarrollé pipeline de datos event-driven para ingesta de datos de marcas con procesamiento de jobs en segundo plano. Implementé flujos de validación de datos, deduplicación y enriquecimiento multi-etapa (formas fonéticas IPA, embeddings semánticos, indexación Metaphone) asegurando calidad de datos para precisión en detección de conflictos."
         ]
       },
       "graceNelson": {
-        "title": "Abogado Asociado y Webmaster",
+        "title": "Abogado Asociado y Consultor de Tecnología",
         "company": "Grace Nelson Attorneys at Law, Cuenca, Ecuador",
-        "dates": "Abr 2021 - Oct 2022 (Medio tiempo desde Ene 2022)",
+        "dates": "Abr 2021 - Presente (Tiempo completo Abr 2021 - Oct 2022, Contrato Oct 2022 - Presente)",
         "bullets": [
-          "Gestioné procedimientos migratorios para más de 100 ciudadanos estadounidenses anualmente con tasa de aprobación casi perfecta",
-          "Lideré iniciativa de transformación digital, implementando el primer sistema CRM y automatizando flujos de trabajo internos",
-          "Coordiné más de 50 cierres de contratos de compraventa de bienes raíces; logré 20% de aumento anual en negocios por referidos"
-        ]
-      },
-      "graceNelsonContract": {
-        "title": "Consultor de Tecnología y PI (Contrato)",
-        "company": "Grace Nelson Attorneys at Law",
-        "dates": "Oct 2022 - Presente",
-        "bullets": [
-          "Mantengo sitio web de la firma con soporte multilingüe, procesamiento seguro de pagos e integración de reserva de citas",
-          "Asesoro en asuntos legales de propiedad intelectual y tecnología"
-        ]
-      },
-      "elliff": {
-        "title": "Contador (Contrato)",
-        "company": "Elliff CPA, Dallas, TX (Remoto)",
-        "dates": "Oct 2022 - Oct 2023",
-        "bullets": [
-          "Preparé más de 100 declaraciones de impuestos individuales y corporativas incluyendo Formularios 1040, 1120, 1120S y 1065",
-          "Gestioné comunicaciones con clientes y flujo de trabajo para más de 300 clientes activos",
-          "Redacté manual completo de software UltraTax para optimizar procesos de entrada de datos"
+          "Gestioné procedimientos migratorios para más de 100 ciudadanos estadounidenses anualmente con tasa de aprobación del 98%+",
+          "Lideré la transformación digital de la firma: implementé primer sistema CRM, automaticé procesos de flujo de trabajo, y desarrollé sitio web multilingüe con procesamiento seguro de pagos y reserva de citas",
+          "Coordino transacciones inmobiliarias y asesoro en asuntos legales de propiedad intelectual y tecnología"
         ]
       },
       "imbaip": {
@@ -92,9 +75,9 @@
         "company": "IMBAIP Cia. Ltda., Quito, Ecuador",
         "dates": "Ene 2022 - Oct 2022",
         "bullets": [
-          "Gestioné procesos de registro, modificación y apelación para cientos de marcas",
-          "Dirigí operaciones de la oficina independientemente tras la salida repentina del director del departamento",
-          "Redacté acciones legales y gestioné archivos digitales y físicos para casos de PI"
+          "Gestioné procesos de registro, oposición y apelación para más de 200 solicitudes de marca ante el SENADI (oficina de PI de Ecuador)",
+          "Construí scripts personalizados para complementar herramientas inadecuadas de la firma para flujos de monitoreo de marcas, automatizando comparación de ~1,700 publicaciones semanales contra portafolios de clientes. La experiencia con estas limitaciones llevó a fundar Markatzy.",
+          "Redacté acciones legales y mantuve sistema integral de gestión de casos para administración de portafolios de PI"
         ]
       }
     },
@@ -103,31 +86,24 @@
         "degree": "Diplomado de Posgrado en Ciberseguridad",
         "school": "University of Texas at Austin - McCombs School of Business",
         "date": "2025",
-        "details": "GPA: 4.13 | Cursos: Seguridad de Redes, Ciberataques, Controles de Seguridad, Gobernanza Riesgo y Cumplimiento (GRC)"
+        "details": "GPA: 4.13/4.0 | Enfoque: Seguridad de Redes, Ciberataques, Controles de Seguridad, Gobernanza Riesgo y Cumplimiento (GRC)"
       },
       "brainstation": {
         "degree": "Diploma en Ingeniería de Software",
         "school": "BrainStation (Konrad Group), Londres, UK",
         "date": "Oct 2024",
-        "details": "Bootcamp intensivo | Ganador del hackathon en asociación con Lloyds Bank"
+        "details": "Ganador del hackathon en asociación con Lloyds Banking Group (proyecto de equipo construyendo prototipo de detección de fraude fintech). Programa intensivo de 12 semanas cubriendo desarrollo full-stack, infraestructura cloud y metodologías ágiles."
       },
       "usfq": {
-        "degree": "Abogado",
+        "degree": "Abogado (Título de Derecho, equivalente a J.D.)",
         "school": "Universidad San Francisco de Quito, Ecuador",
         "date": "Abr 2021",
-        "details": "260 Créditos | Tesis: Monedas Digitales de Bancos Centrales (CBDCs) en economías dolarizadas"
+        "details": "260 créditos | Tesis: \"Monedas Digitales de Bancos Centrales (CBDCs) en Economías Dolarizadas\" - analizó desafíos de implementación para adopción de moneda digital en el sistema monetario dolarizado de Ecuador. Cursos relevantes: Derecho de Propiedad Intelectual, Derecho Tecnológico, Derecho Comercial Internacional."
       }
     },
     "certifications": {
-      "aws": "AWS Certified Cloud Practitioner - Amazon Web Services, Sep 2025",
-      "hbs": "Certificado Profesional en Contabilidad Financiera - Harvard Business School Online, Jul 2022",
-      "bsCyber": "Certificación en Ciberseguridad - BrainStation, Ene 2025"
-    },
-    "languagesText": {
-      "spanish": "Español",
-      "spValue": "Nativo",
-      "english": "Inglés",
-      "enValue": "Competencia Profesional (TOEFL iBT 104/120, CEFR C1)"
+      "aws": "AWS Certified Cloud Practitioner | Amazon Web Services | Sep 2025",
+      "bsCyber": "Certificado Profesional en Ciberseguridad | BrainStation (Konrad Group) | Ene 2025"
     }
   },
   "hero": {
