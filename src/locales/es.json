@@ -3,7 +3,7 @@
     "back": "Volver",
     "savePdf": "Guardar PDF",
     "name": "JUAN IDROVO",
-    "contact": "idrovel@gmail.com | +593 983315783 | linkedin.com/in/juanidrovo | github.com/ichbinderbar | Cuenca, Ecuador",
+    "contact": "idrovel@gmail.com | +593 983315783 | linkedin.com/in/juanidrovo | github.com/ichbinderbar | juanidrovo.com | Cuenca, Ecuador",
     "sections": {
       "summary": "Resumen Profesional",
       "skills": "Habilidades Técnicas",
@@ -52,7 +52,7 @@
           "Comenzó como scripts personalizados para gestionar el monitoreo de marcas tras la salida repentina del director; reconstruido como plataforma web completa durante año sabático (2023-2024)",
           "Diseñé y desarrollé aplicación web full-stack para monitoreo de marcas y detección de conflictos, activa y utilizada por firmas de abogados de PI en Ecuador",
           "Desarrollé motor de detección de similitudes impulsado por IA que analiza conflictos en cuatro dimensiones: semántica, tipográfica, fonética y visual usando bases de datos vectoriales",
-          "Construido con React, Next.js, TypeScript y PostgreSQL; redujo el tiempo de análisis de conflictos de marcas en 80% comparado con métodos tradicionales"
+          "Para una firma mediana con 100 marcas, automatiza más de 170,000 comparaciones mensuales (contra ~1,700 nuevas publicaciones) usando procesamiento paralelo en lotes y filtrado con IA—una reducción del 99%+ comparado con el análisis manual, que es virtualmente imposible de realizar exhaustivamente"
         ]
       },
       "graceNelson": {
@@ -89,7 +89,7 @@
         "company": "IMBAIP Cia. Ltda., Quito, Ecuador",
         "dates": "Ene 2022 - Oct 2022",
         "bullets": [
-          "Gestioné procesos de registro, modificación y apelación de marcas para cientos de clientes",
+          "Gestioné procesos de registro, modificación y apelación para cientos de marcas",
           "Dirigí operaciones de la oficina independientemente tras la salida repentina del director del departamento",
           "Redacté acciones legales y gestioné archivos digitales y físicos para casos de PI"
         ]
@@ -99,7 +99,7 @@
       "utaustin": {
         "degree": "Diplomado de Posgrado en Ciberseguridad",
         "school": "University of Texas at Austin - McCombs School of Business",
-        "date": "Sep 2025",
+        "date": "2025",
         "details": "GPA: 4.13 | Cursos: Seguridad de Redes, Ciberataques, Controles de Seguridad, Gobernanza Riesgo y Cumplimiento (GRC)"
       },
       "brainstation": {
@@ -112,11 +112,11 @@
         "degree": "Abogado",
         "school": "Universidad San Francisco de Quito, Ecuador",
         "date": "Abr 2021",
-        "details": "GPA: 3.12 | 260 Créditos | Tesis: Monedas Digitales de Bancos Centrales (CBDCs) en economías dolarizadas"
+        "details": "260 Créditos | Tesis: Monedas Digitales de Bancos Centrales (CBDCs) en economías dolarizadas"
       }
     },
     "certifications": {
-      "aws": "AWS Certified Cloud Practitioner - Amazon Web Services",
+      "aws": "AWS Certified Cloud Practitioner - Amazon Web Services, Sep 2025",
       "hbs": "Certificado Profesional en Contabilidad Financiera - Harvard Business School Online, Jul 2022",
       "bsCyber": "Certificación en Ciberseguridad - BrainStation, Ene 2025"
     },

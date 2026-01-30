@@ -3,7 +3,7 @@
     "back": "Back",
     "savePdf": "Save as PDF",
     "name": "JUAN IDROVO",
-    "contact": "idrovel@gmail.com | +593 983315783 | linkedin.com/in/juanidrovo | github.com/ichbinderbar | Cuenca, Ecuador",
+    "contact": "idrovel@gmail.com | +593 983315783 | linkedin.com/in/juanidrovo | github.com/ichbinderbar | juanidrovo.com | Cuenca, Ecuador",
     "sections": {
       "summary": "Professional Summary",
       "skills": "Technical Skills",
@@ -52,7 +52,7 @@
           "Started as custom scripts to manage trademark monitoring after director's sudden departure; rebuilt as full web platform during career sabbatical (2023-2024)",
           "Designed and developed full-stack web application for trademark monitoring and conflict detection, now live and actively used by IP law firms in Ecuador",
           "Engineered AI-powered similarity detection engine analyzing conflicts across four dimensions: semantic, typographic, phonetic, and visual using vector databases",
-          "Built with React, Next.js, TypeScript, and PostgreSQL; reduced trademark conflict analysis time by 80% compared to traditional methods"
+          "For a mid-sized firm with 100 brands, automates 170,000+ monthly comparisons (against ~1,700 new publications) using parallel batch processing and AI filtering—a 99%+ reduction compared to manual analysis, which is virtually impossible to perform thoroughly"
         ]
       },
       "graceNelson": {
@@ -89,7 +89,7 @@
         "company": "IMBAIP Cia. Ltda., Quito, Ecuador",
         "dates": "Jan 2022 - Oct 2022",
         "bullets": [
-          "Managed trademark registration, modification, and appeal processes for hundreds of clients",
+          "Managed trademark registration, modification, and appeal processes for hundreds of trademarks",
           "Directed office operations independently after sudden departure of department director",
           "Drafted legal actions and managed digital and physical archives for IP cases"
         ]
@@ -99,7 +99,7 @@
       "utaustin": {
         "degree": "Postgraduate Diploma in Cybersecurity",
         "school": "University of Texas at Austin - McCombs School of Business",
-        "date": "Sep 2025",
+        "date": "2025",
         "details": "GPA: 4.13 | Courses: Network Security, Cyber Attacks, Security Controls, Governance Risk and Compliance (GRC)"
       },
       "brainstation": {
@@ -112,11 +112,11 @@
         "degree": "Abogado (Law Degree)",
         "school": "Universidad San Francisco de Quito, Ecuador",
         "date": "Apr 2021",
-        "details": "GPA: 3.12 | 260 Credits | Thesis: Central Bank Digital Currencies (CBDCs) in dollarized economies"
+        "details": "260 Credits | Thesis: Central Bank Digital Currencies (CBDCs) in dollarized economies"
       }
     },
     "certifications": {
-      "aws": "AWS Certified Cloud Practitioner - Amazon Web Services",
+      "aws": "AWS Certified Cloud Practitioner - Amazon Web Services, Sep 2025",
       "hbs": "Financial Accounting Professional Certificate - Harvard Business School Online, Jul 2022",
       "bsCyber": "Cybersecurity Certification - BrainStation, Jan 2025"
     },
