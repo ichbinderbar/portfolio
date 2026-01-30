@@ -159,7 +159,7 @@
       "description": "AI-powered trademark protection platform with real-time, multi-dimensional conflict detection. Analyzes brands across phonetic (IPA-based, cross-language), typographic, semantic (vector embeddings), and visual dimensions. Searches over half a million trademarks in under 100ms with enterprise-grade security (rate limiting, row-level data isolation). A-rated in SonarQube for maintainability, reliability, and security. Built with RAG architecture (Retrieval-Augmented Generation), Next.js 15, type-safe APIs (tRPC), vector databases (pgvector), and OpenAI for intelligent conflict analysis."
     },
     "updateManager": {
-      "title": "Update Manager",
+      "title": "Update Manager Enterprise Tool",
       "description": "Windows agent installation orchestrator built for Kriptos Inc. Enables IT departments to securely deploy and manage software across thousands of client computers at banks and multinationals. Delivered frontend code with 219 commits and 37,000+ lines of code.",
       "cta": "See Kriptos"
     },

@@ -159,7 +159,7 @@
       "description": "Plataforma de protección de marcas impulsada por IA con detección de conflictos multidimensional en tiempo real. Analiza marcas en dimensiones fonética (basada en IPA, multilingüe), tipográfica, semántica (embeddings vectoriales) y visual. Busca en un registro de más de medio millón de marcas en menos de 100ms con seguridad de nivel empresarial (rate limiting, aislamiento de datos por organización). Calificación A en SonarQube para mantenibilidad, confiabilidad y seguridad. Construida con arquitectura RAG (Retrieval-Augmented Generation), Next.js 15, APIs con tipado seguro (tRPC), bases de datos vectoriales (pgvector), y OpenAI para análisis inteligente de conflictos."
     },
     "updateManager": {
-      "title": "Update Manager",
+      "title": "Update Manager Herramienta Empresarial",
       "description": "Orquestador de instalación de agentes Windows construido para Kriptos Inc. Permite a departamentos de TI desplegar y gestionar software de forma segura en miles de computadoras cliente en bancos y multinacionales. Entregué código frontend con 219 commits y más de 37,000 líneas de código.",
       "cta": "Ver Kriptos"
     },
