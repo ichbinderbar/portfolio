@@ -16,19 +16,23 @@
     "skills": {
       "security": {
         "label": "Seguridad",
-        "value": "Cumplimiento SOC 2 Tipo II, Evaluación de Vulnerabilidades, AWS Security Hub, Amazon Inspector, Vanta, Pruebas de Seguridad Automatizadas, Integración de Seguridad CI/CD, SonarCloud"
+        "value": "Cumplimiento SOC 2 Tipo II, Evaluación de Vulnerabilidades, AWS Security Hub, Amazon Inspector, Vanta, Strike, Hexstrike, Trivy, SonarCloud, Clerk"
       },
       "development": {
         "label": "Desarrollo",
-        "value": "JavaScript, TypeScript, Python, React, Next.js, Node.js, Express, REST APIs, Tailwind CSS, HTML, CSS"
+        "value": "TypeScript, JavaScript, Python, React, Next.js, Node.js, tRPC, Prisma, Express, Zod, Tailwind CSS"
       },
       "cloud": {
         "label": "Cloud e Infraestructura",
-        "value": "Amazon Web Services (AWS), EC2, Amplify, Docker, Pipelines CI/CD, Git, PostgreSQL, MySQL, Redis"
+        "value": "AWS (S3, EC2, Amplify, Inspector), Docker, Pipelines CI/CD, Git, PostgreSQL, Redis, Upstash"
+      },
+      "aiml": {
+        "label": "IA/ML",
+        "value": "OpenAI API, pgvector, Búsqueda Semántica, Coincidencia Fonética"
       },
       "tools": {
         "label": "Herramientas",
-        "value": "ESLint, Prettier, Husky, Vitest, Testing Library, Storybook, Figma, Ansible"
+        "value": "ESLint, Prettier, Vitest, pg-boss, Bun, Figma, Ansible"
       }
     },
     "experience": {

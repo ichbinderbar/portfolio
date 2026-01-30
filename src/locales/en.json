@@ -16,19 +16,23 @@
     "skills": {
       "security": {
         "label": "Security",
-        "value": "SOC 2 Type II Compliance, Vulnerability Assessment, AWS Security Hub, Amazon Inspector, Vanta, Automated Security Testing, CI/CD Security Integration, SonarCloud"
+        "value": "SOC 2 Type II Compliance, Vulnerability Assessment, AWS Security Hub, Amazon Inspector, Vanta, Strike, Hexstrike, Trivy, SonarCloud, Clerk"
       },
       "development": {
         "label": "Development",
-        "value": "JavaScript, TypeScript, Python, React, Next.js, Node.js, Express, REST APIs, Tailwind CSS, HTML, CSS"
+        "value": "TypeScript, JavaScript, Python, React, Next.js, Node.js, tRPC, Prisma, Express, Zod, Tailwind CSS"
       },
       "cloud": {
         "label": "Cloud & Infrastructure",
-        "value": "Amazon Web Services (AWS), EC2, Amplify, Docker, CI/CD Pipelines, Git, PostgreSQL, MySQL, Redis"
+        "value": "AWS (S3, EC2, Amplify, Inspector), Docker, CI/CD Pipelines, Git, PostgreSQL, Redis, Upstash"
+      },
+      "aiml": {
+        "label": "AI/ML",
+        "value": "OpenAI API, pgvector, Semantic Search, Phonetic Matching"
       },
       "tools": {
         "label": "Tools",
-        "value": "ESLint, Prettier, Husky, Vitest, Testing Library, Storybook, Figma, Ansible"
+        "value": "ESLint, Prettier, Vitest, pg-boss, Bun, Figma, Ansible"
       }
     },
     "experience": {
@@ -61,7 +65,7 @@
         "bullets": [
           "Managed immigration procedures for 100+ U.S. nationals annually with near-perfect approval rate",
           "Led digital transformation initiative, implementing first CRM system and automating internal workflows",
-          "Coordinated 50+ real estate purchase and sale agreement closings; achieved 20% annual increase in referral business"
+          "Coordinated 50+ real estate purchase and sale agreement closings"
         ]
       },
       "graceNelsonContract": {

@@ -103,7 +103,6 @@ Designed and developed a comprehensive web application for trademark monitoring 
 
 **Legal Practice - Real Estate & Relocation:**
 - Provided comprehensive relocation services, including brokerage and real estate support
-- 20% annual increase in referral business
 - Coordinated over 50 purchase and sale agreement closings
 
 **Legal Practice - Estate Planning:**
@@ -241,19 +240,19 @@ First year of university in engineering before switching to law. Coursework incl
 ## Technical Skills
 
 ### Security
-Automated Security Testing (Strike, Hexstrike), SOC 2 Compliance, Vulnerability Assessment & Triage, Ansible Security, AWS Security Hub, Amazon Inspector, Vanta
+SOC 2 Type II Compliance, Vulnerability Assessment & Triage, AWS Security Hub, Amazon Inspector, Vanta, Strike, Hexstrike, Trivy, SonarCloud, Clerk
 
 ### Development
-JavaScript/TypeScript, Python, React, Next.js, Node.js, Express, Full-Stack Web Development, REST APIs, Tailwind CSS
+TypeScript, JavaScript, Python, React, Next.js, Node.js, tRPC, Prisma, Express, Zod, Tailwind CSS
 
 ### Cloud & Infrastructure
-AWS (EC2, Amplify), Docker, CI/CD, Git, MySQL
+AWS (S3, EC2, Amplify, Inspector), Docker, CI/CD Pipelines, Git, PostgreSQL, Redis, Upstash
 
 ### AI/ML
-Semantic Search, Phonetic Matching Algorithms, Vector Databases
+OpenAI API, pgvector, Semantic Search, Phonetic Matching
 
 ### Tools & Practices
-ESLint, Prettier, Husky, Vitest, Testing Library, Storybook, SonarCloud
+ESLint, Prettier, Vitest, pg-boss, Bun, Figma, Ansible
 
 ---
 
