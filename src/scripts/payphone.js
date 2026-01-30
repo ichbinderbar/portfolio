@@ -7,6 +7,14 @@ const PAYPHONE_CONFIG = {
   responseUrl: process.env.PAYPHONE_RESPONSE_URL || 'https://juanidrovo.com/payment-confirm.html',
 };
 
+// DEBUG: Log config on load (remove after debugging)
+console.log('[Payphone Debug] Config loaded:', {
+  hasToken: !!PAYPHONE_CONFIG.token,
+  tokenPreview: PAYPHONE_CONFIG.token ? PAYPHONE_CONFIG.token.substring(0, 10) + '...' : 'MISSING',
+  storeId: PAYPHONE_CONFIG.storeId || 'MISSING',
+  responseUrl: PAYPHONE_CONFIG.responseUrl,
+});
+
 const PAYPHONE_CDN = {
   css: 'https://cdn.payphonetodoesposible.com/box/v1.1/payphone-payment-box.css',
   js: 'https://cdn.payphonetodoesposible.com/box/v1.1/payphone-payment-box.js',
@@ -102,7 +110,7 @@ async function initPaymentWidget(amount, reference) {
     sessionStorage.setItem('payphone_token', PAYPHONE_CONFIG.token);
     sessionStorage.setItem('payphone_amount', amount.toString());
 
-    const widget = new window.PPaymentButtonBox({
+    const widgetConfig = {
       token: PAYPHONE_CONFIG.token,
       clientTransactionId: clientTransactionId,
       amount: amountInCents,
@@ -114,7 +122,15 @@ async function initPaymentWidget(amount, reference) {
       reference: sanitizeInput(reference) || 'Portfolio Service Payment',
       responseUrl: PAYPHONE_CONFIG.responseUrl,
       lang: document.documentElement.lang || 'en',
+    };
+
+    // DEBUG: Log widget config before creating (remove after debugging)
+    console.log('[Payphone Debug] Creating widget with config:', {
+      ...widgetConfig,
+      token: widgetConfig.token ? widgetConfig.token.substring(0, 10) + '...' : 'MISSING',
     });
+
+    const widget = new window.PPaymentButtonBox(widgetConfig);
 
     widget.render('pp-button');
 
