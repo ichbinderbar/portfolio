@@ -189,6 +189,18 @@
     "cta": "Let's build something secure—and ship it.",
     "button": "Let's Talk"
   },
+  "payment": {
+    "title": "Quick Payment",
+    "subtitle": "Send a payment for consulting, services, or tips.",
+    "back": "Home",
+    "toggleButton": "Payments",
+    "amountLabel": "Amount (USD)",
+    "referenceLabel": "Reference (optional)",
+    "referencePlaceholder": "e.g., Consulting session, Project payment",
+    "button": "Continue to Payment",
+    "initiated": "Complete your payment below",
+    "note": "Secure payment via Payphone. Accepts Visa, Mastercard, Diners, Discover."
+  },
   "footer": {
     "copyright": "© 2026 Juan Idrovo",
     "blog": "Blog"

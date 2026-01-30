@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Payment Confirmation | Juan Idrovo</title>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <meta name="theme-color" content="#0d9488" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #0d9488 0%, #0f172a 100%);
+        color: #fff;
+        padding: 2rem;
+      }
+      .container {
+        text-align: center;
+        max-width: 500px;
+      }
+      .spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid rgba(255,255,255,0.3);
+        border-top-color: #fff;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 2rem;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        opacity: 0.9;
+        margin-bottom: 0.5rem;
+      }
+      .error {
+        background: rgba(239, 68, 68, 0.2);
+        border: 1px solid #ef4444;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-top: 1rem;
+      }
+      .success {
+        background: rgba(34, 197, 94, 0.2);
+        border: 1px solid #22c55e;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-top: 1rem;
+      }
+      .success h2 {
+        color: #22c55e;
+        margin-bottom: 0.5rem;
+      }
+      .error h2 {
+        color: #ef4444;
+        margin-bottom: 0.5rem;
+      }
+      .btn {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 0.75rem 2rem;
+        background: #fff;
+        color: #0f172a;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: 600;
+        transition: transform 0.2s;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+      .details {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+      #processing, #result {
+        display: none;
+      }
+      #processing.active, #result.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="processing" class="active">
+        <div class="spinner"></div>
+        <h1 id="processing-title">Processing your payment...</h1>
+        <p id="processing-subtitle">Please don't close this window</p>
+      </div>
+
+      <div id="result"></div>
+    </div>
+
+    <script>
+      const PAYPHONE_CONFIRM_URL = 'https://pay.payphonetodoesposible.com/api/button/V2/Confirm';
+
+      // Get URL parameters
+      const params = new URLSearchParams(window.location.search);
+      const paymentId = params.get('id');
+      const clientTransactionId = params.get('clientTransactionId');
+
+      // Get stored token
+      const token = sessionStorage.getItem('payphone_token');
+
+      // Detect language (respect user preference from main site, fallback to browser)
+      const storedLang = localStorage.getItem('i18nextLng');
+      const lang = storedLang || (navigator.language.startsWith('es') ? 'es' : 'en');
+
+      const texts = {
+        en: {
+          processing: 'Processing your payment...',
+          processingSubtitle: "Please don't close this window",
+          successTitle: 'Payment Successful!',
+          successMessage: 'Thank you for your payment.',
+          errorTitle: 'Payment Failed',
+          errorSession: 'Payment session expired. Please try again.',
+          errorParams: 'Invalid payment parameters.',
+          errorGeneric: 'An error occurred processing your payment.',
+          backButton: 'Back to Portfolio',
+          amount: 'Amount',
+          transaction: 'Transaction ID',
+          card: 'Card'
+        },
+        es: {
+          processing: 'Procesando tu pago...',
+          processingSubtitle: 'Por favor no cierres esta ventana',
+          successTitle: 'Pago Exitoso!',
+          successMessage: 'Gracias por tu pago.',
+          errorTitle: 'Pago Fallido',
+          errorSession: 'Sesión de pago expirada. Por favor intenta de nuevo.',
+          errorParams: 'Parámetros de pago inválidos.',
+          errorGeneric: 'Ocurrió un error procesando tu pago.',
+          backButton: 'Volver al Portafolio',
+          amount: 'Monto',
+          transaction: 'ID de Transacción',
+          card: 'Tarjeta'
+        }
+      };
+
+      const t = texts[lang];
+
+      // Update processing text
+      document.getElementById('processing-title').textContent = t.processing;
+      document.getElementById('processing-subtitle').textContent = t.processingSubtitle;
+
+      function showResult(success, title, message, detailsObj = null) {
+        document.getElementById('processing').classList.remove('active');
+        const resultEl = document.getElementById('result');
+        resultEl.classList.add('active');
+
+        // Build DOM safely to prevent XSS
+        const wrapper = document.createElement('div');
+        wrapper.className = success ? 'success' : 'error';
+
+        const h2 = document.createElement('h2');
+        h2.textContent = title;
+        wrapper.appendChild(h2);
+
+        const p = document.createElement('p');
+        p.textContent = message;
+        wrapper.appendChild(p);
+
+        if (detailsObj) {
+          const details = document.createElement('div');
+          details.className = 'details';
+          // Sanitize values before display
+          const sanitize = (val) => String(val).replace(/[<>&"']/g, '');
+          const lines = [
+            `${t.amount}: $${sanitize(detailsObj.amount)}`,
+            `${t.transaction}: ${sanitize(detailsObj.transactionId)}`
+          ];
+          if (detailsObj.lastDigits) {
+            lines.push(`${t.card}: **** ${sanitize(detailsObj.lastDigits)}`);
+          }
+          details.innerHTML = lines.join('<br>');
+          wrapper.appendChild(details);
+        }
+
+        resultEl.appendChild(wrapper);
+
+        const btn = document.createElement('a');
+        btn.href = '/';
+        btn.className = 'btn';
+        btn.textContent = t.backButton;
+        resultEl.appendChild(btn);
+      }
+
+      async function confirmPayment() {
+        // Validate required data
+        if (!token) {
+          showResult(false, t.errorTitle, t.errorSession);
+          return;
+        }
+
+        if (!paymentId || !clientTransactionId) {
+          showResult(false, t.errorTitle, t.errorParams);
+          return;
+        }
+
+        try {
+          const response = await fetch(PAYPHONE_CONFIRM_URL, {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${token}`,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              id: parseInt(paymentId, 10),
+              clientTxId: clientTransactionId,
+            }),
+          });
+
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+
+          const data = await response.json();
+
+          // Clear stored token
+          sessionStorage.removeItem('payphone_token');
+          sessionStorage.removeItem('payphone_amount');
+
+          if (data.transactionStatus === 'Approved' || data.statusCode === 3) {
+            showResult(true, t.successTitle, t.successMessage, {
+              amount: (data.amount / 100).toFixed(2),
+              transactionId: data.transactionId,
+              lastDigits: data.lastDigits
+            });
+          } else {
+            showResult(false, t.errorTitle, data.message || t.errorGeneric);
+          }
+
+        } catch (error) {
+          console.error('Confirm error:', error);
+          showResult(false, t.errorTitle, t.errorGeneric);
+        }
+      }
+
+      // Run confirmation
+      confirmPayment();
+    </script>
+  </body>
+</html>

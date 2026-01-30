@@ -189,6 +189,18 @@
     "cta": "Construyamos algo seguro—y lancémoslo.",
     "button": "Hablemos"
   },
+  "payment": {
+    "title": "Pago Rápido",
+    "subtitle": "Envía un pago por consultoría, servicios o propinas.",
+    "back": "Inicio",
+    "toggleButton": "Pagos",
+    "amountLabel": "Monto (USD)",
+    "referenceLabel": "Referencia (opcional)",
+    "referencePlaceholder": "Ej: Sesión de consultoría, Pago de proyecto",
+    "button": "Continuar al Pago",
+    "initiated": "Completa tu pago abajo",
+    "note": "Pago seguro via Payphone. Acepta Visa, Mastercard, Diners, Discover."
+  },
   "footer": {
     "copyright": "© 2026 Juan Idrovo",
     "blog": "Blog"

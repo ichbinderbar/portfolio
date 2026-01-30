@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Payment | Juan Idrovo</title>
+    <meta name="description" content="Send a payment to Juan Idrovo for consulting, services, or tips." />
+    <meta name="robots" content="noindex" />
+
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/favicon.png" />
+    <meta name="theme-color" content="#0d9488" />
+
+    <link rel="preconnect" href="https://cdn.payphonetodoesposible.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+  </head>
+
+  <body>
+    <a href="/" class="back-btn" title="Back to home">
+      <i class="fa fa-arrow-left"></i>
+      <span data-i18n="payment.back">Home</span>
+    </a>
+
+    <div class="payment-page">
+
+      <main class="payment-page__main">
+        <div class="container">
+          <h1 class="payment-page__title" data-i18n="payment.title">Quick Payment</h1>
+          <p class="payment-page__subtitle" data-i18n="payment.subtitle">
+            Send a payment for consulting, services, or tips.
+          </p>
+
+          <div class="payment-card">
+            <form id="payment-form" class="payment-form">
+              <div id="payment-error" class="payment-error" role="alert" aria-live="polite"></div>
+              <div id="payment-initiated" class="payment-initiated" role="status" aria-live="polite" data-i18n="payment.initiated">
+                Complete your payment below
+              </div>
+
+              <div class="payment-form__group">
+                <label for="payment-amount" class="payment-form__label" data-i18n="payment.amountLabel">Amount (USD)</label>
+                <div class="payment-form__input-wrapper">
+                  <span class="currency-symbol">$</span>
+                  <input
+                    type="number"
+                    id="payment-amount"
+                    class="payment-form__input"
+                    min="1"
+                    max="10000"
+                    step="0.01"
+                    placeholder="50.00"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="payment-form__group">
+                <label for="payment-reference" class="payment-form__label" data-i18n="payment.referenceLabel">Reference (optional)</label>
+                <input
+                  type="text"
+                  id="payment-reference"
+                  class="payment-form__input"
+                  data-i18n-placeholder="payment.referencePlaceholder"
+                  placeholder="e.g., Consulting session, Project payment"
+                  maxlength="100"
+                />
+              </div>
+
+              <button type="submit" class="payment-form__submit" data-i18n="payment.button">
+                Continue to Payment
+              </button>
+            </form>
+
+            <!-- Payphone widget renders here -->
+            <div id="pp-button" aria-label="Payment widget"></div>
+
+            <p class="payment-note" data-i18n="payment.note">
+              Secure payment via Payphone. Accepts Visa, Mastercard, Diners, Discover.
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="payment-page__footer">
+        <p data-i18n="footer.copyright">© 2026 Juan Idrovo</p>
+      </footer>
+    </div>
+
+    <script type="module" src="scripts/payments.js"></script>
+  </body>
+</html>

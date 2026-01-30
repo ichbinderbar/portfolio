@@ -2,3 +2,6 @@ node_modules/
 dist/
 .parcel-cache
 .vercel
+.env
+.env.local
+.env.*.local

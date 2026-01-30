@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "private": "true",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
-  "source": "src/index.html",
+  "source": ["src/index.html", "src/payments.html", "src/payment-confirm.html"],
   "scripts": {
     "start": "parcel",
     "start:blog": "npx @11ty/eleventy --serve --port=8081",
