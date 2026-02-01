@@ -9,7 +9,7 @@ tags:
   - engineering
 ---
 
-I've spent years working at the intersection of law and technology—building compliance systems, advising on data regulations, and translating between engineers and attorneys. The miscommunication I see between these two groups isn't about one side being difficult. It's about two different ways of modeling the world colliding in the same meeting room.
+The miscommunication I see between these two groups isn't about one side being difficult. It's about two different ways of modeling the world colliding in the same meeting room.
 
 Here's what I've learned about where each side goes wrong, and how to fix it.
 
