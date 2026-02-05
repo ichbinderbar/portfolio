@@ -1,6 +1,7 @@
 # robots.txt for juanidrovo.com
 User-agent: *
 Allow: /
+Disallow: /blog/feed.xml
 
 # Sitemap location
 Sitemap: https://juanidrovo.com/sitemap.xml
