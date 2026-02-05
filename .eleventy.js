@@ -1,8 +1,14 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   // RSS Feed plugin
   eleventyConfig.addPlugin(pluginRss);
+
+  // Prevent memory leaks from watching unnecessary directories
+  eleventyConfig.watchIgnores.add("node_modules/**");
+  eleventyConfig.watchIgnores.add(".git/**");
+  eleventyConfig.watchIgnores.add(".parcel-cache/**");
+  eleventyConfig.watchIgnores.add("dist/**");
 
   // Ignore files that Parcel handles
   eleventyConfig.ignores.add("src/index.html");
@@ -22,10 +28,10 @@ module.exports = function(eleventyConfig) {
 
   // Date formatting filter
   eleventyConfig.addFilter("dateFormat", (date) => {
-    return new Date(date).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
+    return new Date(date).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
     });
   });
 
@@ -36,7 +42,7 @@ module.exports = function(eleventyConfig) {
     }
     if (format === "Y-m-d") {
       const d = new Date(value);
-      return d.toISOString().split('T')[0];
+      return d.toISOString().split("T")[0];
     }
     return new Date(value).toISOString();
   });
@@ -51,8 +57,9 @@ module.exports = function(eleventyConfig) {
   });
 
   // Create blog posts collection
-  eleventyConfig.addCollection("posts", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/blog/posts/**/*.md")
+  eleventyConfig.addCollection("posts", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("src/blog/posts/**/*.md")
       .sort((a, b) => b.date - a.date);
   });
 
@@ -61,10 +68,10 @@ module.exports = function(eleventyConfig) {
       input: "src",
       output: "dist",
       includes: "_includes",
-      layouts: "_includes/layouts"
+      layouts: "_includes/layouts",
     },
     templateFormats: ["njk", "md"],
     htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "njk"
+    markdownTemplateEngine: "njk",
   };
 };
