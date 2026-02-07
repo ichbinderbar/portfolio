@@ -23,25 +23,25 @@ The EU sets the standard. The big platforms (AWS, Azure, Vercel) align their inf
 
 ### Why Your Architecture Needs to Be "Brussels-Ready"
 
-When I was building *Markatzy*, I had to make a choice about our RAG (Retrieval-Augmented Generation) pipeline. 
+When I was building *Markatzy* — an AI-powered trademark monitoring platform for the Ecuadorian market — I hit this wall early.
 
-The easy path? Dump everything into a vector database and let the LLM sort it out. 
-The compliant path? Data tagging at the ingestion layer.
+Markatzy sends trademark data to OpenAI's embedding API for semantic similarity scoring and uses AI to generate opposition letters ready for filing with SENADI (Ecuador's IP office). That means I'm the Data Controller, and OpenAI is my Processor. Every trademark name, every portfolio entry that passes through their API is my liability.
 
-If you don't tag data by origin and consent level *before* it hits your embeddings, you cannot comply with the "Right to be Forgotten" (GDPR Art 17) or the AI Act's transparency requirements. 
+The easy path? Send raw trademark data to the API, get a score back, move on.
+The compliant path? Treat every AI integration point as a data boundary.
 
-Trying to retrofit this later is a nightmare. It requires:
-1.  **Re-indexing** your entire vector store.
-2.  **Retraining** or fine-tuning models to remove specific data points (machine unlearning is still hard).
-3.  **Migrating** databases while live.
+In practice, that meant three architectural decisions from day one:
+1.  **AI transparency at the output layer.** Every AI-generated opposition letter carries a disclosure: *"This document was generated with artificial intelligence assistance."* Under the AI Act's transparency requirements (Art. 50), if you generate content that looks like professional legal output, you must disclose it. Retrofitting this after users have already filed undisclosed AI letters with a government agency is not a patch — it's a product recall.
+2.  **Data provenance on ingestion.** Trademark data comes from official gazettes, user portfolios, and third-party sources. Each source has different retention rules and deletion rights. If you don't track provenance at ingestion, you cannot honor a deletion request (GDPR Art. 17) without nuking your entire dataset.
+3.  **Scoped API calls.** Only the minimum necessary data goes to external AI providers. You don't send a user's full portfolio to score one trademark pair. This isn't just good engineering — it's the "data minimization" principle (GDPR Art. 5(1)(c)) applied at the architecture level.
 
 ### The Trade-off: Velocity vs. Viability
 
 Choosing a "Brussels-Ready" architecture means slower initial velocity. 
 
--   **Cost:** You spend more time on schema design.
--   **Complexity:** You need middleware to handle consent propagation.
--   **Friction:** Your "Sign Up" flow has more steps.
+-   **Cost:** You spend more time on schema design and data provenance tracking.
+-   **Complexity:** You need middleware to scope AI provider calls and log data flows.
+-   **Friction:** Every new AI feature requires a compliance review before shipping.
 
 But the alternative is building a product that has a ceiling. If you ever want to sell to a multinational client, get acquired by a global player, or expand beyond your borders, a non-compliant stack is a dealbreaker. 
 
