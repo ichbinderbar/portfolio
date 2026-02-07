@@ -4,7 +4,7 @@ description: "Why I use Gemini 3 Flash as the brain and Claude Code as the hands
 date: 2026-02-07
 author: "Juan José Idrovo"
 tags: ["AI", "Agents", "OpenClaw", "Productivity"]
-layout: layouts/post.njk
+layout: post.njk
 ---
 
 In early 2026, the \"one model for everything\" approach is officially obsolete. To build an effective agentic workflow—one that can be controlled from a phone while performing professional-grade engineering—you need a specialized stack.
