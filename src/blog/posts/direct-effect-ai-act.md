@@ -23,17 +23,17 @@ The EU sets the standard. The big platforms (AWS, Azure, Vercel) align their inf
 
 ### Why Your Architecture Needs to Be "Brussels-Ready"
 
-When I was building *Markatzy* — an AI-powered trademark monitoring platform for the Ecuadorian market — I hit this wall early.
+When building AI-powered compliance tools in LATAM, you often face a critical choice about your RAG (Retrieval-Augmented Generation) pipeline.
 
-Markatzy sends trademark data to OpenAI's embedding API for semantic similarity scoring and uses AI to generate opposition letters ready for filing with SENADI (Ecuador's IP office). That means I'm the Data Controller, and OpenAI is my Processor. Every trademark name, every portfolio entry that passes through their API is my liability.
-
-The easy path? Send raw trademark data to the API, get a score back, move on.
+The easy path? Dump everything into a vector database and let the LLM sort it out. 
 The compliant path? Treat every AI integration point as a data boundary.
 
-In practice, that meant three architectural decisions from day one:
-1.  **AI transparency at the output layer.** Every AI-generated opposition letter carries a disclosure: *"This document was generated with artificial intelligence assistance."* Under the AI Act's transparency requirements (Art. 50), if you generate content that looks like professional legal output, you must disclose it. Retrofitting this after users have already filed undisclosed AI letters with a government agency is not a patch — it's a product recall.
-2.  **Data provenance on ingestion.** Trademark data comes from official gazettes, user portfolios, and third-party sources. Each source has different retention rules and deletion rights. If you don't track provenance at ingestion, you cannot honor a deletion request (GDPR Art. 17) without nuking your entire dataset.
-3.  **Scoped API calls.** Only the minimum necessary data goes to external AI providers. You don't send a user's full portfolio to score one trademark pair. This isn't just good engineering — it's the "data minimization" principle (GDPR Art. 5(1)(c)) applied at the architecture level.
+If you don't tag data by origin and consent level *before* it hits your embeddings, you cannot comply with the "Right to be Forgotten" (GDPR Art 17) or the AI Act's transparency requirements. 
+
+Trying to retrofit this later is a nightmare. It requires:
+1.  **Re-indexing** your entire vector store.
+2.  **Retraining** or fine-tuning models to remove specific data points (machine unlearning is still hard).
+3.  **Migrating** databases while live.
 
 ### The Trade-off: Velocity vs. Viability
 
