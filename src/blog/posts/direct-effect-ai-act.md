@@ -2,9 +2,12 @@
 title: "The Direct Effect of the EU AI Act: Why Local Compliance Isn't Enough"
 description: "Why the 'Brussels Effect' determines your software architecture, even if you only operate in Latin America."
 date: 2026-02-07
-author: "Juan José Idrovo"
-tags: ["AI Regulation", "EU Law", "Compliance", "Product Management"]
-layout: post.njk
+tags:
+  - posts
+  - ai-regulation
+  - eu-law
+  - compliance
+  - product-management
 ---
 
 You launch a feature. It complies with Ecuador's LOPDP. It respects Colombia's Habeas Data. You think you're safe.
@@ -13,7 +16,7 @@ Then you land your first enterprise client—a multinational with headquarters i
 
 This is the **Brussels Effect**. And with the EU AI Act now in force, the stakes just got higher for software architects in Latin America.
 
-### The Myth of Local Isolation
+## The Myth of Local Isolation
 
 Many product teams in LATAM operate under a dangerous assumption: "We don't sell in Europe, so European law doesn't matter."
 
@@ -21,7 +24,7 @@ This ignores a fundamental reality of the global software supply chain. While th
 
 The EU sets the standard. The big platforms (AWS, Azure, Vercel) align their infrastructure to meet it. If you build on their stack, you inherit their compliance posture. But more importantly, if you want to sell to anyone who does business in Europe, you inherit their liability.
 
-### Why Your Architecture Needs to Be "Brussels-Ready"
+## Why Your Architecture Needs to Be "Brussels-Ready"
 
 When building AI-powered compliance tools in LATAM, you often face a critical choice about your RAG (Retrieval-Augmented Generation) pipeline. 
 
@@ -30,7 +33,7 @@ The compliant path? **Metadata filtering at the ingestion layer.**
 
 If you don't architecture for deletion from day one, you are building technical debt that is almost impossible to pay down.
 
-#### The "Right to be Forgotten" Problem
+### The "Right to be Forgotten" Problem
 Under GDPR Art. 17 (and similar provisions in Brazil's LGPD), a user can request deletion. In a traditional relational database (PostgreSQL), this is a simple `DELETE FROM users WHERE id = x`.
 
 In a vector database, it is a nightmare. If you embedded a user's document into a shared index without tagging it with a `user_id` or `tenant_id` in the vector metadata, you cannot find it to delete it. You have to re-index your entire dataset—a process that can cost thousands of dollars in compute for large applications.
@@ -54,7 +57,7 @@ If your product categorizes resumes (HR tech), scores creditworthiness (Fintech)
 
 Retrofitting a "Human-in-the-loop" approval workflow onto a fully automated AI agent is not a UI tweak. It is a backend rewrite.
 
-### The Trade-off: Velocity vs. Viability
+## The Trade-off: Velocity vs. Viability
 
 Choosing a "Brussels-Ready" architecture means slower initial velocity. 
 
@@ -64,7 +67,7 @@ Choosing a "Brussels-Ready" architecture means slower initial velocity.
 
 But the alternative is building a product that has a ceiling. Due diligence teams in 2026 don't care that you complied with local laws. They care that you are a liability risk under the strictest standard.
 
-### Actionable Advice for Technical PMs
+## Actionable Advice for Technical PMs
 
 If you are building in LATAM today, do this audit:
 
