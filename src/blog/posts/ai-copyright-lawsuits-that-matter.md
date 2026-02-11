@@ -141,3 +141,11 @@ That uncertainty is itself a product constraint. You can't wait for the law to s
 The courtroom *is* writing the rulebook. It's just writing it one motion at a time, with no table of contents and no estimated completion date.
 
 If you're building at the intersection of AI and content, that ambiguity isn't a reason to wait. It's a reason to build compliance into the product from day one, because by the time the rules are clear, the companies that didn't will already be defendants.
+
+---
+
+**Keep reading:**
+- [NYT v. OpenAI: The Case That's Quietly Rewriting the Rules for Every AI Product](/blog/nyt-v-openai-ai-product-rules/)
+- [The Direct Effect of the EU AI Act: Why Local Compliance Isn't Enough](/blog/direct-effect-ai-act/)
+
+*Building AI products and need help navigating copyright risk? [Let's talk](https://calendly.com/juanidrovo).*

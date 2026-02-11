@@ -125,3 +125,11 @@ The discovery fights aren't sideshows. They're writing the de facto rules for AI
 If you're building AI products and you're only tracking this case for the fair use ruling, you're missing most of the story. The procedural decisions are the ones that will hit your engineering roadmap first. The fair use opinion, whenever it comes, will confirm or reshape the direction. But by then, the companies that weren't paying attention to the discovery orders will already be scrambling.
 
 The courtroom is writing the rulebook. In this case, it's writing the infrastructure requirements too.
+
+---
+
+**Keep reading:**
+- [The Courtroom is Writing the Rulebook: AI Copyright Lawsuits That Actually Matter](/blog/ai-copyright-lawsuits-that-matter/)
+- [RAG Pipelines and the Right to Be Forgotten: An Engineering Problem Disguised as a Legal One](/blog/rag-pipelines-right-to-be-forgotten/)
+
+*Need help with AI data governance and compliance? [Let's talk](https://calendly.com/juanidrovo).*

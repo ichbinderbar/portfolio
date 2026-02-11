@@ -106,3 +106,11 @@ But it does not demonstrate that your product respects the rights of the people 
 The certificate is a foundation. The GDPR requires the entire building.
 
 If you hold ISO 27001 and assume you're covered, run a gap analysis against the full 99 Articles. You'll likely find that your ISMS addresses the security requirements well, and that the privacy, rights, and governance requirements need dedicated, product-level work that no security framework was designed to provide.
+
+---
+
+**Keep reading:**
+- [How to Prepare for a Compliance Audit in Ecuador (And Why Certification Might Be Worth It)](/blog/ecuador-compliance-audit-guide/)
+- [RAG Pipelines and the Right to Be Forgotten: An Engineering Problem Disguised as a Legal One](/blog/rag-pipelines-right-to-be-forgotten/)
+
+*Need help closing the gap between ISO 27001 and GDPR? [Let's talk](https://calendly.com/juanidrovo).*

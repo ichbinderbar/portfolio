@@ -93,3 +93,11 @@ This inverts the typical RAG build order. Most teams start with the LLM and ask 
 The practical consequence: if you're building RAG for a domain with these five properties (large structured corpus, multi-dimensional similarity, domain expertise requirements, high accuracy demands, and a clear generation gap), invest disproportionately in retrieval. The generation layer is the easier problem. The retrieval layer is what determines whether the system produces defensible output or hallucinated noise.
 
 Trademark monitoring happens to have all five. That's what makes it a natural fit  - not because RAG is a universal solution, but because the domain's structural properties align precisely with what RAG does well.
+
+---
+
+**Keep reading:**
+- [RAG Pipelines and the Right to Be Forgotten: An Engineering Problem Disguised as a Legal One](/blog/rag-pipelines-right-to-be-forgotten/)
+- [The Agentic Architect: Lessons from the OpenClaw Workflow](/blog/the-agentic-architect-openclaw/)
+
+*Want to see trademark monitoring RAG in action? [Check out Markatzy](https://markatzy.com).*

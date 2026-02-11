@@ -76,3 +76,12 @@ If you are building in LATAM today, do this audit:
 3.  **Audit for "High-Risk" Classification:** Read Annex III of the EU AI Act. If your app touches education, employment, credit, or justice, stop "moving fast" and start documenting your models.
 
 Compliance isn't a box you check at the end. It is a system constraint you design around from line one of code.
+
+---
+
+**Keep reading:**
+- [RAG Pipelines and the Right to Be Forgotten: An Engineering Problem Disguised as a Legal One](/blog/rag-pipelines-right-to-be-forgotten/)
+- [Your ISO 27001 Certificate Doesn't Make You GDPR Compliant](/blog/iso-27001-not-gdpr-compliant/)
+- [The Courtroom is Writing the Rulebook: AI Copyright Lawsuits That Actually Matter](/blog/ai-copyright-lawsuits-that-matter/)
+
+*Building AI products for global markets? [Let's talk](https://calendly.com/juanidrovo).*

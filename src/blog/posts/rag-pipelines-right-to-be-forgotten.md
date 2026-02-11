@@ -232,3 +232,12 @@ Regardless of the vector store, three design decisions matter more than the choi
 3. **Design for tenant-level isolation from day one.** Partitions, namespaces, shards, or collections. The mechanism varies by database, but the principle is universal: deletion at the isolation boundary is atomic and fast. Deletion within a shared index is slow, lossy, and hard to verify.
 
 Retrofitting any of these into an existing system is expensive. The schema changes, the data migration, the reindexing. This is load-bearing infrastructure. It needs to be in the foundation, not bolted on after the building is up.
+
+---
+
+**Keep reading:**
+- [Why Trademark Monitoring Is a Natural Fit for RAG](/blog/why-trademark-monitoring-natural-fit-rag/)
+- [The Direct Effect of the EU AI Act: Why Local Compliance Isn't Enough](/blog/direct-effect-ai-act/)
+- [Your ISO 27001 Certificate Doesn't Make You GDPR Compliant](/blog/iso-27001-not-gdpr-compliant/)
+
+*Building RAG pipelines and need help with data protection compliance? [Let's talk](https://calendly.com/juanidrovo).*

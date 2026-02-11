@@ -117,3 +117,11 @@ Most compliance failures aren't failures of intent. Organizations want to be com
 An audit doesn't test whether you're a good company. It tests whether your compliance program has the same rigor as your product development process: version control, documentation, testing, reproducibility.
 
 If you'd be embarrassed to ship your product the way you run your compliance program, you already know what needs fixing.
+
+---
+
+**Keep reading:**
+- [Your ISO 27001 Certificate Doesn't Make You GDPR Compliant](/blog/iso-27001-not-gdpr-compliant/)
+- [What Developers Get Wrong About Legal (And Vice Versa)](/blog/what-developers-lawyers-get-wrong/)
+
+*Preparing for a compliance audit in Ecuador? [Let's talk](https://calendly.com/juanidrovo).*

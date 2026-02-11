@@ -124,3 +124,11 @@ That's how products get built at the intersection of law and engineering. Not by
 But every product worth building lives in that intersection. And the people who can work in it—really work in it, not just wave at it from one side—are the ones shipping things that actually hold up when the auditor calls or the regulator sends a letter.
 
 The checklist crowd and the "just make it work" crowd will always be loud. Build anyway.
+
+---
+
+**Keep reading:**
+- [How to Prepare for a Compliance Audit in Ecuador (And Why Certification Might Be Worth It)](/blog/ecuador-compliance-audit-guide/)
+- [Your ISO 27001 Certificate Doesn't Make You GDPR Compliant](/blog/iso-27001-not-gdpr-compliant/)
+
+*Need help bridging the gap between legal and engineering? [See how I can help](https://juanidrovo.com).*

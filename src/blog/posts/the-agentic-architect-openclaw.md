@@ -40,3 +40,11 @@ The engineers who thrive in this new era are those who care about outcomes. They
 The role of the developer is evolving into that of a "benevolent dictator" for a fleet of agents. You set the direction, you enforce the style, and you ensure the system follows the vision. You're no longer the bricklayer. You're the architect ensuring the building doesn't fall down.
 
 The future of software isn't just about AI writing code. It's about humans designing better systems because they finally have the leverage to do so.
+
+---
+
+**Keep reading:**
+- [What Developers Get Wrong About Legal (And Vice Versa)](/blog/what-developers-lawyers-get-wrong/)
+- [Why Trademark Monitoring Is a Natural Fit for RAG](/blog/why-trademark-monitoring-natural-fit-rag/)
+
+*Building AI-powered products? [Let's talk](https://calendly.com/juanidrovo).*

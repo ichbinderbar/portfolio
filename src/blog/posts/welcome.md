@@ -26,3 +26,10 @@ I've spent years helping businesses navigate the complex world of data security 
 If you're working on similar challenges or just want to chat about compliance, security, or legal tech, [reach out](mailto:idrovel@gmail.com). I'm always happy to connect.
 
 Stay tuned for more posts coming soon.
+
+---
+
+**Keep reading:**
+- [What Developers Get Wrong About Legal (And Vice Versa)](/blog/what-developers-lawyers-get-wrong/)
+
+*Need help with compliance, security, or legal tech? [Let's talk](https://calendly.com/juanidrovo).*
