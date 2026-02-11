@@ -1,6 +1,6 @@
 ---
 title: "SOC 2 Compliance Explained: What It Is, Who Needs It, and How to Get Certified"
-description: SOC 2 is the security standard that enterprise buyers expect before signing contracts. Here's what it covers, how the audit works, what the report contains, and how to get there without wasting time or money.
+description: "SOC 2 is the security standard that enterprise buyers expect before signing contracts. Here's what it covers, how the audit works, what the report contains, and how to get there without wasting time or money."
 date: 2026-02-12
 tags:
   - posts

@@ -1,6 +1,6 @@
 ---
-title: What Developers Get Wrong About Legal (And Vice Versa)
-description: The gap between engineering and legal teams isn't about intelligence—it's about modeling. Here's how both sides can bridge it.
+title: "What Developers Get Wrong About Legal (And Vice Versa)"
+description: "The gap between engineering and legal teams isn't about intelligence—it's about modeling. Here's how both sides can bridge it."
 date: 2026-02-01
 tags:
   - posts
@@ -131,4 +131,4 @@ The checklist crowd and the "just make it work" crowd will always be loud. Build
 - [How to Prepare for a Compliance Audit in Ecuador (And Why Certification Might Be Worth It)](/blog/ecuador-compliance-audit-guide/)
 - [Your ISO 27001 Certificate Doesn't Make You GDPR Compliant](/blog/iso-27001-not-gdpr-compliant/)
 
-*Need help bridging the gap between legal and engineering? [See how I can help](https://juanidrovo.com).*
+*Need help bridging the gap between legal and engineering? [Let's talk](https://calendly.com/juanidrovo).*

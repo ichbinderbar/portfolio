@@ -1,6 +1,6 @@
 ---
-title: Welcome to My Blog
-description: Why I'm starting a blog about compliance, security, and building secure digital solutions.
+title: "Welcome to My Blog"
+description: "Why I'm starting a blog about compliance, security, and building secure digital solutions."
 date: 2026-01-30
 tags:
   - posts
