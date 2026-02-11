@@ -1,6 +1,17 @@
 $fa-font-path: "../node_modules/font-awesome/fonts";
 @import "font-awesome/scss/font-awesome";
 
+// Override FontAwesome font-face to add font-display: swap
+@font-face {
+  font-family: 'FontAwesome';
+  font-display: swap;
+  src: url('#{$fa-font-path}/fontawesome-webfont.woff2?v=#{$fa-version}') format('woff2'),
+    url('#{$fa-font-path}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
+    url('#{$fa-font-path}/fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @import "./sass/vendors/bootstrap.scss";
 
 @import "./sass/abstracts/mixins";

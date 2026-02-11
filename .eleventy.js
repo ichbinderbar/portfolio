@@ -30,6 +30,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "node_modules/font-awesome/css/font-awesome.min.css": "blog/vendor/font-awesome.min.css" });
   eleventyConfig.addPassthroughCopy({ "node_modules/font-awesome/fonts": "blog/fonts" });
 
+  // Pass through self-hosted Montserrat fonts for blog pages
+  eleventyConfig.addPassthroughCopy({ "src/assets/fonts": "assets/fonts" });
+
   // Date formatting filter
   eleventyConfig.addFilter("dateFormat", (date) => {
     return new Date(date).toLocaleDateString("en-US", {
