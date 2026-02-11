@@ -24,6 +24,7 @@ $fa-font-path: "../node_modules/font-awesome/fonts";
 @import "./sass/components/buttons";
 
 @import "./sass/layout/footer";
+@import "./sass/layout/nav-buttons";
 @import "./sass/layout/sections";
 
 @import "./sass/sections/about";
@@ -32,30 +33,3 @@ $fa-font-path: "../node_modules/font-awesome/fonts";
 @import "./sass/sections/payment";
 @import "./sass/sections/projects";
 @import "./sass/sections/faq";
-
-// Language Toggle (positioned button for main site)
-.lang-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-// Payments Toggle (positioned button for main site)
-.payments-toggle {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1000;
-  text-decoration: none;
-  background: $primary-color;
-  border: 2px solid $secondary-color;
-  color: $secondary-color;
-  -webkit-text-fill-color: $secondary-color;
-
-  &:hover {
-    background: $secondary-color;
-    color: $white-color;
-    -webkit-text-fill-color: $white-color;
-  }
-}
