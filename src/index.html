@@ -288,7 +288,7 @@
               "name": "Do I need SOC 2 or ISO 27001?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "It depends on your target market. SOC 2 is the standard buyers expect in the United States—if you're a Latin American company selling SaaS or handling data for US clients, SOC 2 is usually the fastest path to closing deals. ISO 27001 carries more weight in Europe and internationally. Many LATAM companies pursuing both start with SOC 2 for quicker wins, then layer on ISO 27001 for global reach."
+                "text": "SOC 2 is the standard expected by buyers in the United States, while ISO 27001 carries more weight in Europe and internationally. Companies targeting US enterprise clients typically start with SOC 2, then add ISO 27001 for global reach. The choice depends on where your buyers are and which certification they require in procurement."
               }
             },
             {
@@ -296,39 +296,71 @@
               "name": "How long does SOC 2 certification take?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A realistic timeline is 3–6 months for Type I and 6–12 months for Type II, depending on your current security posture. Companies in emerging markets often need extra time to formalize policies and choose the right tooling."
+                "text": "A typical SOC 2 Type I engagement takes 3–6 months, covering policy development, control implementation, and a point-in-time audit. Type II requires an additional observation period of 3–12 months during which controls must operate effectively, making the total timeline 6–12 months from start to report."
               }
             },
             {
               "@type": "Question",
-              "name": "Why hire a lawyer who also builds software?",
+              "name": "What is the difference between SOC 2 Type I and Type II?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most compliance consultants hand you a checklist and leave you to figure out the technical implementation. Most developers build what you ask without understanding the legal implications. A professional at the intersection writes the policies and builds the systems that enforce them—fewer handoffs, less miscommunication, and controls that actually work."
+                "text": "SOC 2 Type I evaluates whether security controls are properly designed at a specific point in time. Type II evaluates whether those same controls operated effectively over a period—typically 3 to 12 months. Enterprise buyers generally require Type II because it demonstrates sustained operational security, not just a one-time snapshot."
               }
             },
             {
               "@type": "Question",
-              "name": "How does AI help with trademark monitoring?",
+              "name": "How much does SOC 2 certification cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Traditional trademark monitoring relies on exact or near-exact text matching, which misses phonetic similarities, semantic overlaps, and visual resemblances. Markatzy uses AI embeddings and phonetic algorithms to detect conflicts across multiple dimensions in under 100ms, automating 170,000+ comparisons monthly for a mid-sized firm."
+                "text": "SOC 2 costs typically range from $20,000 to $100,000+ depending on company size, scope, and readiness. Major cost drivers include compliance automation tooling ($10,000–$30,000/year), auditor fees ($10,000–$50,000), and internal effort for gap remediation. Startups with clean cloud-native infrastructure tend toward the lower end."
               }
             },
             {
               "@type": "Question",
-              "name": "Can a compliance consultant in Latin America handle international certifications?",
+              "name": "Do I still need SOC 2 if I use AWS or Azure?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Absolutely. SOC 2 and ISO 27001 are global frameworks—what matters is understanding the standards, the audit process, and the technical controls. Working from Latin America also means competitive rates and overlap with US business hours, which is a practical advantage for most engagements."
+                "text": "Yes. Cloud providers like AWS and Azure operate under a shared responsibility model. The provider secures the infrastructure, but the customer is responsible for data handling, access controls, application security, and operational procedures. SOC 2 audits evaluate the customer's controls, not the cloud provider's."
               }
             },
             {
               "@type": "Question",
-              "name": "Why are Latin American companies pursuing SOC 2 and ISO 27001?",
+              "name": "Is SOC 2 required by law?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The LATAM SaaS and tech ecosystem is maturing fast. Companies selling to US and European enterprise buyers need SOC 2 reports to close deals. Startups raising international funding face the same pressure from investors. Certifications like SOC 2 and ISO 27001 are becoming table stakes for LATAM companies competing globally."
+                "text": "SOC 2 is not required by any law or regulation. It is a voluntary framework developed by the AICPA (American Institute of Certified Public Accountants). However, it has become a de facto requirement in B2B software sales—enterprise buyers, investors, and procurement teams routinely require a SOC 2 report before signing contracts."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can a startup get SOC 2 without a dedicated security team?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Many startups achieve SOC 2 certification by using compliance automation platforms (such as Vanta, Drata, or Secureframe) that handle evidence collection, policy templates, and continuous monitoring. These tools reduce the need for dedicated security staff. A single engineer or operations lead can typically manage the process with external guidance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does ISO 27001 make you GDPR compliant?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ISO 27001 and GDPR overlap in areas like access control, incident management, and data inventory, but ISO 27001 certification does not make an organization GDPR compliant. GDPR imposes specific obligations around data subject rights, legal bases for processing, cross-border transfers, and supervisory authority reporting that ISO 27001 does not address."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does the EU AI Act affect companies outside Europe?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The EU AI Act applies to any company that places AI systems on the EU market or whose AI outputs are used within the EU, regardless of where the company is headquartered. This extraterritorial reach follows the same model as GDPR. Companies outside Europe selling AI-powered products to EU customers must comply with the Act's risk classification and transparency requirements."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What legal risks should AI products prepare for?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AI products face legal exposure across intellectual property, data privacy, and regulatory compliance. Key risks include copyright claims over training data, liability for AI-generated outputs that infringe existing works, GDPR and data protection violations, and emerging AI-specific regulations like the EU AI Act. Companies should establish clear data provenance, output monitoring, and compliance frameworks early."
               }
             }
           ]
@@ -731,42 +763,70 @@
           <details class="faq-item load-hidden">
             <summary data-i18n="faq.q1">Do I need SOC 2 or ISO 27001?</summary>
             <div class="faq-answer">
-              <p data-i18n="faq.a1">It depends on your target market. SOC 2 is the standard buyers expect in the United States—if you're a Latin American company selling SaaS or handling data for US clients, SOC 2 is usually the fastest path to closing deals. ISO 27001 carries more weight in Europe and internationally. Many LATAM companies pursuing both start with SOC 2 for quicker wins, then layer on ISO 27001 for global reach. I help you assess which certification fits your sales pipeline and timeline.</p>
+              <p data-i18n="faq.a1">It depends on your target market. SOC 2 is what US enterprise buyers expect in procurement—if you're selling SaaS or handling data for US clients, start there. ISO 27001 carries more weight in Europe and internationally. Many companies pursuing both start with SOC 2 for quicker wins, then layer on ISO 27001 for global reach.</p>
             </div>
           </details>
 
           <details class="faq-item load-hidden">
             <summary data-i18n="faq.q2">How long does SOC 2 certification take?</summary>
             <div class="faq-answer">
-              <p data-i18n="faq.a2">A realistic timeline is 3–6 months for Type I and 6–12 months for Type II, depending on your current security posture. Companies in emerging markets often need extra time to formalize policies and choose the right tooling. I've guided organizations through the entire process—from gap analysis and policy drafting to evidence collection and auditor coordination—so you avoid the common delays that push timelines out.</p>
+              <p data-i18n="faq.a2">A realistic timeline is 3–6 months for Type I and 6–12 months for Type II, depending on your current security posture. Type I covers policy design and a point-in-time audit. Type II adds an observation period (3–12 months) where controls must operate effectively. Companies in emerging markets often need extra time to formalize policies and choose tooling.</p>
             </div>
           </details>
 
           <details class="faq-item load-hidden">
-            <summary data-i18n="faq.q3">Why hire a lawyer who also builds software?</summary>
+            <summary data-i18n="faq.q3">What is the difference between SOC 2 Type I and Type II?</summary>
             <div class="faq-answer">
-              <p data-i18n="faq.a3">Most compliance consultants hand you a checklist and leave you to figure out the technical implementation. Most developers build what you ask without understanding the legal implications. I operate at the intersection: I write the policies and I build the systems that enforce them. That means fewer handoffs, less miscommunication, and controls that actually work—not just on paper.</p>
+              <p data-i18n="faq.a3">Type I evaluates whether your security controls are properly designed at a specific point in time. Type II evaluates whether those controls operated effectively over a period—typically 3 to 12 months. Enterprise buyers generally require Type II because it demonstrates sustained operational security, not just a one-time snapshot.</p>
             </div>
           </details>
 
           <details class="faq-item load-hidden">
-            <summary data-i18n="faq.q4">How does AI help with trademark monitoring?</summary>
+            <summary data-i18n="faq.q4">How much does SOC 2 certification cost?</summary>
             <div class="faq-answer">
-              <p data-i18n-html="faq.a4">Traditional trademark monitoring relies on exact or near-exact text matching, which misses phonetic similarities, semantic overlaps, and visual resemblances. I built <a href="https://markatzy.com" target="_blank" rel="noreferrer">Markatzy</a> to solve this—it uses AI embeddings and phonetic algorithms to detect conflicts across multiple dimensions in under 100ms. For a firm with 100 brands, that's 170,000+ comparisons automated every month.</p>
+              <p data-i18n="faq.a4">Costs typically range from $20,000 to $100,000+ depending on company size, scope, and readiness. Major cost drivers include compliance automation tooling ($10,000–$30,000/year), auditor fees ($10,000–$50,000), and internal effort for gap remediation. Startups with clean cloud-native infrastructure tend toward the lower end.</p>
             </div>
           </details>
 
           <details class="faq-item load-hidden">
-            <summary data-i18n="faq.q5">Can a compliance consultant in Latin America handle international certifications?</summary>
+            <summary data-i18n="faq.q5">Do I still need SOC 2 if I use AWS or Azure?</summary>
             <div class="faq-answer">
-              <p data-i18n="faq.a5">Absolutely. SOC 2 and ISO 27001 are global frameworks—what matters is understanding the standards, the audit process, and the technical controls, not where you sit. I've worked with US-based companies on SOC 2 Type II certification and build software used by international clients. Working from Latin America also means competitive rates and overlap with US business hours, which is a practical advantage for most engagements.</p>
+              <p data-i18n="faq.a5">Yes—cloud providers operate under a shared responsibility model. AWS and Azure secure the infrastructure, but you're responsible for data handling, access controls, application security, and operational procedures. A SOC 2 audit evaluates your controls, not your cloud provider's.</p>
             </div>
           </details>
 
           <details class="faq-item load-hidden">
-            <summary data-i18n="faq.q6">Why are Latin American companies pursuing SOC 2 and ISO 27001?</summary>
+            <summary data-i18n="faq.q6">Is SOC 2 required by law?</summary>
             <div class="faq-answer">
-              <p data-i18n="faq.a6">The LATAM SaaS and tech ecosystem is maturing fast. Companies selling to US and European enterprise buyers are hitting the same wall: "Send us your SOC 2 report." Without it, deals stall. Startups raising international funding face the same pressure from investors. Certifications like SOC 2 and ISO 27001 are becoming table stakes for LATAM companies competing globally—and early movers gain a real competitive edge.</p>
+              <p data-i18n="faq.a6">No. SOC 2 is a voluntary framework developed by the AICPA—it's not mandated by any law or regulation. That said, it's become a de facto requirement in B2B software sales. Enterprise buyers, investors, and procurement teams routinely require a SOC 2 report before signing contracts.</p>
+            </div>
+          </details>
+
+          <details class="faq-item load-hidden">
+            <summary data-i18n="faq.q7">Can a startup get SOC 2 without a dedicated security team?</summary>
+            <div class="faq-answer">
+              <p data-i18n="faq.a7">Absolutely. Many startups achieve SOC 2 using compliance automation platforms like Vanta, Drata, or Secureframe that handle evidence collection, policy templates, and continuous monitoring. A single engineer or operations lead can typically manage the process with some external guidance.</p>
+            </div>
+          </details>
+
+          <details class="faq-item load-hidden">
+            <summary data-i18n="faq.q8">Does ISO 27001 make you GDPR compliant?</summary>
+            <div class="faq-answer">
+              <p data-i18n-html="faq.a8">They overlap in areas like access control and incident management, but ISO 27001 alone doesn't cover GDPR's specific requirements—data subject rights, legal bases for processing, cross-border transfers, and supervisory authority reporting are all outside its scope. <a href="/blog/iso-27001-not-gdpr-compliant/" target="_blank">Read more</a></p>
+            </div>
+          </details>
+
+          <details class="faq-item load-hidden">
+            <summary data-i18n="faq.q9">How does the EU AI Act affect companies outside Europe?</summary>
+            <div class="faq-answer">
+              <p data-i18n-html="faq.a9">The EU AI Act applies to any company whose AI systems are placed on the EU market or whose outputs are used within the EU—regardless of where the company is headquartered. This extraterritorial reach follows the GDPR model, meaning companies outside Europe selling AI-powered products to EU customers must comply. <a href="/blog/direct-effect-ai-act/" target="_blank">Read more</a></p>
+            </div>
+          </details>
+
+          <details class="faq-item load-hidden">
+            <summary data-i18n="faq.q10">What legal risks should AI products prepare for?</summary>
+            <div class="faq-answer">
+              <p data-i18n-html="faq.a10">AI products face legal exposure across intellectual property, data privacy, and regulation. Key risks include copyright claims over training data, liability for AI-generated outputs, GDPR violations, and emerging AI-specific laws like the EU AI Act. Establishing clear data provenance and compliance frameworks early is critical. <a href="/blog/ai-copyright-lawsuits-that-matter/" target="_blank">Read more</a></p>
             </div>
           </details>
 
