@@ -48,7 +48,7 @@
       "headline": "{{ title }}",
       "description": "{{ description }}",
       "datePublished": "{{ date | date('Y-m-d') }}",
-      "dateModified": "{{ date | date('Y-m-d') }}",
+      "dateModified": "{{ (lastModified or date) | date('Y-m-d') }}",
       "url": "https://juanidrovo.com{{ page.url }}",
       "author": {
         "@type": "Person",
