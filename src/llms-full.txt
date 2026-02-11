@@ -258,7 +258,7 @@
 A: SOC 2 is the standard expected by buyers in the United States, while ISO 27001 carries more weight in Europe and internationally. Companies targeting US enterprise clients typically start with SOC 2, then add ISO 27001 for global reach. The choice depends on where your buyers are and which certification they require in procurement.
 
 **Q: How long does SOC 2 certification take?**
-A: A typical SOC 2 Type I engagement takes 3–6 months, covering policy development, control implementation, and a point-in-time audit. Type II requires an additional observation period of 3–12 months during which controls must operate effectively, making the total timeline 6–12 months from start to report.
+A: A typical SOC 2 Type I engagement takes 3–6 months, covering policy development, control implementation, and a point-in-time audit. Type II requires an additional observation period of 3–12 months during which controls must operate effectively, making the total timeline 6–12 months from start to report. See: https://juanidrovo.com/blog/how-to-prepare-soc-2-audit/
 
 **Q: What is the difference between SOC 2 Type I and Type II?**
 A: SOC 2 Type I evaluates whether security controls are properly designed at a specific point in time. Type II evaluates whether those same controls operated effectively over a period—typically 3 to 12 months. Enterprise buyers generally require Type II because it demonstrates sustained operational security, not just a one-time snapshot.
@@ -273,7 +273,10 @@ A: Yes. Cloud providers like AWS and Azure operate under a shared responsibility
 A: SOC 2 is not required by any law or regulation. It is a voluntary framework developed by the AICPA (American Institute of Certified Public Accountants). However, it has become a de facto requirement in B2B software sales—enterprise buyers, investors, and procurement teams routinely require a SOC 2 report before signing contracts.
 
 **Q: Can a startup get SOC 2 without a dedicated security team?**
-A: Yes. Many startups achieve SOC 2 certification by using compliance automation platforms (such as Vanta, Drata, or Secureframe) that handle evidence collection, policy templates, and continuous monitoring. These tools reduce the need for dedicated security staff. A single engineer or operations lead can typically manage the process with external guidance.
+A: Yes. Many startups achieve SOC 2 certification by using compliance automation platforms (such as Vanta, Drata, or Secureframe) that handle evidence collection, policy templates, and continuous monitoring. These tools reduce the need for dedicated security staff. A single engineer or operations lead can typically manage the process with external guidance. See: https://juanidrovo.com/blog/soc-2-for-startups/
+
+**Q: What compliance frameworks do SaaS companies need?**
+A: The compliance stack depends on market and vertical. U.S. enterprise sales typically require SOC 2. European markets require ISO 27001. GDPR applies to any company processing EU residents' data. Vertical-specific frameworks include HIPAA (healthcare), PCI DSS (payments), and FedRAMP (U.S. government). Most SaaS companies start with SOC 2, then add ISO 27001 as they expand internationally, pursuing vertical frameworks only when customer requirements demand them. See: https://juanidrovo.com/blog/saas-compliance-stack/
 
 **Q: Does ISO 27001 make you GDPR compliant?**
 A: ISO 27001 and GDPR overlap in areas like access control, incident management, and data inventory, but ISO 27001 certification does not make an organization GDPR compliant. GDPR imposes specific obligations around data subject rights, legal bases for processing, cross-border transfers, and supervisory authority reporting that ISO 27001 does not address. See: https://juanidrovo.com/blog/iso-27001-not-gdpr-compliant/

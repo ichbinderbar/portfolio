@@ -19,74 +19,92 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://juanidrovo.com/blog/posts/welcome/</loc>
+    <loc>https://juanidrovo.com/blog/welcome/</loc>
     <lastmod>2026-01-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://juanidrovo.com/blog/posts/what-developers-lawyers-get-wrong/</loc>
+    <loc>https://juanidrovo.com/blog/what-developers-lawyers-get-wrong/</loc>
     <lastmod>2026-02-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://juanidrovo.com/blog/posts/ai-copyright-lawsuits-that-matter/</loc>
+    <loc>https://juanidrovo.com/blog/ai-copyright-lawsuits-that-matter/</loc>
     <lastmod>2026-02-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://juanidrovo.com/blog/posts/ecuador-compliance-audit-guide/</loc>
+    <loc>https://juanidrovo.com/blog/ecuador-compliance-audit-guide/</loc>
     <lastmod>2026-02-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://juanidrovo.com/blog/posts/nyt-v-openai-ai-product-rules/</loc>
+    <loc>https://juanidrovo.com/blog/nyt-v-openai-ai-product-rules/</loc>
     <lastmod>2026-02-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://juanidrovo.com/blog/posts/iso-27001-not-gdpr-compliant/</loc>
+    <loc>https://juanidrovo.com/blog/iso-27001-not-gdpr-compliant/</loc>
     <lastmod>2026-02-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://juanidrovo.com/blog/posts/direct-effect-ai-act/</loc>
+    <loc>https://juanidrovo.com/blog/direct-effect-ai-act/</loc>
     <lastmod>2026-02-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://juanidrovo.com/blog/posts/the-agentic-architect-openclaw/</loc>
+    <loc>https://juanidrovo.com/blog/the-agentic-architect-openclaw/</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://juanidrovo.com/blog/posts/rag-pipelines-right-to-be-forgotten/</loc>
+    <loc>https://juanidrovo.com/blog/rag-pipelines-right-to-be-forgotten/</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://juanidrovo.com/blog/posts/why-trademark-monitoring-natural-fit-rag/</loc>
+    <loc>https://juanidrovo.com/blog/why-trademark-monitoring-natural-fit-rag/</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://juanidrovo.com/blog/posts/soc-2-vs-iso-27001/</loc>
+    <loc>https://juanidrovo.com/blog/soc-2-vs-iso-27001/</loc>
     <lastmod>2026-02-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://juanidrovo.com/blog/posts/what-is-soc-2-compliance/</loc>
+    <loc>https://juanidrovo.com/blog/what-is-soc-2-compliance/</loc>
     <lastmod>2026-02-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://juanidrovo.com/blog/how-to-prepare-soc-2-audit/</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://juanidrovo.com/blog/soc-2-for-startups/</loc>
+    <lastmod>2026-02-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://juanidrovo.com/blog/saas-compliance-stack/</loc>
+    <lastmod>2026-02-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
