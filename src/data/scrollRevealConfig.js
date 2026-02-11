@@ -58,6 +58,13 @@ export const targetElements = [
     },
   },
   {
+    element: ".faq-item",
+    animation: {
+      delay: 300,
+      origin: "bottom",
+    },
+  },
+  {
     element: ".contact-wrapper",
     animation: {
       delay: 800,

@@ -31,6 +31,11 @@ const updateContent = () => {
     element.textContent = i18next.t(key);
   });
 
+  document.querySelectorAll('[data-i18n-html]').forEach((element) => {
+    const key = element.getAttribute('data-i18n-html');
+    element.innerHTML = i18next.t(key);
+  });
+
   document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
     const key = element.getAttribute('data-i18n-placeholder');
     element.placeholder = i18next.t(key);

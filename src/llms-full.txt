@@ -254,23 +254,23 @@
 
 ## Frequently Asked Questions
 
-**Q: What services does Juan Idrovo offer?**
-A: Compliance consulting (SOC 2, ISO 27001), custom software development, business process automation, data security consulting, and legal tech solutions.
+**Q: Do I need SOC 2 or ISO 27001?**
+A: It depends on your target market. SOC 2 is the standard buyers expect in the United States—if you're a Latin American company selling SaaS or handling data for US clients, SOC 2 is usually the fastest path to closing deals. ISO 27001 carries more weight in Europe and internationally. Many LATAM companies pursuing both start with SOC 2 for quicker wins, then layer on ISO 27001 for global reach.
 
-**Q: What is Juan Idrovo's background?**
-A: Lawyer with cybersecurity postgraduate diploma from UT Austin, software engineering diploma from BrainStation, financial accounting certificate from HBS Online, and AWS certification. Experience in both SOC and development teams.
+**Q: How long does SOC 2 certification take?**
+A: A realistic timeline is 3–6 months for Type I and 6–12 months for Type II, depending on your current security posture. Companies in emerging markets often need extra time to formalize policies and choose the right tooling.
+
+**Q: Why hire a lawyer who also builds software?**
+A: Most compliance consultants hand you a checklist and leave you to figure out the technical implementation. Most developers build what you ask without understanding the legal implications. A professional at the intersection writes the policies and builds the systems that enforce them—fewer handoffs, less miscommunication, and controls that actually work.
+
+**Q: How does AI help with trademark monitoring?**
+A: Traditional trademark monitoring relies on exact or near-exact text matching, which misses phonetic similarities, semantic overlaps, and visual resemblances. Markatzy (https://markatzy.com) uses AI embeddings and phonetic algorithms to detect conflicts across multiple dimensions in under 100ms, automating 170,000+ comparisons monthly for a mid-sized firm.
+
+**Q: Can a compliance consultant in Latin America handle international certifications?**
+A: Absolutely. SOC 2 and ISO 27001 are global frameworks—what matters is understanding the standards, the audit process, and the technical controls. Working from Latin America also means competitive rates and overlap with US business hours, which is a practical advantage for most engagements.
+
+**Q: Why are Latin American companies pursuing SOC 2 and ISO 27001?**
+A: The LATAM SaaS and tech ecosystem is maturing fast. Companies selling to US and European enterprise buyers need SOC 2 reports to close deals. Startups raising international funding face the same pressure from investors. Certifications like SOC 2 and ISO 27001 are becoming table stakes for LATAM companies competing globally.
 
 **Q: How can I book a consultation?**
 A: Schedule a conversation at https://calendly.com/juanidrovo or email idrovel@gmail.com.
-
-**Q: Does Juan Idrovo work with international clients?**
-A: Yes, based in Ecuador but serving clients worldwide with remote-first approach. Fluent in English and Spanish.
-
-**Q: What industries does Juan Idrovo serve?**
-A: Legal, technology/SaaS, financial services, healthcare tech, e-commerce, and professional services.
-
-**Q: Can Juan Idrovo help with SOC 2 certification?**
-A: Yes, with hands-on experience supporting SOC 2 Type II certification at Kriptos Inc., including security control monitoring and vulnerability triage.
-
-**Q: What tech stack does Juan Idrovo use?**
-A: Next.js 15, React, TypeScript, Node.js, tRPC, Prisma, PostgreSQL, AWS, and OpenAI for AI features.

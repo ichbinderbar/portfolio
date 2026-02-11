@@ -1,0 +1,82 @@
+#faq {
+  background-color: $white-color;
+  color: $dark-blue-text;
+  padding: 8rem 0 10rem;
+
+  @include respond(tab-land) {
+    padding: 5rem 0;
+  }
+
+  .faq-wrapper {
+    max-width: 800px;
+    margin: 3.2rem auto 0;
+    padding: 0 2rem;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid $light-grey;
+    backface-visibility: hidden;
+
+    &:first-child {
+      border-top: 1px solid $light-grey;
+    }
+
+    summary {
+      padding: 2rem 3rem 2rem 0;
+      font-size: 1.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      position: relative;
+      list-style: none;
+      transition: color 0.2s ease;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &::after {
+        content: "+";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2.2rem;
+        font-weight: 300;
+        color: $secondary-color;
+        transition: transform 0.2s ease;
+      }
+
+      &:hover {
+        color: $secondary-color;
+      }
+
+      @include respond(phone) {
+        font-size: 1.6rem;
+        padding: 1.6rem 2.5rem 1.6rem 0;
+      }
+    }
+
+    &[open] summary::after {
+      content: "−";
+    }
+
+    .faq-answer {
+      padding: 0 0 2rem;
+
+      p {
+        font-size: $default-font-size;
+        line-height: 1.7;
+        color: $dark-grey;
+
+        a {
+          color: $secondary-color;
+          text-decoration: underline;
+
+          &:hover {
+            color: darken($secondary-color, 10%);
+          }
+        }
+      }
+    }
+  }
+}

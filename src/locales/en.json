@@ -160,6 +160,21 @@
       "cta": "Visit Store"
     }
   },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "Do I need SOC 2 or ISO 27001?",
+    "a1": "It depends on your target market. SOC 2 is the standard buyers expect in the United States—if you're a Latin American company selling SaaS or handling data for US clients, SOC 2 is usually the fastest path to closing deals. ISO 27001 carries more weight in Europe and internationally. Many LATAM companies pursuing both start with SOC 2 for quicker wins, then layer on ISO 27001 for global reach. I help you assess which certification fits your sales pipeline and timeline.",
+    "q2": "How long does SOC 2 certification take?",
+    "a2": "A realistic timeline is 3–6 months for Type I and 6–12 months for Type II, depending on your current security posture. Companies in emerging markets often need extra time to formalize policies and choose the right tooling. I've guided organizations through the entire process—from gap analysis and policy drafting to evidence collection and auditor coordination—so you avoid the common delays that push timelines out.",
+    "q3": "Why hire a lawyer who also builds software?",
+    "a3": "Most compliance consultants hand you a checklist and leave you to figure out the technical implementation. Most developers build what you ask without understanding the legal implications. I operate at the intersection: I write the policies and I build the systems that enforce them. That means fewer handoffs, less miscommunication, and controls that actually work—not just on paper.",
+    "q4": "How does AI help with trademark monitoring?",
+    "a4": "Traditional trademark monitoring relies on exact or near-exact text matching, which misses phonetic similarities, semantic overlaps, and visual resemblances. I built <a href=\"https://markatzy.com\" target=\"_blank\" rel=\"noreferrer\">Markatzy</a> to solve this—it uses AI embeddings and phonetic algorithms to detect conflicts across multiple dimensions in under 100ms. For a firm with 100 brands, that's 170,000+ comparisons automated every month.",
+    "q5": "Can a compliance consultant in Latin America handle international certifications?",
+    "a5": "Absolutely. SOC 2 and ISO 27001 are global frameworks—what matters is understanding the standards, the audit process, and the technical controls, not where you sit. I've worked with US-based companies on SOC 2 Type II certification and build software used by international clients. Working from Latin America also means competitive rates and overlap with US business hours, which is a practical advantage for most engagements.",
+    "q6": "Why are Latin American companies pursuing SOC 2 and ISO 27001?",
+    "a6": "The LATAM SaaS and tech ecosystem is maturing fast. Companies selling to US and European enterprise buyers are hitting the same wall: \"Send us your SOC 2 report.\" Without it, deals stall. Startups raising international funding face the same pressure from investors. Certifications like SOC 2 and ISO 27001 are becoming table stakes for LATAM companies competing globally—and early movers gain a real competitive edge."
+  },
   "contact": {
     "title": "Contact",
     "cta": "Let's build something secure—and ship it.",
