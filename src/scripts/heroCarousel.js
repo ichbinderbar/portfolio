@@ -93,9 +93,14 @@ const goToSlide = (index) => {
     dot.setAttribute('tabindex', isActive ? '0' : '-1');
   });
 
-  // Update aria-hidden on slides
+  // Update aria-hidden on slides and manage focusable elements
   slides.forEach((slide, i) => {
-    slide.setAttribute('aria-hidden', i !== currentSlide);
+    const isActive = i === currentSlide;
+    slide.setAttribute('aria-hidden', !isActive);
+    const focusables = slide.querySelectorAll('a, button, input, [tabindex]');
+    focusables.forEach((el) => {
+      el.setAttribute('tabindex', isActive ? '0' : '-1');
+    });
   });
 
   announceSlide();
