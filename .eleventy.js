@@ -26,6 +26,10 @@ module.exports = function (eleventyConfig) {
   // Pass through blog CSS
   eleventyConfig.addPassthroughCopy({ "src/blog/blog.css": "blog/blog.css" });
 
+  // Pass through Font Awesome for blog pages
+  eleventyConfig.addPassthroughCopy({ "node_modules/font-awesome/css/font-awesome.min.css": "blog/vendor/font-awesome.min.css" });
+  eleventyConfig.addPassthroughCopy({ "node_modules/font-awesome/fonts": "blog/fonts" });
+
   // Date formatting filter
   eleventyConfig.addFilter("dateFormat", (date) => {
     return new Date(date).toLocaleDateString("en-US", {
