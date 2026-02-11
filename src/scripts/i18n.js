@@ -22,6 +22,7 @@ const initI18n = () => {
     .then(() => {
       updateContent();
       updateLanguageToggle();
+      bindToggle();
     });
 };
 
@@ -57,7 +58,11 @@ const toggleLanguage = () => {
   });
 };
 
-// Expose toggle function globally
-window.toggleLanguage = toggleLanguage;
+const bindToggle = () => {
+  const toggle = document.getElementById('lang-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', toggleLanguage);
+  }
+};
 
 export default initI18n;
