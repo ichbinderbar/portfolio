@@ -6,7 +6,8 @@
   "source": [
     "src/index.html",
     "src/payments.html",
-    "src/payment-confirm.html"
+    "src/payment-confirm.html",
+    "src/resume.html"
   ],
   "scripts": {
     "start": "parcel",
