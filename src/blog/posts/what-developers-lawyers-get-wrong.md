@@ -1,6 +1,6 @@
 ---
 title: "What Developers Get Wrong About Legal (And Vice Versa)"
-description: "The gap between engineering and legal teams isn't about intelligence—it's about modeling. Here's how both sides can bridge it."
+description: "The gap between engineering and legal teams isn't about intelligence. It's about modeling. Here's how both sides can bridge it."
 date: 2026-02-01
 lastModified: 2026-02-11
 tags:
@@ -38,7 +38,7 @@ The reasoning goes like this: let's build the product first, validate the market
 
 The problem? **Compliance isn't a coat of paint. It's load-bearing.**
 
-When we were building out role-based access controls for an enterprise security module—tens of thousands of lines of production code—the access model had to account for SOC 2 requirements around least-privilege access from day one. Not because an auditor was breathing down our necks, but because retrofitting access controls into an existing architecture meant touching every service boundary, every API call, every data flow.
+When we were building out role-based access controls for an enterprise security module (tens of thousands of lines of production code), the access model had to account for SOC 2 requirements around least-privilege access from day one. Not because an auditor was breathing down our necks, but because retrofitting access controls into an existing architecture meant touching every service boundary, every API call, every data flow.
 
 If we'd built the core system first and "added compliance later," we would've essentially rebuilt it. I've watched teams do exactly that. It's demoralizing and expensive.
 
@@ -48,7 +48,7 @@ Think of it like plumbing in a building. You don't frame the walls, finish the d
 
 Sometimes, yes. Legal review cycles can be painfully slow. But most of the time when I hear this complaint, the real issue is that engineering asked legal the wrong question at the wrong time.
 
-If you go to an attorney and say "review this feature," you'll wait weeks. If you say "we're building a feature that processes user biometric data for identity verification, we plan to store the raw data for 30 days, here's the data flow diagram—what obligations does this trigger in Brazil and Colombia?" you'll get a useful answer in days.
+If you go to an attorney and say "review this feature," you'll wait weeks. If you say "we're building a feature that processes user biometric data for identity verification, we plan to store the raw data for 30 days, here's the data flow diagram. What obligations does this trigger in Brazil and Colombia?" you'll get a useful answer in days.
 
 Lawyers aren't slow because they're inefficient. They're slow when they don't have enough context to scope the problem. Engineers scope problems for a living. Apply that skill to legal questions and watch the bottleneck shrink.
 
@@ -106,7 +106,7 @@ Engineers model the world in systems: inputs, outputs, state, transformations. L
 
 Law school doesn't teach you how a distributed system handles data residency. Computer science programs don't teach you how regulatory ambiguity affects design decisions. So you end up with two groups of very capable people talking past each other in meetings, each frustrated that the other "doesn't get it."
 
-I got lucky—or stubborn, depending on who you ask—and ended up building in both worlds. What I've learned is that the translation layer between legal and engineering isn't a person (though it helps to have one). It's a shared artifact.
+I got lucky (or stubborn, depending on who you ask) and ended up building in both worlds. What I've learned is that the translation layer between legal and engineering isn't a person (though it helps to have one). It's a shared artifact.
 
 Data flow diagrams that map to regulatory obligations. Threat models that reference specific provisions. Architecture decision records that include compliance trade-offs alongside performance and cost trade-offs.
 
@@ -122,7 +122,7 @@ That's how products get built at the intersection of law and engineering. Not by
 
 **If you're both, or trying to be:** Welcome to the weird middle. It's messy here. The regulations are ambiguous, the systems are complex, and nobody's textbook covers the intersection.
 
-But every product worth building lives in that intersection. And the people who can work in it—really work in it, not just wave at it from one side—are the ones shipping things that actually hold up when the auditor calls or the regulator sends a letter.
+But every product worth building lives in that intersection. And the people who can work in it, really work in it, not just wave at it from one side, are the ones shipping things that actually hold up when the auditor calls or the regulator sends a letter.
 
 The checklist crowd and the "just make it work" crowd will always be loud. Build anyway.
 

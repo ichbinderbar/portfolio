@@ -13,7 +13,7 @@ tags:
 
 You launch a feature. It complies with Ecuador's LOPDP. It respects Colombia's Habeas Data. You think you're safe.
 
-Then you land your first enterprise client—a multinational with headquarters in Madrid. They send you a Data Processing Addendum (DPA). Suddenly, your "local" app is contractually bound to the GDPR.
+Then you land your first enterprise client, a multinational with headquarters in Madrid. They send you a Data Processing Addendum (DPA). Suddenly, your "local" app is contractually bound to the GDPR.
 
 This is the **Brussels Effect**. And with the EU AI Act now in force, the stakes just got higher for software architects in Latin America.
 
@@ -37,7 +37,7 @@ If you don't architecture for deletion from day one, you are building technical 
 ### The "Right to be Forgotten" Problem
 Under GDPR Art. 17 (and similar provisions in Brazil's LGPD), a user can request deletion. In a traditional relational database (PostgreSQL), this is a simple `DELETE FROM users WHERE id = x`.
 
-In a vector database, it is a nightmare. If you embedded a user's document into a shared index without tagging it with a `user_id` or `tenant_id` in the vector metadata, you cannot find it to delete it. You have to re-index your entire dataset—a process that can cost thousands of dollars in compute for large applications.
+In a vector database, it is a nightmare. If you embedded a user's document into a shared index without tagging it with a `user_id` or `tenant_id` in the vector metadata, you cannot find it to delete it. You have to re-index your entire dataset, a process that can cost thousands of dollars in compute for large applications.
 
 **The Fix:**
 You must treat every embedding as a structured record.
@@ -47,7 +47,7 @@ You must treat every embedding as a structured record.
 
 ### The "Contractual Infection" Vector
 
-The most common way LATAM startups get hit by the AI Act isn't through a European regulator—it's through their own clients.
+The most common way LATAM startups get hit by the AI Act isn't through a European regulator. It's through their own clients.
 
 If you sell B2B software to a company like Telefónica, BBVA, or AB InBev, their compliance teams will demand that you meet EU standards as a vendor. They cannot risk their data flowing into a non-compliant "High-Risk AI System."
 

@@ -12,7 +12,7 @@ After years of working at the intersection of law and technology, I've decided t
 
 ## What to Expect
 
-**Compliance & Security**: Practical insights on SOC 2, ISO 27001, and building security into your processes from day one. Not the boring checkbox stuff—real strategies that work.
+**Compliance & Security**: Practical insights on SOC 2, ISO 27001, and building security into your processes from day one. Not the boring checkbox stuff. Real strategies that work.
 
 **Legal Tech**: How technology is transforming legal work, from AI-powered trademark analysis to workflow automation.
 

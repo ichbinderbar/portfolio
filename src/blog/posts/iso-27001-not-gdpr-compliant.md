@@ -1,6 +1,6 @@
 ---
 title: "Your ISO 27001 Certificate Doesn't Make You GDPR Compliant"
-description: "ISO 27001 covers security. The GDPR covers security and privacy. Here's the structural gap that catches companies off guard—sometimes to the tune of hundreds of millions of euros."
+description: "ISO 27001 covers security. The GDPR covers security and privacy. Here's the structural gap that catches companies off guard, sometimes to the tune of hundreds of millions of euros."
 date: 2026-02-03
 lastModified: 2026-02-11
 tags:

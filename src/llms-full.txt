@@ -261,7 +261,7 @@ A: SOC 2 is the standard expected by buyers in the United States, while ISO 2700
 A: A typical SOC 2 Type I engagement takes 3–6 months, covering policy development, control implementation, and a point-in-time audit. Type II requires an additional observation period of 3–12 months during which controls must operate effectively, making the total timeline 6–12 months from start to report. See: https://juanidrovo.com/blog/how-to-prepare-soc-2-audit/
 
 **Q: What is the difference between SOC 2 Type I and Type II?**
-A: SOC 2 Type I evaluates whether security controls are properly designed at a specific point in time. Type II evaluates whether those same controls operated effectively over a period—typically 3 to 12 months. Enterprise buyers generally require Type II because it demonstrates sustained operational security, not just a one-time snapshot.
+A: SOC 2 Type I evaluates whether security controls are properly designed at a specific point in time. Type II evaluates whether those same controls operated effectively over a period, typically 3 to 12 months. Enterprise buyers generally require Type II because it demonstrates sustained operational security, not just a one-time snapshot.
 
 **Q: How much does SOC 2 certification cost?**
 A: SOC 2 costs typically range from $20,000 to $100,000+ depending on company size, scope, and readiness. Major cost drivers include compliance automation tooling ($10,000–$30,000/year), auditor fees ($10,000–$50,000), and internal effort for gap remediation. Startups with clean cloud-native infrastructure tend toward the lower end.
@@ -270,7 +270,7 @@ A: SOC 2 costs typically range from $20,000 to $100,000+ depending on company si
 A: Yes. Cloud providers like AWS and Azure operate under a shared responsibility model. The provider secures the infrastructure, but the customer is responsible for data handling, access controls, application security, and operational procedures. SOC 2 audits evaluate the customer's controls, not the cloud provider's.
 
 **Q: Is SOC 2 required by law?**
-A: SOC 2 is not required by any law or regulation. It is a voluntary framework developed by the AICPA (American Institute of Certified Public Accountants). However, it has become a de facto requirement in B2B software sales—enterprise buyers, investors, and procurement teams routinely require a SOC 2 report before signing contracts.
+A: SOC 2 is not required by any law or regulation. It is a voluntary framework developed by the AICPA (American Institute of Certified Public Accountants). However, it has become a de facto requirement in B2B software sales. Enterprise buyers, investors, and procurement teams routinely require a SOC 2 report before signing contracts.
 
 **Q: Can a startup get SOC 2 without a dedicated security team?**
 A: Yes. Many startups achieve SOC 2 certification by using compliance automation platforms (such as Vanta, Drata, or Secureframe) that handle evidence collection, policy templates, and continuous monitoring. These tools reduce the need for dedicated security staff. A single engineer or operations lead can typically manage the process with external guidance. See: https://juanidrovo.com/blog/soc-2-for-startups/
