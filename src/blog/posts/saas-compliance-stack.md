@@ -177,7 +177,7 @@ At scale, the goal shifts from "achieve compliance" to "maintain compliance effi
 - Annual SOC 2 audits
 - ISO 27001 surveillance audits (years 2 and 3) and recertification (year 4)
 - Continuous GDPR and privacy program management
-- Monitoring emerging regulations (EU AI Act, state privacy laws)
+- Monitoring emerging regulations (EU AI Act, state privacy laws) and [AI-specific compliance requirements](/blog/audit-ready-llm-architecture/)
 - A compliance automation platform managing evidence collection, control monitoring, and audit coordination across all frameworks
 
 ## The Cost of Doing It Wrong

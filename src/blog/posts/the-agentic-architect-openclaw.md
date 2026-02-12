@@ -45,6 +45,7 @@ The future of software isn't just about AI writing code. It's about humans desig
 ---
 
 **Keep reading:**
+- [AI Agents and Liability: Who's Responsible When the Agent Gets It Wrong?](/blog/ai-agents-liability/)
 - [What Developers Get Wrong About Legal (And Vice Versa)](/blog/what-developers-lawyers-get-wrong/)
 - [Why Trademark Monitoring Is a Natural Fit for RAG](/blog/why-trademark-monitoring-natural-fit-rag/)
 

@@ -11,7 +11,7 @@ tags:
   - startups
 ---
 
-Every B2B startup hits a moment where compliance stops being theoretical and starts blocking revenue. A prospect's security team sends a vendor questionnaire. Somewhere in that spreadsheet is a question about SOC 2. The deal stalls.
+Every B2B startup hits a moment where compliance stops being theoretical and starts blocking revenue. A prospect's security team sends a [vendor questionnaire](/blog/security-questionnaires-saas-startups/). Somewhere in that spreadsheet is a question about SOC 2. The deal stalls.
 
 If this has happened once, you can work around it. If it's happening repeatedly, you have a structural problem - and the fix isn't filling out more questionnaires. It's getting the report.
 
