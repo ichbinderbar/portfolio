@@ -3,7 +3,7 @@
   "outputDirectory": "dist",
   "headers": [
     {
-      "source": "/(.+).(css|js|png|jpg|jpeg|woff2|woff|ttf|svg|ico)",
+      "source": "/(.+).(css|js|png|jpg|jpeg|webp|woff2|woff|ttf|svg|ico)",
       "headers": [
         {
           "key": "Cache-Control",
