@@ -105,16 +105,18 @@
   </head>
 
   <body>
-    {% if layout == "post.njk" %}
+    {% if not hideBackBtn %}
+      {% if layout == "post.njk" %}
     <a href="/blog/" class="back-btn" title="Blog">
       <i class="fa fa-arrow-left"></i>
       <span>Blog</span>
     </a>
-    {% else %}
+      {% else %}
     <a href="/" class="back-btn" title="Back to home">
       <i class="fa fa-arrow-left"></i>
       <span>Home</span>
     </a>
+      {% endif %}
     {% endif %}
 
     <main class="blog-main">
