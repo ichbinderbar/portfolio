@@ -59,7 +59,7 @@ The overlap with SOC 2 is approximately 80%. If you already have SOC 2, adding I
 
 HIPAA has no formal certification process and no size exemptions. If you handle Protected Health Information as a business associate, you comply or you don't. You appoint yourself as Security Officer and implement the required safeguards.
 
-GDPR applies to any company processing EU residents' personal data, regardless of size. There's a common misconception that solo developers are exempt -- they aren't. However, businesses under 250 employees are exempt from maintaining detailed processing records unless the processing is more than occasional.
+GDPR applies to any company processing EU residents' personal data, regardless of size. There's a common misconception that solo developers are exempt -- they aren't. Article 30(5) technically exempts businesses under 250 employees from maintaining detailed records of processing activities, but the exceptions are so broad -- covering any non-occasional processing, any processing that involves risk, or any special category data -- that virtually no operating business qualifies. If you process customer data regularly (and you do), you need records of processing.
 
 PCI DSS is tiered by transaction volume. Most solo developers fall into Level 4 (fewer than 20,000 e-commerce transactions per year), which requires only a Self-Assessment Questionnaire and quarterly vulnerability scans. No on-site audit needed.
 
@@ -273,8 +273,8 @@ AI tools can serve as compensating controls for segregation of duties, but they 
 ---
 
 **Keep reading:**
-- [SOC 2 for Startups: When You Need It and How to Get There](/blog/soc-2-for-startups/)
-- [The SaaS Compliance Stack: SOC 2, ISO 27001, GDPR, and What Actually Matters](/blog/saas-compliance-stack/)
-- [How to Prepare for a SOC 2 Audit: A Practical Checklist](/blog/how-to-prepare-soc-2-audit/)
+- [How to Handle SOC 2 Separation of Duties When You're a Team of One](/blog/soc-2-separation-duties-solo-developer/)
+- [The Budget SOC 2 Stack: Getting Certified for Under $10,000](/blog/budget-soc-2-stack-under-5000/)
+- [SOC 2 Alternatives: What to Do When You Can't Afford Full Certification](/blog/soc-2-alternatives-small-companies/)
 
 *Building a solo SaaS product and running into compliance questions from enterprise prospects? [Let's talk](https://calendly.com/juanidrovo).*
