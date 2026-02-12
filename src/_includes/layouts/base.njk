@@ -25,6 +25,14 @@
     <meta property="og:description" content="{{ description or 'Thoughts on compliance, security, legal tech, and building secure digital solutions.' }}" />
     <meta property="og:image" content="{{ ogImage or 'https://juanidrovo.com/assets/profile.jpg' }}" />
     <meta property="og:site_name" content="Juan Idrovo Blog" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+    {% if layout == "post.njk" %}
+    <meta property="article:published_time" content="{{ date | date('Y-m-d') }}" />
+    <meta property="article:modified_time" content="{{ (lastModified or date) | date('Y-m-d') }}" />
+    <meta property="article:author" content="https://juanidrovo.com/" />
+    {% endif %}
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
