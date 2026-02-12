@@ -4,7 +4,7 @@
 
 Create a markdown file in `src/blog/posts/`. The filename becomes the URL slug.
 
-**Example:** `my-new-post.md` → `juanidrovo.com/blog/posts/my-new-post/`
+**Example:** `my-new-post.md` → `juanidrovo.com/blog/my-new-post/`
 
 ## Required Frontmatter
 
@@ -15,6 +15,7 @@ Always quote `title` and `description` values in YAML:
 title: "Your Post Title"
 description: "Brief description for SEO and post previews (1-2 sentences)"
 date: 2026-01-30
+lastModified: 2026-01-30
 tags:
   - posts
 ---
@@ -25,6 +26,7 @@ tags:
 | `title` | Yes | Post title (appears as h1 and in browser tab). Always quote. |
 | `description` | Yes | SEO meta description and preview text on blog listing. Always quote. |
 | `date` | Yes | Publication date (YYYY-MM-DD). Controls sort order (newest first) |
+| `lastModified` | Yes | Last updated date (YYYY-MM-DD). Set equal to `date` for new posts. Used in JSON-LD `dateModified`, OG `article:modified_time`, RSS `<updated>`, and visible "Updated" label. |
 | `tags` | Yes | Must include `posts`. Add others for categorization |
 
 ## Optional Frontmatter
@@ -37,7 +39,6 @@ ogImage: https://juanidrovo.com/assets/custom-image.jpg
 
 | Field | Description |
 |-------|-------------|
-| `lastModified` | Date the post was last updated (YYYY-MM-DD). Shown as "Updated" on the post page when different from `date`. Also used in JSON-LD `dateModified` and RSS feed `<updated>`. |
 | `ogImage` | Custom Open Graph image for social sharing (defaults to profile.jpg) |
 
 ## Markdown Content
@@ -118,6 +119,7 @@ Foundational, high-volume-query posts. Reference-quality, educational tone. Incl
 title: "SOC 2 Compliance for Startups"
 description: "A practical guide to achieving SOC 2 without breaking the bank or slowing down your team."
 date: 2026-02-15
+lastModified: 2026-02-15
 tags:
   - posts
   - compliance
@@ -159,7 +161,7 @@ When adding new posts, manually update `src/sitemap.xml` to include the new URL:
 ```xml
 <!-- Regular post -->
 <url>
-  <loc>https://juanidrovo.com/blog/posts/your-new-post/</loc>
+  <loc>https://juanidrovo.com/blog/your-new-post/</loc>
   <lastmod>2026-02-15</lastmod>
   <changefreq>yearly</changefreq>
   <priority>0.7</priority>
@@ -167,7 +169,7 @@ When adding new posts, manually update `src/sitemap.xml` to include the new URL:
 
 <!-- Pillar post (higher priority) -->
 <url>
-  <loc>https://juanidrovo.com/blog/posts/your-pillar-post/</loc>
+  <loc>https://juanidrovo.com/blog/your-pillar-post/</loc>
   <lastmod>2026-02-15</lastmod>
   <changefreq>yearly</changefreq>
   <priority>0.8</priority>
