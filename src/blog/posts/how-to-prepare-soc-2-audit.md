@@ -1,6 +1,6 @@
 ---
 title: "How to Prepare for a SOC 2 Audit: A Practical Checklist"
-description: "A step-by-step guide to SOC 2 audit preparation - from scoping and readiness assessments to evidence collection and fieldwork. Includes timelines, cost breakdowns, and the controls most companies miss."
+description: "A step-by-step guide to SOC 2 audit preparation, from scoping and readiness assessments to evidence collection and fieldwork. Includes timelines, cost breakdowns, and the controls most companies miss."
 date: 2026-02-13
 lastModified: 2026-02-13
 tags:
@@ -12,7 +12,7 @@ tags:
 
 Preparing for a SOC 2 audit is less about knowing what SOC 2 is and more about knowing what to do next. You've read the overview. You know about the Trust Services Criteria. Your sales team has a deal blocked until you can produce a report. Now what?
 
-This is the practical version: what to do, in what order, how long it takes, and what it costs - with specific attention to the controls that trip up first-time companies.
+This is the practical version: what to do, in what order, how long it takes, and what it costs, with specific attention to the controls that trip up first-time companies.
 
 ## The Timeline: What to Expect
 
@@ -37,9 +37,9 @@ Scoping determines what systems, processes, people, and Trust Services Criteria 
 
 ### Which Trust Services Criteria to include
 
-**Security is mandatory.** Every SOC 2 audit includes it. The other four - Availability, Processing Integrity, Confidentiality, and Privacy - are optional and selected based on your service commitments and customer expectations.
+**Security is mandatory.** Every SOC 2 audit includes it. The other four (Availability, Processing Integrity, Confidentiality, and Privacy) are optional and selected based on your service commitments and customer expectations.
 
-For most B2B SaaS companies on their first audit, **Security alone is the right starting point.** Add Availability if you have SLA commitments. Add Confidentiality if you handle trade secrets or sensitive business data beyond personal information. Add Privacy only if you handle PII and your customers specifically require it - many companies address privacy through separate compliance frameworks like the GDPR or CCPA instead.
+For most B2B SaaS companies on their first audit, **Security alone is the right starting point.** Add Availability if you have SLA commitments. Add Confidentiality if you handle trade secrets or sensitive business data beyond personal information. Add Privacy only if you handle PII and your customers specifically require it; many companies address privacy through separate compliance frameworks like the GDPR or CCPA instead.
 
 ### Which systems to include
 
@@ -78,9 +78,9 @@ A readiness assessment is a pre-audit evaluation where an auditor or consultant 
 
 **Duration:** 4-8 weeks, including stakeholder interviews, documentation review, and deliverable preparation.
 
-**What you get:** A gap analysis report listing every control that's missing, incomplete, or insufficient - along with remediation recommendations and a prioritized timeline.
+**What you get:** A gap analysis report listing every control that's missing, incomplete, or insufficient, along with remediation recommendations and a prioritized timeline.
 
-Skipping the readiness assessment is the most expensive mistake companies make. Discovering a major gap mid-audit - like the absence of a formal change management process or incomplete access reviews - extends the audit timeline and multiplies costs. A readiness assessment costs a fraction of what a delayed or exception-heavy audit costs.
+Skipping the readiness assessment is the most expensive mistake companies make. Discovering a major gap mid-audit (like the absence of a formal change management process or incomplete access reviews) extends the audit timeline and multiplies costs. A readiness assessment costs a fraction of what a delayed or exception-heavy audit costs.
 
 ### What the assessor evaluates
 
@@ -94,7 +94,7 @@ Skipping the readiness assessment is the most expensive mistake companies make. 
 
 ## Step 3: Remediate the Gaps
 
-The readiness assessment tells you what's missing. Now you fix it. Gap remediation is where most of the work - and most of the cost - lives.
+The readiness assessment tells you what's missing. Now you fix it. Gap remediation is where most of the work, and most of the cost, lives.
 
 Here's what first-time companies typically need to implement or formalize, organized by the areas that generate the most audit findings.
 
@@ -104,9 +104,9 @@ Access control issues are the most common finding in SOC 2 audits with qualified
 
 **What to implement:**
 
-- **Multi-factor authentication** on all in-scope systems. Not optional. Use an authenticator app or hardware key - SMS-based MFA is acceptable but increasingly frowned upon. Cover production infrastructure, identity providers, code repositories, and cloud consoles.
+- **Multi-factor authentication** on all in-scope systems. Not optional. Use an authenticator app or hardware key; SMS-based MFA is acceptable but increasingly frowned upon. Cover production infrastructure, identity providers, code repositories, and cloud consoles.
 
-- **Role-based access control (RBAC).** Define roles with minimum necessary permissions. Document who has access to what and why. The principle of least privilege isn't theoretical here - auditors test for it by examining actual permission sets.
+- **Role-based access control (RBAC).** Define roles with minimum necessary permissions. Document who has access to what and why. The principle of least privilege isn't theoretical here; auditors test for it by examining actual permission sets.
 
 - **User provisioning and deprovisioning.** Document your process for granting access when someone joins, changes roles, or leaves. Deprovisioning is the critical one: auditors will check whether former employees still have active accounts. Aim for same-day deprovisioning.
 
@@ -117,14 +117,14 @@ Access control issues are the most common finding in SOC 2 audits with qualified
 ### Encryption
 
 - **At rest:** AES-256 for databases, file storage, and backups. Most cloud providers enable this by default, but verify it's active and document it.
-- **In transit:** TLS 1.2 minimum, TLS 1.3 preferred. All data transmitted over networks - internal and external - should be encrypted. Disable older protocols (TLS 1.0, 1.1, SSL).
+- **In transit:** TLS 1.2 minimum, TLS 1.3 preferred. All data transmitted over networks, internal and external, should be encrypted. Disable older protocols (TLS 1.0, 1.1, SSL).
 - **Key management:** Document your key rotation policy. Use your cloud provider's key management service (AWS KMS, GCP Cloud KMS, Azure Key Vault) rather than managing keys yourself.
 
 ### Logging and monitoring
 
 - **Centralized logging** across all in-scope systems. Application logs, infrastructure logs, access logs, and authentication logs should flow into a single platform.
 - **SIEM or equivalent.** You need the ability to detect anomalies, correlate events, and alert on suspicious activity. Tools range from cloud-native (AWS CloudTrail + CloudWatch, GCP Cloud Logging) to dedicated platforms (Datadog, Splunk, Sumo Logic).
-- **Log retention.** Define a retention period - 90 days is the minimum most auditors expect, 12 months is safer. Document the policy and verify logs are actually retained for the stated period.
+- **Log retention.** Define a retention period (90 days is the minimum most auditors expect, 12 months is safer). Document the policy and verify logs are actually retained for the stated period.
 - **Alerting.** Configure alerts for critical events: failed authentication attempts, privilege escalations, configuration changes to production infrastructure, and unauthorized access attempts.
 
 ### Change management
@@ -136,7 +136,7 @@ Auditors evaluate change management under CC8, which requires that changes to in
 - All production changes tracked in an issue tracker (Jira, Linear, GitHub Issues)
 - Code reviewed by at least one other engineer before merge
 - CI/CD pipeline with automated testing (unit, integration)
-- Deployment approval process - who can deploy to production, and is there a record of approval?
+- Deployment approval process: who can deploy to production, and is there a record of approval?
 - Rollback procedures documented and tested
 - Separation of duties between development and production deployment (the person who wrote the code shouldn't be the only one who can deploy it)
 
@@ -153,13 +153,13 @@ SOC 2 requires formal policies for:
 - Vendor management
 - Risk management
 
-These policies must be reviewed and approved by management, communicated to employees, and actually followed. The most common readiness finding is policies that don't match practice - either because they were copied from a template and never customized, or because practices changed without updating documentation.
+These policies must be reviewed and approved by management, communicated to employees, and actually followed. The most common readiness finding is policies that don't match practice, either because they were copied from a template and never customized, or because practices changed without updating documentation.
 
 **Pro tip:** Write policies that describe what you actually do, not what you aspire to do. An auditor would rather see a simple, accurate policy than an ambitious one you don't follow. You can mature your controls over time and update policies accordingly.
 
 ### Vendor management
 
-If you use third-party services that process customer data on your behalf - and every SaaS company does - you need a vendor management program.
+If you use third-party services that process customer data on your behalf (and every SaaS company does), you need a vendor management program.
 
 - **Vendor inventory.** List every subservice organization: cloud providers, payment processors, email services, analytics platforms, monitoring tools.
 - **Risk assessment.** Evaluate each vendor's security posture. For critical vendors, obtain and review their SOC 2 report. For lower-risk vendors, a security questionnaire or assessment may suffice.
@@ -171,7 +171,7 @@ AWS, GCP, and Azure SOC 2 reports are available through their respective portals
 ### HR and personnel controls
 
 - **Background checks** within 30 days of hire for all employees with access to in-scope systems. For international employees where traditional background checks aren't available, document alternative verification (reference checks, credential verification).
-- **Security awareness training** for all employees, completed within 30 days of hire and refreshed annually. Track completion dates - auditors sample employee records and verify training was completed on time.
+- **Security awareness training** for all employees, completed within 30 days of hire and refreshed annually. Track completion dates; auditors sample employee records and verify training was completed on time.
 - **Documented onboarding and offboarding procedures.** What access is granted during onboarding? What's revoked during offboarding? Is there a checklist? Is it followed?
 
 ### Incident response
@@ -185,7 +185,7 @@ AWS, GCP, and Azure SOC 2 reports are available through their respective portals
 While SOC 2 doesn't mandate specific scanning or testing frequencies, auditors evaluate your vulnerability management program under CC7.1 (detection and monitoring procedures).
 
 - **Vulnerability scanning:** Monthly minimum. Weekly or continuous is better. Use tools like Qualys, Nessus, or cloud-native scanners.
-- **Penetration testing:** Annually at minimum. Semi-annually is becoming the expectation for companies handling sensitive data. Engage an external firm - internal-only testing doesn't carry the same weight with auditors.
+- **Penetration testing:** Annually at minimum. Semi-annually is becoming the expectation for companies handling sensitive data. Engage an external firm; internal-only testing doesn't carry the same weight with auditors.
 - **Remediation tracking.** Scan results mean nothing without a process for triaging, prioritizing, and remediating findings. Document your remediation SLAs (critical: 24 hours, high: 7 days, medium: 30 days, etc.) and track against them.
 
 ## Step 4: Choose Your Compliance Tooling
@@ -222,7 +222,7 @@ All three offer audit-readiness assessments and can connect you with CPA firms i
 
 ## Step 5: The Observation Period (Type II)
 
-For Type II audits, your controls must operate effectively for a defined observation period - typically six to twelve months. During this window, every control you've implemented needs to generate evidence continuously.
+For Type II audits, your controls must operate effectively for a defined observation period, typically six to twelve months. During this window, every control you've implemented needs to generate evidence continuously.
 
 ### What "operating effectively" means
 
@@ -230,11 +230,11 @@ It's not enough to have controls in place. They must be executed consistently th
 
 - Access reviews must happen every quarter, on schedule, with documented results.
 - Background checks must be completed for every new hire within the defined window.
-- Change management procedures must be followed for every production deployment - no exceptions.
+- Change management procedures must be followed for every production deployment, no exceptions.
 - Vulnerability scans must run at the frequency stated in your policy.
 - Training must be completed on time by every employee.
 
-One missed quarterly access review doesn't necessarily sink your audit. But a pattern of missed controls - or a complete absence of evidence for any period during the observation window - results in exceptions that weaken your report and raise questions with prospects.
+One missed quarterly access review doesn't necessarily sink your audit. But a pattern of missed controls, or a complete absence of evidence for any period during the observation window, results in exceptions that weaken your report and raise questions with prospects.
 
 ### Evidence collection strategy
 
@@ -257,7 +257,7 @@ Choosing a CPA firm matters more than most companies realize. The firm's reputat
 - **Mid-tier regional firms:** $30,000-$60,000 for Type II. Good balance of credibility and cost.
 - **Big Four (Deloitte, PwC, EY, KPMG):** $60,000-$150,000+ for Type II. Maximum credibility for large enterprise sales but significantly higher cost and longer timelines.
 
-For most companies under 500 employees, a reputable mid-tier firm provides the best value. Your prospects are reading the report content, not the firm's logo. The exception is if your largest customers specifically require a Big Four auditor - some financial institutions and government contracts have this requirement.
+For most companies under 500 employees, a reputable mid-tier firm provides the best value. Your prospects are reading the report content, not the firm's logo. The exception is if your largest customers specifically require a Big Four auditor; some financial institutions and government contracts have this requirement.
 
 ### What to ask before engaging
 
@@ -284,8 +284,8 @@ Fieldwork typically takes 4-8 weeks for a Type II audit. Here's what happens.
 
 - **Orphaned accounts.** Former employees or contractors who still have active access. Run a comprehensive access audit before fieldwork begins.
 - **Undocumented changes.** Production deployments that bypassed the change management process. Even one undocumented change becomes an exception.
-- **Missing training records.** An employee hired eight months ago who never completed security awareness training. Auditors sample employee records - if they pull that person, it's a finding.
-- **Stale vendor reviews.** A vendor SOC 2 report from two years ago. Reviews should be current - within the last 12 months.
+- **Missing training records.** An employee hired eight months ago who never completed security awareness training. Auditors sample employee records, and if they pull that person, it's a finding.
+- **Stale vendor reviews.** A vendor SOC 2 report from two years ago. Reviews should be current, within the last 12 months.
 
 ## The Preparation Checklist
 
@@ -395,9 +395,9 @@ Total cost varies by company size, scope, and existing security maturity. Here's
 | **Total first year** | **$77,000-$220,000** |
 | **Annual renewal (subsequent years)** | **$50,000-$120,000** |
 
-The wide range reflects real variation. A company with mature engineering practices - version control, code review, CI/CD, centralized logging already in place - will spend far less on remediation than one building those processes from scratch. The compliance platform and auditor fees are the fixed-cost floor.
+The wide range reflects real variation. A company with mature engineering practices (version control, code review, CI/CD, centralized logging already in place) will spend far less on remediation than one building those processes from scratch. The compliance platform and auditor fees are the fixed-cost floor.
 
-If you're evaluating whether to pursue SOC 2 or [ISO 27001](/blog/soc-2-vs-iso-27001/) (or both), the cost comparison matters - ISO 27001 certification has a different cost structure and three-year cycle that can be more economical for internationally-focused companies.
+If you're evaluating whether to pursue SOC 2 or [ISO 27001](/blog/soc-2-vs-iso-27001/) (or both), the cost comparison matters. ISO 27001 certification has a different cost structure and three-year cycle that can be more economical for internationally-focused companies.
 
 ## Frequently Asked Questions
 
@@ -405,19 +405,19 @@ If you're evaluating whether to pursue SOC 2 or [ISO 27001](/blog/soc-2-vs-iso-2
 Yes, but it's significantly more painful. Before these platforms existed, companies managed evidence collection in spreadsheets and shared drives. It works, but it requires dedicated headcount for evidence gathering, monitoring, and audit coordination. For companies with fewer than 50 employees, the time cost of manual compliance often exceeds the platform subscription cost within the first year.
 
 **Should we start with Type I or go straight to Type II?**
-If you have a deal blocked by a SOC 2 requirement, get a Type I first - it takes 4-7 months versus 9-15 months for Type II. Start the Type II observation period immediately after the Type I engagement. If there's no immediate sales pressure, going straight to Type II is more cost-efficient since you avoid paying for two separate audits.
+If you have a deal blocked by a SOC 2 requirement, get a Type I first. It takes 4-7 months versus 9-15 months for Type II. Start the Type II observation period immediately after the Type I engagement. If there's no immediate sales pressure, going straight to Type II is more cost-efficient since you avoid paying for two separate audits.
 
 **How do we handle subservice organizations like AWS?**
-Almost all SOC 2 audits use the carve-out method: your report acknowledges that certain controls (physical security, infrastructure) are the responsibility of the subservice organization and excluded from your audit scope. You document which subservice organizations you rely on, obtain and review their SOC 2 reports annually, and implement complementary controls on your side (access management, configuration, encryption). The inclusive method - where your auditor examines the subservice organization's controls directly - is rarely practical with large cloud providers.
+Almost all SOC 2 audits use the carve-out method: your report acknowledges that certain controls (physical security, infrastructure) are the responsibility of the subservice organization and excluded from your audit scope. You document which subservice organizations you rely on, obtain and review their SOC 2 reports annually, and implement complementary controls on your side (access management, configuration, encryption). The inclusive method (where your auditor examines the subservice organization's controls directly) is rarely practical with large cloud providers.
 
 **What happens if we have exceptions in the report?**
-Exceptions appear in Section 4 of the SOC 2 report. They don't automatically disqualify you - [SOC 2 has no pass/fail](/blog/what-is-soc-2-compliance/). Minor exceptions (one missed quarterly access review, a single late training completion) are common and typically acceptable to prospects. Systemic exceptions (no access reviews conducted, no change management process) signal fundamental control weaknesses and will cost you deals. What matters most is the nature, severity, and your management's documented response.
+Exceptions appear in Section 4 of the SOC 2 report. They don't automatically disqualify you; [SOC 2 has no pass/fail](/blog/what-is-soc-2-compliance/). Minor exceptions (one missed quarterly access review, a single late training completion) are common and typically acceptable to prospects. Systemic exceptions (no access reviews conducted, no change management process) signal fundamental control weaknesses and will cost you deals. What matters most is the nature, severity, and your management's documented response.
 
 **Do we need separate readiness and audit firms?**
-The same CPA firm can perform both your readiness assessment and your formal audit, but the same engagement team typically cannot do both - this would compromise auditor independence. Many firms handle this by having separate teams for advisory (readiness) and attest (audit) engagements. Alternatively, you can hire a consulting firm for readiness and a CPA firm for the audit.
+The same CPA firm can perform both your readiness assessment and your formal audit, but the same engagement team typically cannot do both, as this would compromise auditor independence. Many firms handle this by having separate teams for advisory (readiness) and attest (audit) engagements. Alternatively, you can hire a consulting firm for readiness and a CPA firm for the audit.
 
 **How often do we need to renew?**
-SOC 2 Type II reports are renewed annually. Each year, you undergo a new audit covering the latest observation period. Prospects expect a current report - anything more than 12 months old raises questions. Between reports, you can issue bridge letters (management self-assertions covering the gap), but these are temporary and should cover no more than three months.
+SOC 2 Type II reports are renewed annually. Each year, you undergo a new audit covering the latest observation period. Prospects expect a current report; anything more than 12 months old raises questions. Between reports, you can issue bridge letters (management self-assertions covering the gap), but these are temporary and should cover no more than three months.
 
 <script type="application/ld+json">
 {
@@ -437,7 +437,7 @@ SOC 2 Type II reports are renewed annually. Each year, you undergo a new audit c
       "name": "Should we start with SOC 2 Type I or go straight to Type II?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If you have a deal blocked by a SOC 2 requirement, get a Type I first - it takes 4-7 months versus 9-15 months for Type II. Start the Type II observation period immediately after. If there's no immediate sales pressure, going straight to Type II is more cost-efficient since you avoid paying for two separate audits."
+        "text": "If you have a deal blocked by a SOC 2 requirement, get a Type I first. It takes 4-7 months versus 9-15 months for Type II. Start the Type II observation period immediately after. If there's no immediate sales pressure, going straight to Type II is more cost-efficient since you avoid paying for two separate audits."
       }
     },
     {
@@ -453,7 +453,7 @@ SOC 2 Type II reports are renewed annually. Each year, you undergo a new audit c
       "name": "What happens if we have exceptions in the SOC 2 report?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Exceptions appear in Section 4 of the SOC 2 report. They don't automatically disqualify you - SOC 2 has no pass/fail. Minor exceptions are common and typically acceptable to prospects. Systemic exceptions signal fundamental control weaknesses and will cost you deals."
+        "text": "Exceptions appear in Section 4 of the SOC 2 report. They don't automatically disqualify you; SOC 2 has no pass/fail. Minor exceptions are common and typically acceptable to prospects. Systemic exceptions signal fundamental control weaknesses and will cost you deals."
       }
     },
     {
@@ -469,7 +469,7 @@ SOC 2 Type II reports are renewed annually. Each year, you undergo a new audit c
       "name": "How often do we need to renew SOC 2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "SOC 2 Type II reports are renewed annually. Each year, you undergo a new audit covering the latest observation period. Prospects expect a current report - anything more than 12 months old raises questions. Between reports, you can issue bridge letters covering gaps of no more than three months."
+        "text": "SOC 2 Type II reports are renewed annually. Each year, you undergo a new audit covering the latest observation period. Prospects expect a current report; anything more than 12 months old raises questions. Between reports, you can issue bridge letters covering gaps of no more than three months."
       }
     }
   ]

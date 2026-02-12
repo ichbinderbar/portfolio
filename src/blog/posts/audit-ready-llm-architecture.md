@@ -13,11 +13,11 @@ tags:
 
 Every company building LLM-powered products will face the same question: can you prove this system is safe, fair, and auditable?
 
-The question comes from different directions depending on your market. Enterprise buyers ask for your [SOC 2 report](/blog/what-is-soc-2-compliance/). European regulators ask for EU AI Act conformity documentation. Forward-thinking compliance teams ask about ISO 42001 certification. The underlying concern is the same -your AI does things that affect people, and someone needs to verify that you've built it responsibly.
+The question comes from different directions depending on your market. Enterprise buyers ask for your [SOC 2 report](/blog/what-is-soc-2-compliance/). European regulators ask for EU AI Act conformity documentation. Forward-thinking compliance teams ask about ISO 42001 certification. The underlying concern is the same: your AI does things that affect people, and someone needs to verify that you've built it responsibly.
 
 The good news is that these frameworks share roughly 70% of their requirements. Risk management, data governance, logging, human oversight, bias monitoring, and incident response appear across all of them. An architecture designed for one can satisfy most of the others with incremental effort.
 
-This guide maps the practical engineering decisions that make an LLM product audit-ready across SOC 2, EU AI Act, and ISO 42001 -without requiring you to rebuild your stack.
+This guide maps the practical engineering decisions that make an LLM product audit-ready across SOC 2, EU AI Act, and ISO 42001, without requiring you to rebuild your stack.
 
 ## The Framework Landscape
 
@@ -56,7 +56,7 @@ Penalties scale to EUR 35 million or 7% of global annual turnover. SMEs and star
 
 - **Security:** Access controls for model endpoints, training pipelines, and vector databases. Protection of model weights as sensitive assets.
 - **Availability:** SLAs for inference endpoints. Fallback mechanisms when models fail.
-- **Processing Integrity:** Controls ensuring AI systems process data as intended -input validation through output verification.
+- **Processing Integrity:** Controls ensuring AI systems process data as intended, from input validation through output verification.
 - **Confidentiality:** Prevention of training data leakage. Ensuring model outputs don't expose other customers' information.
 - **Privacy:** PII detection in prompts and responses. Consent management for data used in AI training.
 
@@ -64,7 +64,7 @@ Including AI components within scope of an existing SOC 2 Type II is a low-cost 
 
 ### NIST AI RMF: The Connective Tissue
 
-The NIST AI Risk Management Framework (AI 100-1) is voluntary and not certifiable, but it provides the conceptual foundation that maps across all other frameworks. Its four functions -Govern, Map, Measure, Manage -align to specific clauses in ISO 42001, articles in the EU AI Act, and Trust Services Criteria in SOC 2.
+The NIST AI Risk Management Framework (AI 100-1) is voluntary and not certifiable, but it provides the conceptual foundation that maps across all other frameworks. Its four functions (Govern, Map, Measure, Manage) align to specific clauses in ISO 42001, articles in the EU AI Act, and Trust Services Criteria in SOC 2.
 
 NIST has published official crosswalk documents mapping the AI RMF to ISO 42001. The key finding: significant overlap in governance and risk management, with the main difference being that NIST is voluntary while ISO 42001 is certifiable. Assessors can verify compliance across multiple frameworks in a single integrated assessment.
 
@@ -102,7 +102,7 @@ Implement PII redaction in logs before storage. The EU AI Act requires event log
 
 **What it satisfies:** EU AI Act Art. 15 (Robustness), SOC 2 PI1.x (Processing Integrity), ISO 42001 A.6.2, NIST MEASURE
 
-Position a modular governance layer between user applications and your LLM -an API gateway that operates as an LLM-agnostic validation interface.
+Position a modular governance layer between user applications and your LLM: an API gateway that operates as an LLM-agnostic validation interface.
 
 **Input guardrails** (pre-inference):
 - Prompt injection detection (pattern analysis, blocking known attack vectors)
@@ -117,7 +117,7 @@ Position a modular governance layer between user applications and your LLM -an A
 - Business rule alignment (ensuring outputs conform to expected parameters)
 - Hallucination checks (cross-referencing claims against source documents for RAG systems)
 
-**Performance tip:** Input validation and LLM response generation can be parallelized -if guardrails trigger, discard the LLM generation and route to an intervention flow. This avoids adding latency to the happy path.
+**Performance tip:** Input validation and LLM response generation can be parallelized. If guardrails trigger, discard the LLM generation and route to an intervention flow. This avoids adding latency to the happy path.
 
 The key distinction for auditors: model alignment (training-based safety) is different from guardrails (external filters). Both are necessary. Guardrails can be updated without retraining the model, making them the faster path to addressing new risks.
 
@@ -125,7 +125,7 @@ The key distinction for auditors: model alignment (training-based safety) is dif
 
 **What it satisfies:** EU AI Act Art. 11 (Technical Documentation), SOC 2 CC8.x (Change Management), ISO 42001 A.6, NIST MAP
 
-The core principle: given Model V1 + Training Data V3 + Training Code V2.1, you must be able to reproduce the exact same model. Corporate and government compliance may require investigation on both the model and data -every version of productionized models must be accessible.
+The core principle: given Model V1 + Training Data V3 + Training Code V2.1, you must be able to reproduce the exact same model. Corporate and government compliance may require investigation on both the model and data: every version of productionized models must be accessible.
 
 **What to version:**
 - Model weights and configuration
@@ -157,7 +157,7 @@ For RAG systems, this means tracking which documents were indexed, when they wer
 - Automated quality monitoring for AI-specific data flows
 - Granular access controls aligned with privacy requirements
 
-AI lineage goes beyond traditional data lineage -it must track feature engineering, model training processes, inference decisions, and derived attributes that traditional lineage tools weren't designed to capture.
+AI lineage goes beyond traditional data lineage: it must track feature engineering, model training processes, inference decisions, and derived attributes that traditional lineage tools weren't designed to capture.
 
 ### 5. Access Controls for AI Systems
 
@@ -167,19 +167,19 @@ Traditional RBAC is insufficient for LLM systems because prompts can implicitly 
 
 **Enforce permissions at three layers:**
 
-1. **Prompt layer** -what users can ask (topic restrictions, role-based prompt policies)
-2. **Retrieval layer** -what data the system can access to answer (document-level permissions in your vector database, tenant isolation for multi-tenant systems)
-3. **Output layer** -what information can be returned (output filtering, redaction of unauthorized data)
+1. **Prompt layer:** what users can ask (topic restrictions, role-based prompt policies)
+2. **Retrieval layer:** what data the system can access to answer (document-level permissions in your vector database, tenant isolation for multi-tenant systems)
+3. **Output layer:** what information can be returned (output filtering, redaction of unauthorized data)
 
 For multi-tenant SaaS products, this is especially critical. Your vector database must enforce tenant boundaries so that one customer's data never appears in another customer's RAG context. This is load-bearing infrastructure, not a nice-to-have.
 
-SOC 2 auditors will test this directly -expect questions about how you prevent cross-tenant data leakage in AI responses, how you handle prompt-based privilege escalation, and how access is revoked when a customer churns.
+SOC 2 auditors will test this directly. Expect questions about how you prevent cross-tenant data leakage in AI responses, how you handle prompt-based privilege escalation, and how access is revoked when a customer churns.
 
 ### 6. Bias Testing and Fairness Monitoring
 
 **What it satisfies:** EU AI Act Art. 10, ISO 42001 A.5/A.7, SOC 2 PI1.x, NIST MAP/MEASURE
 
-If your AI makes or influences decisions about people -hiring, lending, insurance, healthcare, content moderation -bias testing isn't optional. It's already legally required in multiple jurisdictions:
+If your AI makes or influences decisions about people (hiring, lending, insurance, healthcare, content moderation), bias testing isn't optional. It's already legally required in multiple jurisdictions:
 
 - **NYC Local Law 144** (effective July 2023): Annual bias audits for automated employment decision tools, $500-$1,500 per day for violations
 - **Colorado SB 205** (effective June 2026): Annual discrimination reviews for high-risk AI
@@ -187,11 +187,11 @@ If your AI makes or influences decisions about people -hiring, lending, insuranc
 - **EU AI Act Article 10**: Mandates bias detection and mitigation in training data
 
 **Core testing methods:**
-- Disparate impact testing (the "four-fifths rule" -does the unprivileged group get positive outcomes less than 80% as often as the privileged group?)
+- Disparate impact testing (the "four-fifths rule": does the unprivileged group get positive outcomes less than 80% as often as the privileged group?)
 - Counterfactual testing (swap sensitive attributes and check if outcomes change)
 - Demographic parity and equalized odds metrics
 
-**Tooling:** IBM AI Fairness 360, Microsoft Fairlearn, Amazon SageMaker Clarify, and Google's What-If Tool all provide bias detection capabilities. The critical point is continuous monitoring, not one-time testing -biases can emerge as models interact with new data post-deployment.
+**Tooling:** IBM AI Fairness 360, Microsoft Fairlearn, Amazon SageMaker Clarify, and Google's What-If Tool all provide bias detection capabilities. The critical point is continuous monitoring, not one-time testing; biases can emerge as models interact with new data post-deployment.
 
 ### 7. Incident Response for AI Failures
 
@@ -234,7 +234,7 @@ This phase satisfies your buyers' most urgent questions and builds the evidence 
 
 ### Phase 2: NIST AI RMF Alignment (concurrent)
 
-Map your existing controls to the NIST AI RMF's four functions. This is a documentation exercise, not an engineering project -you're organizing what you've already built into the framework's structure. The NIST Playbook provides specific suggested actions for each subcategory.
+Map your existing controls to the NIST AI RMF's four functions. This is a documentation exercise, not an engineering project; you're organizing what you've already built into the framework's structure. The NIST Playbook provides specific suggested actions for each subcategory.
 
 This alignment serves two purposes: it prepares you for ISO 42001 certification (which shares significant overlap) and demonstrates risk management maturity to regulators and enterprise buyers who reference the AI RMF.
 
@@ -295,7 +295,7 @@ Including AI within your existing SOC 2 scope is the most cost-effective approac
 Annex III defines high-risk categories: biometric identification, critical infrastructure management, education and vocational training, employment and worker management, access to essential services (credit, insurance), law enforcement, migration and border control, and administration of justice. If your AI system makes or influences decisions in any of these areas, it's likely high-risk.
 
 **How do I handle compliance when my AI capabilities evolve rapidly?**
-Treat prompt templates, model configurations, and guardrail rules as code -version-controlled, peer-reviewed, and deployed through your CI/CD pipeline. This means compliance documentation stays synchronized with your actual system. When you change a system prompt or switch model versions, the change management process captures it automatically.
+Treat prompt templates, model configurations, and guardrail rules as code: version-controlled, peer-reviewed, and deployed through your CI/CD pipeline. This means compliance documentation stays synchronized with your actual system. When you change a system prompt or switch model versions, the change management process captures it automatically.
 
 <script type="application/ld+json">
 {
@@ -339,7 +339,7 @@ Treat prompt templates, model configurations, and guardrail rules as code -versi
       "name": "How do I handle compliance when my AI capabilities evolve rapidly?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Treat prompt templates, model configurations, and guardrail rules as code -version-controlled, peer-reviewed, and deployed through your CI/CD pipeline. This ensures compliance documentation stays synchronized with your actual system. When you change a system prompt or switch model versions, the change management process captures it automatically."
+        "text": "Treat prompt templates, model configurations, and guardrail rules as code: version-controlled, peer-reviewed, and deployed through your CI/CD pipeline. This ensures compliance documentation stays synchronized with your actual system. When you change a system prompt or switch model versions, the change management process captures it automatically."
       }
     }
   ]
