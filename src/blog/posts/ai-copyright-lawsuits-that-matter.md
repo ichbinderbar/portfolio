@@ -1,6 +1,6 @@
 ---
 title: "The Courtroom is Writing the Rulebook: AI Copyright Lawsuits That Actually Matter"
-description: Over 50 active copyright lawsuits against AI companies are shaping what you can build. Here's what the rulings actually say and why they're product requirements in disguise.
+description: "Over 50 active copyright lawsuits against AI companies are shaping what you can build. Here's what the rulings actually say and why they're product requirements in disguise."
 date: 2026-02-01
 lastModified: 2026-02-11
 tags:

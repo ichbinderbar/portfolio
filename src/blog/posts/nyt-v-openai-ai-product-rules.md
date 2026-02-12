@@ -1,6 +1,6 @@
 ---
 title: "NYT v. OpenAI: The Case That's Quietly Rewriting the Rules for Every AI Product"
-description: This copyright lawsuit has become the case that will define how AI companies handle data, privacy, and litigation for the next decade. Here's why the discovery orders matter more than the fair use question.
+description: "This copyright lawsuit has become the case that will define how AI companies handle data, privacy, and litigation for the next decade. Here's why the discovery orders matter more than the fair use question."
 date: 2026-02-02
 lastModified: 2026-02-11
 tags:

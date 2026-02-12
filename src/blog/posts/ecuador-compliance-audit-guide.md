@@ -1,6 +1,6 @@
 ---
 title: "How to Prepare for a Compliance Audit in Ecuador (And Why Certification Might Be Worth It)"
-description: Ecuador's data protection authority issued its first major fines in 2025. Here's how to prepare for an audit under the LOPDP and when third-party certification makes sense.
+description: "Ecuador's data protection authority issued its first major fines in 2025. Here's how to prepare for an audit under the LOPDP and when third-party certification makes sense."
 date: 2026-02-01
 lastModified: 2026-02-11
 tags:
