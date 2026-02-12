@@ -2,6 +2,7 @@
 title: "SOC 2 for Startups: When You Need It and How to Get There"
 description: "SOC 2 unlocks enterprise deals, but pursuing it too early wastes money and engineering time. Here's when startups actually need it, what it costs at different stages, and how to get compliant without stalling your product roadmap."
 date: 2026-02-14
+lastModified: 2026-02-14
 tags:
   - posts
   - compliance

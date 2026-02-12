@@ -2,6 +2,7 @@
 title: "Why Trademark Monitoring Is a Natural Fit for RAG"
 description: "Trademark search and monitoring has five properties that make it one of the strongest domain candidates for Retrieval-Augmented Generation: massive structured corpora, multi-dimensional similarity, domain expertise requirements, high accuracy demands, and a clear last-mile generation gap."
 date: 2026-02-10
+lastModified: 2026-02-11
 tags:
   - posts
   - ai

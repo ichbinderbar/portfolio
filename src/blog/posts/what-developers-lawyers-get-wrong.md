@@ -2,6 +2,7 @@
 title: "What Developers Get Wrong About Legal (And Vice Versa)"
 description: "The gap between engineering and legal teams isn't about intelligence—it's about modeling. Here's how both sides can bridge it."
 date: 2026-02-01
+lastModified: 2026-02-11
 tags:
   - posts
   - legal-tech

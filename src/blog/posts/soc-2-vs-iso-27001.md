@@ -2,6 +2,7 @@
 title: "SOC 2 vs ISO 27001: Which Certification Do You Actually Need?"
 description: "SOC 2 and ISO 27001 both prove your security posture, but they work differently, cost differently, and matter to different buyers. Here's how to choose based on your market, budget, and growth stage."
 date: 2026-02-11
+lastModified: 2026-02-11
 tags:
   - posts
   - compliance

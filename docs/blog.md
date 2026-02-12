@@ -37,6 +37,7 @@ ogImage: https://juanidrovo.com/assets/custom-image.jpg
 
 | Field | Description |
 |-------|-------------|
+| `lastModified` | Date the post was last updated (YYYY-MM-DD). Shown as "Updated" on the post page when different from `date`. Also used in JSON-LD `dateModified` and RSS feed `<updated>`. |
 | `ogImage` | Custom Open Graph image for social sharing (defaults to profile.jpg) |
 
 ## Markdown Content

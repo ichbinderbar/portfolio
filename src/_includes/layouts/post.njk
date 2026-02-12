@@ -6,6 +6,9 @@ layout: base.njk
     <header class="blog-post__header">
       <div class="blog-post__meta">
         <time datetime="{{ date.toISOString().split('T')[0] }}">{{ date | dateFormat }}</time>
+        {% if lastModified and (lastModified | date('Y-m-d')) != (date | date('Y-m-d')) %}
+        <time datetime="{{ lastModified | date('Y-m-d') }}">Updated {{ lastModified | dateFormat }}</time>
+        {% endif %}
         <span class="blog-post__reading-time">{{ content | readingTime }}</span>
       </div>
       <h1 class="blog-post__title">{{ title }}</h1>

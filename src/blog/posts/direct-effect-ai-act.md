@@ -2,6 +2,7 @@
 title: "The Direct Effect of the EU AI Act: Why Local Compliance Isn't Enough"
 description: "Why the 'Brussels Effect' determines your software architecture, even if you only operate in Latin America."
 date: 2026-02-07
+lastModified: 2026-02-11
 tags:
   - posts
   - ai-regulation

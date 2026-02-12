@@ -11,14 +11,21 @@ Goal: Get juanidrovo.com cited as a source by AI systems (ChatGPT, Perplexity, G
 - Person + SoftwareApplication structured data on homepage
 - Niche authority content (RAG + GDPR, AI copyright, Ecuador compliance)
 
-### What's Broken
-- Zero internal links between blog posts
-- Zero links from blog posts back to juanidrovo.com
-- No foundational "pillar" posts targeting high-volume queries
-- No Article structured data on blog posts (no author attribution)
-- FAQ answers contain first-person sales language in structured data (hurts citability)
-- FAQ doesn't link to related blog posts
-- Blog post endings are inconsistent (some lack CTAs)
+### What's Been Fixed
+- ~~Zero internal links between blog posts~~ All 15 posts cross-linked (Phase 2)
+- ~~Zero links from blog posts back to juanidrovo.com~~ CTAs and homepage links added (Phase 2)
+- ~~No foundational "pillar" posts targeting high-volume queries~~ 5 pillar posts written (Phase 3)
+- ~~FAQ answers contain first-person sales language in structured data~~ Rewritten for citability (Phase 1)
+- ~~FAQ doesn't link to related blog posts~~ 7 FAQ-to-blog links added (Phase 1)
+- ~~Blog post endings are inconsistent~~ Standardized with "Keep reading" + Calendly CTA (Phase 2)
+- Blog URL structure fixed: permalink config outputs posts at `/blog/slug/` instead of `/blog/posts/slug/`
+- All 5 pillar posts fact-checked against primary sources, inaccuracies corrected
+- Sitemap updated with all 15 posts at correct URLs
+
+### Still To Do
+- ~~No Article structured data on blog posts (no author attribution)~~ BlogPosting JSON-LD with author added (Phase 4)
+- ~~No `dateModified` metadata on blog posts~~ `lastModified` frontmatter + visible "Updated" date added (Phase 4)
+- No FAQPage schema on individual pillar posts (Phase 5)
 
 ---
 
@@ -66,17 +73,17 @@ Every post ends with:
 
 ---
 
-## Phase 3: Pillar Content (High-Volume Posts)
+## Phase 3: Pillar Content (High-Volume Posts) ✅ DONE
 
 Write 3-5 foundational posts targeting the queries that appear in Google AI Overviews and PAA boxes:
 
-| Target Query | Estimated Intent | Post Title |
-|---|---|---|
-| "SOC 2 vs ISO 27001" | Comparison shopping | SOC 2 vs ISO 27001: Which Certification Do You Actually Need? |
-| "what is SOC 2 compliance" | Educational | SOC 2 Compliance Explained: What It Is, Who Needs It, and How to Get Certified |
-| "how to prepare for SOC 2 audit" | Action-oriented | How to Prepare for a SOC 2 Audit: A Practical Checklist |
-| "SOC 2 for startups" | Startup-specific | SOC 2 for Startups: When You Need It and How to Get There |
-| "compliance for SaaS companies" | Broad entry point | The SaaS Compliance Stack: SOC 2, ISO 27001, GDPR, and What Actually Matters |
+| Target Query | Estimated Intent | Post Title | Status |
+|---|---|---|---|
+| "SOC 2 vs ISO 27001" | Comparison shopping | SOC 2 vs ISO 27001: Which Certification Do You Actually Need? | ✅ Done |
+| "what is SOC 2 compliance" | Educational | SOC 2 Compliance Explained: What It Is, Who Needs It, and How to Get Certified | ✅ Done |
+| "how to prepare for SOC 2 audit" | Action-oriented | How to Prepare for a SOC 2 Audit: A Practical Checklist | ✅ Done |
+| "SOC 2 for startups" | Startup-specific | SOC 2 for Startups: When You Need It and How to Get There | ✅ Done |
+| "compliance for SaaS companies" | Broad entry point | The SaaS Compliance Stack: SOC 2, ISO 27001, GDPR, and What Actually Matters | ✅ Done |
 
 These posts should:
 - Be 3,000-5,000 words with real depth
@@ -87,24 +94,24 @@ These posts should:
 
 ---
 
-## Phase 4: Technical SEO for Blog
+## Phase 4: Technical SEO for Blog ✅ DONE
 
-### 4.1 Add Article Structured Data
-Add JSON-LD to blog post template:
-```json
-{
-  "@type": "Article",
-  "author": { "@id": "https://juanidrovo.com/#person" },
-  "datePublished": "...",
-  "dateModified": "..."
-}
-```
+### 4.1 Add `lastModified` Frontmatter
+- Added `lastModified` to all 15 posts
+- Posts modified during Phase 2/3 get `lastModified: 2026-02-11`
+- Posts not modified after publish get `lastModified` equal to `date`
+- JSON-LD `dateModified` in `base.njk` already consumes this field
 
-### 4.2 Add "Last Updated" Dates
-AI systems prefer fresh content. Display and include `dateModified` in structured data.
+### 4.2 Show "Updated" Date on Posts
+- Added visible "Updated: [date]" in `post.njk` next to published date
+- Only shows when `lastModified` differs from `date`
 
-### 4.3 Sitemap and RSS
-Verify blog sitemap and RSS feed are discoverable and include all posts.
+### 4.3 RSS Feed Updated
+- Changed `<updated>` element in `feed.njk` to use `lastModified` when available
+
+### 4.4 Sitemap Verified
+- All 15 posts present with correct `/blog/slug/` URLs
+- Pillar posts at priority 0.8, regular posts at 0.7
 
 ---
 

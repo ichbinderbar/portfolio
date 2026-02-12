@@ -2,6 +2,7 @@
 title: "How to Prepare for a SOC 2 Audit: A Practical Checklist"
 description: "A step-by-step guide to SOC 2 audit preparation - from scoping and readiness assessments to evidence collection and fieldwork. Includes timelines, cost breakdowns, and the controls most companies miss."
 date: 2026-02-13
+lastModified: 2026-02-13
 tags:
   - posts
   - compliance

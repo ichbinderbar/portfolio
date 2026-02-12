@@ -2,6 +2,7 @@
 title: "The SaaS Compliance Stack: SOC 2, ISO 27001, GDPR, and What Actually Matters"
 description: "SaaS companies face a growing list of compliance frameworks - SOC 2, ISO 27001, GDPR, CCPA, HIPAA, PCI DSS - but most don't need all of them. Here's how to build a compliance stack based on your market, stage, and customers."
 date: 2026-02-15
+lastModified: 2026-02-15
 tags:
   - posts
   - compliance

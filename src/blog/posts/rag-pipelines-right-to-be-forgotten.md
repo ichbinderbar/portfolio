@@ -2,6 +2,7 @@
 title: "RAG Pipelines and the Right to Be Forgotten: An Engineering Problem Disguised as a Legal One"
 description: "Vector databases break the assumptions behind GDPR Article 17. Here's why deletion in RAG systems is architecturally different from relational databases, and how to design for it."
 date: 2026-02-10
+lastModified: 2026-02-11
 tags:
   - posts
   - ai

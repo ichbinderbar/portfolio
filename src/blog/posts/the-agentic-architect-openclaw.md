@@ -2,6 +2,7 @@
 title: "The Agentic Architect: Lessons from the OpenClaw Workflow"
 description: "Analyzing Peter Steinberger's radical approach to AI-native software engineering and what it means for the future of product development."
 date: 2026-02-10
+lastModified: 2026-02-11
 tags:
   - posts
   - ai-agents

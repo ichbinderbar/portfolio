@@ -21,7 +21,7 @@ eleventyExcludeFromCollections: true
     <link href="{{ absolutePostUrl }}" rel="alternate" type="text/html"/>
     <id>{{ absolutePostUrl }}</id>
     <published>{{ post.date | dateToRfc3339 }}</published>
-    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <updated>{{ (post.data.lastModified or post.date) | dateToRfc3339 }}</updated>
     {%- if post.data.description %}
     <summary>{{ post.data.description }}</summary>
     {%- endif %}
