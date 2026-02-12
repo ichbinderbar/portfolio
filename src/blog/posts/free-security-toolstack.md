@@ -316,6 +316,7 @@ trivy image --format spdx-json --output sbom.json your-app:latest
 
 **GitHub Actions integration:**
 
+{% raw %}
 ```yaml
 - name: Build Docker image
   run: docker build -t your-app:${{ github.sha }} .
@@ -327,6 +328,7 @@ trivy image --format spdx-json --output sbom.json your-app:latest
     severity: 'CRITICAL,HIGH'
     exit-code: '1'
 ```
+{% endraw %}
 
 ### Alternatives
 
@@ -538,6 +540,7 @@ For teams that do not need a full SIEM but want runtime security visibility, the
 
 Here is how all these tools fit together in a single GitHub Actions workflow. This pipeline runs on every push and pull request, covering SAST, SCA, secrets detection, container scanning, and IaC scanning.
 
+{% raw %}
 ```yaml
 # .github/workflows/security.yml
 name: Security Pipeline
@@ -604,6 +607,7 @@ jobs:
           directory: .
           soft_fail: false
 ```
+{% endraw %}
 
 Add the Dependabot configuration for automated dependency updates:
 

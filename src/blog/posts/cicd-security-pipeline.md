@@ -161,6 +161,7 @@ This action is free for all GitHub repositories, public and private. It runs in 
 
 ### Job 3: SAST with CodeQL
 
+{% raw %}
 ```yaml
   codeql:
     name: CodeQL Analysis
@@ -190,6 +191,7 @@ This action is free for all GitHub repositories, public and private. It runs in 
         with:
           category: "/language:${{ matrix.language }}"
 ```
+{% endraw %}
 
 CodeQL is GitHub's semantic code analysis engine. Unlike pattern-matching tools, it builds a database of your code's data flow and queries it for vulnerability patterns. It catches injection flaws, authentication issues, cryptographic weaknesses, insecure deserialization, and data exposure risks that simpler tools miss.
 
@@ -229,6 +231,7 @@ Trivy scans your repository's filesystem for vulnerabilities in dependencies, mi
 
 If you build Docker images, add a container image scan step:
 
+{% raw %}
 ```yaml
       - name: Build image
         run: docker build -t myapp:${{ github.sha }} .
@@ -241,6 +244,7 @@ If you build Docker images, add a container image scan step:
           output: 'trivy-image-results.sarif'
           severity: 'CRITICAL,HIGH'
 ```
+{% endraw %}
 
 Trivy is completely free, open source, and works on public and private repositories without any paid add-ons. It covers the vulnerability scanning gap for teams that cannot afford GitHub Advanced Security. For a complete breakdown of free security tools, see [the free security toolstack guide](/blog/free-security-toolstack/).
 
@@ -250,6 +254,7 @@ SonarQube adds code quality analysis on top of security scanning. It measures co
 
 For SonarQube Cloud (formerly SonarCloud), which is free for public projects:
 
+{% raw %}
 ```yaml
   sonarqube:
     name: SonarQube Analysis
@@ -273,6 +278,7 @@ For SonarQube Cloud (formerly SonarCloud), which is free for public projects:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 ```
+{% endraw %}
 
 The quality gate check polls SonarQube for the analysis result and fails the workflow if the gate conditions are not met. The default quality gate requires:
 
@@ -444,6 +450,7 @@ gh attestation verify dist/your-artifact.tar.gz --owner your-org
 
 For Docker images, use the digest output from the build step:
 
+{% raw %}
 ```yaml
       - name: Build and push Docker image
         id: build
@@ -459,6 +466,7 @@ For Docker images, use the digest output from the build step:
           subject-digest: ${{ steps.build.outputs.digest }}
           push-to-registry: true
 ```
+{% endraw %}
 
 ### Reaching SLSA Build Level 3
 
@@ -544,6 +552,7 @@ GitHub also offers an organization-level policy that requires all Actions refere
 
 Here is the full security pipeline assembled into a single workflow file. Copy this into `.github/workflows/security.yml` and customize the language matrix and SonarQube configuration for your project.
 
+{% raw %}
 ```yaml
 name: Security Pipeline
 on:
@@ -680,6 +689,7 @@ jobs:
       - name: Deploy to production
         run: echo "Deploy steps here"
 ```
+{% endraw %}
 
 ### Setup Checklist
 

@@ -117,6 +117,7 @@ The YAML plan supports authentication configuration, session management, alert f
 
 Here is a CI workflow that runs a ZAP baseline scan on every push and a full scan weekly:
 
+{% raw %}
 ```yaml
 # .github/workflows/zap-scan.yml
 name: ZAP Security Scan
@@ -156,6 +157,7 @@ jobs:
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
 ```
+{% endraw %}
 
 The baseline scan is lightweight and runs in minutes. The full scan is thorough but aggressive, so schedule it outside business hours against a staging environment. Both automatically create GitHub issues for findings.
 
@@ -485,6 +487,7 @@ describe('Rate Limiting', () => {
 
 ### Input Validation and XSS Prevention Tests
 
+{% raw %}
 ```typescript
 // tests/security/input-validation.test.ts
 import { describe, it, expect, beforeAll } from 'vitest';
@@ -557,6 +560,7 @@ describe('Input Validation and XSS Prevention', () => {
   });
 });
 ```
+{% endraw %}
 
 ### CSRF Protection Tests
 

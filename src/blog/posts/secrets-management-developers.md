@@ -293,6 +293,7 @@ GitHub Actions provides three scopes for secrets:
 - Use deploy keys or service accounts instead of personal access tokens.
 - Rotate critical CI/CD secrets every 30 days.
 
+{% raw %}
 ```yaml
 # Example: environment-scoped secrets with approval
 jobs:
@@ -308,6 +309,7 @@ jobs:
           API_KEY: ${{ secrets.PROD_API_KEY }}
         run: ./deploy.sh
 ```
+{% endraw %}
 
 ### Docker build secrets
 

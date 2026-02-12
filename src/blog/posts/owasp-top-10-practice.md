@@ -380,6 +380,7 @@ const users = await prisma.user.findMany({
 
 ### Vulnerable code: XSS in React
 
+{% raw %}
 ```jsx
 // VULNERABLE: Rendering unsanitized HTML
 function Comment({ body }) {
@@ -387,9 +388,11 @@ function Comment({ body }) {
   // Attacker submits: <img src=x onerror="steal(document.cookie)">
 }
 ```
+{% endraw %}
 
 ### Fixed code: XSS prevention
 
+{% raw %}
 ```jsx
 import DOMPurify from 'dompurify';
 
@@ -404,6 +407,7 @@ function Comment({ body }) {
   return <div>{body}</div>; // React auto-escapes by default
 }
 ```
+{% endraw %}
 
 ### Vulnerable code: SQL injection in Python
 
