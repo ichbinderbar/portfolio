@@ -45,9 +45,9 @@ The gap is structural.
 
 **Consent management (Articles 7 and 8).** The GDPR requires explicit, informed, freely given consent before processing personal data, and requires that controllers can demonstrate that consent was obtained. Pre-checked boxes don't qualify. Consent must be as easy to withdraw as it is to give. ISO 27001 contains no requirements around how user consent is collected, recorded, or managed. Your ISMS doesn't address whether your signup flow has a lawful basis for each processing activity.
 
-**Data subject rights (Chapter 3, Articles 12–22).** The GDPR grants individuals eight specific rights:
+**Data subject rights (Chapter 3, Articles 12-22).** The GDPR grants individuals eight specific rights:
 
-- The right to be informed (Articles 13–14)
+- The right to be informed (Articles 13-14)
 - The right of access (Article 15)
 - The right to rectification (Article 16)
 - The right to erasure, also called "the right to be forgotten" (Article 17)
@@ -58,13 +58,13 @@ The gap is structural.
 
 ISO 27001 does not address any of these. An ISMS ensures data is stored securely. It says nothing about whether a system can locate all data held on a specific individual, package it in a machine-readable format for portability, cascade a deletion request across services and third-party integrations, or halt processing while retaining the record. These aren't security problems. They're product architecture problems that require purpose-built workflows, APIs, and data governance pipelines.
 
-**Breach notification timelines (Articles 33–34).** Both the GDPR and ISO 27001 address incident response. But the GDPR mandates notification to the relevant supervisory authority within 72 hours of becoming aware of a personal data breach. If the breach poses a high risk to individuals, they must also be notified directly, without undue delay. ISO 27001's Annex A.16 covers incident management but does not specify a notification deadline. That specificity matters when the clock starts ticking.
+**Breach notification timelines (Articles 33-34).** Both the GDPR and ISO 27001 address incident response. But the GDPR mandates notification to the relevant supervisory authority within 72 hours of becoming aware of a personal data breach. If the breach poses a high risk to individuals, they must also be notified directly, without undue delay. ISO 27001's Annex A.16 covers incident management but does not specify a notification deadline. That specificity matters when the clock starts ticking.
 
 **Data Protection Impact Assessments (Article 35).** The GDPR requires DPIAs before high-risk processing activities: large-scale profiling, systematic monitoring, or processing of sensitive data categories. ISO 27001's risk assessment process evaluates risks *to the organization's information assets*. A DPIA evaluates risks *to the individuals whose data is processed*. The lens is fundamentally different.
 
-**International data transfers (Articles 44–49).** Moving personal data outside the EU requires that the receiving country provides an "essentially equivalent" level of data protection. This is precisely what drove TikTok's €530 million fine. The company couldn't demonstrate that Chinese law provided equivalent protections for European users' data. ISO 27001 addresses vendor management and outsourcing controls, but it doesn't evaluate the legal adequacy of cross-border data flows under EU standards.
+**International data transfers (Articles 44-49).** Moving personal data outside the EU requires that the receiving country provides an "essentially equivalent" level of data protection. This is precisely what drove TikTok's €530 million fine. The company couldn't demonstrate that Chinese law provided equivalent protections for European users' data. ISO 27001 addresses vendor management and outsourcing controls, but it doesn't evaluate the legal adequacy of cross-border data flows under EU standards.
 
-**Data Protection Officer (Articles 37–39).** Certain organizations (public authorities, companies that conduct large-scale systematic monitoring, or those processing sensitive data at scale) must appoint a DPO. ISO 27001 has no equivalent requirement.
+**Data Protection Officer (Articles 37-39).** Certain organizations (public authorities, companies that conduct large-scale systematic monitoring, or those processing sensitive data at scale) must appoint a DPO. ISO 27001 has no equivalent requirement.
 
 ## The Core Distinction: Security vs. Privacy
 
