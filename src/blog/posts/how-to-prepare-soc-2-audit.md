@@ -419,6 +419,63 @@ The same CPA firm can perform both your readiness assessment and your formal aud
 **How often do we need to renew?**
 SOC 2 Type II reports are renewed annually. Each year, you undergo a new audit covering the latest observation period. Prospects expect a current report - anything more than 12 months old raises questions. Between reports, you can issue bridge letters (management self-assertions covering the gap), but these are temporary and should cover no more than three months.
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can we do SOC 2 without a compliance automation platform?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but it's significantly more painful. Before these platforms existed, companies managed evidence collection in spreadsheets and shared drives. For companies with fewer than 50 employees, the time cost of manual compliance often exceeds the platform subscription cost within the first year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should we start with SOC 2 Type I or go straight to Type II?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you have a deal blocked by a SOC 2 requirement, get a Type I first - it takes 4-7 months versus 9-15 months for Type II. Start the Type II observation period immediately after. If there's no immediate sales pressure, going straight to Type II is more cost-efficient since you avoid paying for two separate audits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we handle subservice organizations like AWS in a SOC 2 audit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Almost all SOC 2 audits use the carve-out method: your report acknowledges that certain controls are the responsibility of the subservice organization and excluded from your audit scope. You document which subservice organizations you rely on, obtain and review their SOC 2 reports annually, and implement complementary controls on your side."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if we have exceptions in the SOC 2 report?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Exceptions appear in Section 4 of the SOC 2 report. They don't automatically disqualify you - SOC 2 has no pass/fail. Minor exceptions are common and typically acceptable to prospects. Systemic exceptions signal fundamental control weaknesses and will cost you deals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do we need separate readiness and audit firms for SOC 2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The same CPA firm can perform both your readiness assessment and your formal audit, but the same engagement team typically cannot do both due to auditor independence requirements. Many firms handle this by having separate teams for advisory and attest engagements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often do we need to renew SOC 2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SOC 2 Type II reports are renewed annually. Each year, you undergo a new audit covering the latest observation period. Prospects expect a current report - anything more than 12 months old raises questions. Between reports, you can issue bridge letters covering gaps of no more than three months."
+      }
+    }
+  ]
+}
+</script>
+
 ---
 
 **Keep reading:**

@@ -289,6 +289,63 @@ Yes, and this is where they provide the most value. Platforms like Vanta, Drata,
 **What's the total annual cost of maintaining SOC 2 + ISO 27001 + GDPR?**
 For a SaaS company of 50-200 employees with both certifications and GDPR compliance operational: $80,000-$150,000/year. This includes SOC 2 annual audit ($30,000-$60,000), ISO 27001 surveillance audit ($6,000-$40,000), compliance platform subscription ($20,000-$50,000), penetration testing ($10,000-$30,000), and ongoing privacy program costs (DPA management, sub-processor tracking, training). The cost drops each year as processes mature and automation handles more of the evidence burden.
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which compliance framework should a SaaS company pursue first?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your market. If your customers are U.S. enterprises, SOC 2 Type II. If European enterprises, ISO 27001. If both, SOC 2 first (faster and cheaper), then add ISO 27001 within 12-18 months. GDPR and CCPA are legal obligations, not optional certifications - comply with them regardless."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much overlap is there between SOC 2 and ISO 27001?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Approximately 80% of controls overlap. Access controls, encryption, change management, incident response, vendor management, and employee training satisfy both frameworks. A company with SOC 2 that adds ISO 27001 typically spends 40-60% of what it would cost from scratch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do we need both SOC 2 and GDPR compliance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you have U.S. enterprise customers and EU users, yes. They address different concerns. SOC 2 demonstrates that your security controls work. GDPR compliance demonstrates that you handle personal data lawfully. Having one does not satisfy the other."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should a SaaS company pursue HIPAA compliance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only when you handle Protected Health Information. If your product will store, process, or transmit PHI, you need HIPAA compliance before signing your first healthcare customer. Your existing SOC 2 or ISO 27001 program provides 60-70% of the technical controls HIPAA requires."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a compliance automation platform handle multiple frameworks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and this is where they provide the most value. Platforms like Vanta, Drata, and Secureframe maintain a unified control library that maps a single control to every applicable framework simultaneously. When you implement the control and collect evidence once, it satisfies SOC 2, ISO 27001, HIPAA, and GDPR requirements in parallel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the total annual cost of maintaining SOC 2 + ISO 27001 + GDPR?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a SaaS company of 50-200 employees: $80,000-$150,000/year. This includes SOC 2 annual audit ($30,000-$60,000), ISO 27001 surveillance audit ($6,000-$40,000), compliance platform subscription ($20,000-$50,000), penetration testing ($10,000-$30,000), and ongoing privacy program costs."
+      }
+    }
+  ]
+}
+</script>
+
 ---
 
 **Keep reading:**

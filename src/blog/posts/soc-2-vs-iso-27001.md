@@ -224,6 +224,63 @@ Vanta, Drata, and Secureframe are the leading options. All three support both SO
 **Do I need to hire a consultant?**
 Not necessarily, but it depends on internal expertise. If no one on your team has been through a SOC 2 or ISO 27001 engagement before, a readiness consultant can save months of trial and error. Budget $20,000-$50,000 for consulting support. If you have experienced security or compliance staff, a good automation platform may be enough.
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I skip SOC 2 Type I and go straight to Type II?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Technically yes. But most companies use Type I as a stepping stone. The Type II observation period is a minimum of six months and cannot be rushed. If a prospect needs evidence of your controls now, a Type I report bridges the gap while you build toward Type II."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is SOC 2 a certification?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. SOC 2 is an attestation. A CPA firm issues a report with their opinion on your controls. There is no certifying body, no certificate, and no pass/fail. The distinction matters - calling it a certification signals unfamiliarity with the framework."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does ISO 27001 expire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The certificate is valid for three years, subject to passing annual surveillance audits in years two and three. If you fail a surveillance audit, the certification body can suspend or withdraw your certificate. After three years, you undergo a full recertification audit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much of the work transfers between SOC 2 and ISO 27001?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "About 80%, according to the AICPA's official mapping. The overlap covers access controls, risk assessment, incident management, change management, vendor management, encryption, and business continuity. The unique work for each framework is mostly documentation-specific."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which compliance automation platform should I use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vanta, Drata, and Secureframe are the leading options. All three support both SOC 2 and ISO 27001 and integrate with major cloud providers, identity providers, and development tools. The best choice depends on your stack, team size, and budget."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to hire a consultant for SOC 2 or ISO 27001?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily, but it depends on internal expertise. If no one on your team has been through a SOC 2 or ISO 27001 engagement before, a readiness consultant can save months of trial and error. Budget $20,000-$50,000 for consulting support."
+      }
+    }
+  ]
+}
+</script>
+
 ---
 
 **Keep reading:**

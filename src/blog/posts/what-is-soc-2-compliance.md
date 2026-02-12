@@ -205,6 +205,63 @@ SOC 2 reports are typically shared under NDA. Most companies share Section 1 (au
 **Is SOC 2 a one-time thing?**
 No. SOC 2 Type II reports are renewed annually. Each year, you undergo a new audit covering the latest observation period. The expectation from buyers is a current report - a report more than 12 months old raises questions.
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does SOC 2 cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All-in costs typically range from $20,000-$60,000 for Type I and $30,000-$150,000 for Type II, including readiness assessment, gap remediation, compliance tooling, and audit fees. Compliance automation platforms ($10,000-$30,000/year) significantly reduce the manual effort."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does SOC 2 take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Type I: 2-5 months from start to report. Type II: 6-12 months, primarily constrained by the minimum six-month observation period. Many companies get a Type I first to address immediate sales needs, then begin the Type II observation period."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a SOC 2 report from my cloud provider instead?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Cloud providers like AWS, Azure, and GCP have their own SOC 2 reports covering their infrastructure controls. Your SOC 2 report covers your controls - how you configure, access, and operate within that infrastructure. This is the shared responsibility model."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if we have exceptions in the SOC 2 report?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Exceptions appear in Section 4 of the report. They don't automatically mean failure - SOC 2 has no pass/fail. What matters is the nature and severity of the exceptions and how management responds. Minor exceptions are common and usually acceptable to prospects. Systemic exceptions are deal-breakers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do we need to share the full SOC 2 report with prospects?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SOC 2 reports are typically shared under NDA. Most companies share Section 1 (auditor's opinion) and Section 4 (test results) with prospects during vendor due diligence. For public distribution, get a SOC 3 report - it's a summary designed for that purpose."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is SOC 2 a one-time thing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. SOC 2 Type II reports are renewed annually. Each year, you undergo a new audit covering the latest observation period. Prospects expect a current report - a report more than 12 months old raises questions."
+      }
+    }
+  ]
+}
+</script>
+
 ---
 
 **Keep reading:**
