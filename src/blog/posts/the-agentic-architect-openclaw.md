@@ -2,7 +2,7 @@
 title: "The Agentic Architect: Running a One-Person AI Engineering Team for Under $300/Month"
 description: "How I use a three-model delegation pattern with cheap orchestrators and Claude Code on a single cloud instance to automate blog writing, email drafts, and competitive intelligence."
 date: 2026-02-10
-lastModified: 2026-03-04
+lastModified: 2026-03-05
 tags:
   - posts
   - ai-agents
@@ -155,6 +155,38 @@ I chose OpenClaw because it gave me the most flexibility with the least code. Th
 **Automated cost tracking.** I track costs manually by checking provider dashboards. A scheduled job that pulls usage data from each provider's API and posts a weekly cost summary would close the loop.
 
 **More granular reporting.** The current setup reports success or failure. Richer summaries (word count, SEO estimates, diff stats) would make the daily review faster.
+
+## Making It Production-Ready
+
+The architecture gets you running. These patterns keep it running safely.
+
+### Isolate the Orchestrator From External State
+
+The orchestrator should route and report. Nothing else. If a workflow touches email, git, or any external API, that call goes through the worker via a wrapper script — never inline in the cron job payload. When I let the orchestrator call email scripts directly, I got race conditions (two sessions hitting the same inbox) and context leaks (the orchestrator accumulating token-heavy email threads it had no business holding). From a security perspective, this also shrinks the orchestrator's attack surface. If it's compromised or prompt-injected, it can't touch your email, your repos, or your credentials. It can only delegate to a worker that operates within its own sandboxed permissions.
+
+### Use Wrapper Scripts With Output Contracts
+
+Put the worker instructions in parameterized wrapper scripts, not in the cron job definition. The orchestrator passes four arguments (topic, angle, source, related slugs) and the script handles template substitution, worker invocation, and output parsing. Every script should return a strict JSON contract: `{"status": "ok", "published": true, "title": "...", "url": "..."}` or `{"status": "error", "phase": "seo-review"}`. Without this, the orchestrator interprets freeform output, and interpretation drifts. More importantly, a defined contract means you can validate output programmatically. If the JSON doesn't parse or contains unexpected fields, something went wrong — possibly including injection into the worker's output.
+
+### Chain Reviews Before Anything Goes Public
+
+For content that gets published automatically, the worker should run a multi-stage review pipeline before committing: write the post, run a copy and voice review, run an SEO audit, and only commit if no critical issues surface. This isn't just quality control. It's a security gate. An agent writing content from scraped news sources is one prompt injection away from publishing something you didn't intend. Each review stage is an independent check that catches drift, tone violations, and content that doesn't match your editorial constraints.
+
+### Never Let the Agent Write Its Own Configuration
+
+This one cost me time. I let the orchestrator generate its own cron job configs and scheduling logic. The results looked reasonable but had subtle issues: wrong timezone handling, missing error paths, overly broad permissions. The agent doesn't understand the security implications of the permissions it grants itself. The fix is either to build a dedicated skill that enforces your conventions when creating cron jobs (validated schedules, mandatory timeouts, restricted delivery channels) or to write the configs manually. Configuration is where your constraints live. An agent defining its own constraints is a circular dependency with security implications.
+
+### Delegate Heavy Work to Your Best Tool — With a Plan
+
+When the orchestrator hands off to the worker, the worker should receive a plan, not just a raw prompt. Claude Code is currently the strongest coding and writing tool available, and its plan mode lets you front-load reasoning in a cheaper planning step before the expensive implementation pass. That means better output per dollar. But it also means the worker's actions are more predictable and auditable. A plan that says "write post, review copy, review SEO, commit if clean" is easier to verify than "here's a topic, figure it out." Predictability is a security property.
+
+### Use Heartbeats for Monitoring, Cron for Actions
+
+Not everything needs a cron job. Batch lightweight checks — inbox polling, disk usage, calendar lookups, credential health — into a heartbeat: a periodic pulse where the orchestrator runs through a short checklist and only reports if something needs attention. Reserve cron for tasks that need exact timing, isolated sessions, or produce external side effects. One heartbeat running every 30 minutes replaces half a dozen cron jobs and burns fewer tokens. It also gives you a natural place to run security hygiene: verify OAuth tokens haven't expired, check that container images are pruned (a small instance fills its disk in days without cleanup), and alert if disk usage crosses a threshold. Treat the heartbeat as your canary.
+
+### File-Based Memory — Simple, Auditable, Deletable
+
+The agent wakes up fresh every session. Continuity comes from flat files: daily logs capture raw session notes, and a curated long-term memory file distills what's worth keeping. Before each job, the worker reads the last 48 hours of context. It's not a vector database. It's not RAG. It's `cat` and markdown. The security advantage is underrated: you can `grep` your agent's entire memory in seconds, audit exactly what it knows, and delete anything that shouldn't persist. Try doing that with an embedding store. When your agent handles client emails and personal data, "I can see and delete everything it remembers" isn't a limitation. It's a feature.
 
 ## The Blueprint
 
